@@ -30,15 +30,20 @@ namespace Prog_Kursovaya_sem3
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_MainMenu));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripDropDownButtonProcessor = new System.Windows.Forms.ToolStripDropDownButton();
@@ -80,34 +85,33 @@ namespace Prog_Kursovaya_sem3
             this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
             this.tabPage_CompCase = new System.Windows.Forms.TabPage();
             this.dataGridView_CompCase = new System.Windows.Forms.DataGridView();
-            this.Column_CompCaseMotherboardsFormFactor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column_CompCaseStandardSize = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column_CompCaseName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column_CompCaseInfo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage_PSU = new System.Windows.Forms.TabPage();
             this.dataGridView_SupplyUnit = new System.Windows.Forms.DataGridView();
-            this.tabPage_RAM = new System.Windows.Forms.TabPage();
-            this.dataGridView_RAM = new System.Windows.Forms.DataGridView();
-            this.tabPage_Videocard = new System.Windows.Forms.TabPage();
-            this.tabPage_Motherboard = new System.Windows.Forms.TabPage();
-            this.tabPage_Processor = new System.Windows.Forms.TabPage();
-            this.button2 = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button_TextSearchProcessor = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.tabControl2 = new System.Windows.Forms.TabControl();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button_Reset = new System.Windows.Forms.Button();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.Column_RAMname = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column_RAMinfo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column_SupplyUnitName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column_SupplyUnitInfo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabPage_RAM = new System.Windows.Forms.TabPage();
+            this.dataGridView_RAM = new System.Windows.Forms.DataGridView();
+            this.Column_RAMname = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column_RAMinfo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabPage_Videocard = new System.Windows.Forms.TabPage();
             this.dataGridView_Videocard = new System.Windows.Forms.DataGridView();
             this.Column_VideocardName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column_VideocardInfo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabPage_Motherboard = new System.Windows.Forms.TabPage();
+            this.dataGridView_Motherboard = new System.Windows.Forms.DataGridView();
+            this.tabPage_Processor = new System.Windows.Forms.TabPage();
+            this.dataGridView_Processor = new System.Windows.Forms.DataGridView();
+            this.Column_ProcessorName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column_ProcessorInfo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.Column_MotherboardName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column_MotherboardInfo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabPage_HardDrive = new System.Windows.Forms.TabPage();
+            this.dataGridView_HardDrive = new System.Windows.Forms.DataGridView();
+            this.Column_HardDriveName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column_HardDriveInfo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.toolStrip1.SuspendLayout();
             this.tabPage_CompCase.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_CompCase)).BeginInit();
@@ -116,12 +120,14 @@ namespace Prog_Kursovaya_sem3
             this.tabPage_RAM.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_RAM)).BeginInit();
             this.tabPage_Videocard.SuspendLayout();
-            this.tabPage_Processor.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.tabControl2.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.tabControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Videocard)).BeginInit();
+            this.tabPage_Motherboard.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Motherboard)).BeginInit();
+            this.tabPage_Processor.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Processor)).BeginInit();
+            this.tabControl1.SuspendLayout();
+            this.tabPage_HardDrive.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_HardDrive)).BeginInit();
             this.SuspendLayout();
             // 
             // toolStrip1
@@ -145,7 +151,7 @@ namespace Prog_Kursovaya_sem3
             this.toolStripDropDownButton5,
             this.toolStripSeparator7});
             this.toolStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow;
-            this.toolStrip1.Location = new System.Drawing.Point(968, 145);
+            this.toolStrip1.Location = new System.Drawing.Point(818, 304);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(178, 208);
             this.toolStrip1.TabIndex = 0;
@@ -442,7 +448,7 @@ namespace Prog_Kursovaya_sem3
             this.tabPage_CompCase.Location = new System.Drawing.Point(4, 22);
             this.tabPage_CompCase.Name = "tabPage_CompCase";
             this.tabPage_CompCase.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_CompCase.Size = new System.Drawing.Size(910, 454);
+            this.tabPage_CompCase.Size = new System.Drawing.Size(677, 454);
             this.tabPage_CompCase.TabIndex = 6;
             this.tabPage_CompCase.Text = "Корпус";
             this.tabPage_CompCase.UseVisualStyleBackColor = true;
@@ -456,54 +462,43 @@ namespace Prog_Kursovaya_sem3
             this.dataGridView_CompCase.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_CompCase.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column_CompCaseName,
-            this.Column_CompCaseStandardSize,
-            this.Column_CompCaseMotherboardsFormFactor});
-            this.dataGridView_CompCase.Location = new System.Drawing.Point(500, 6);
+            this.Column_CompCaseInfo});
+            this.dataGridView_CompCase.Location = new System.Drawing.Point(3, 3);
             this.dataGridView_CompCase.MultiSelect = false;
             this.dataGridView_CompCase.Name = "dataGridView_CompCase";
             this.dataGridView_CompCase.ReadOnly = true;
             this.dataGridView_CompCase.RowHeadersVisible = false;
             this.dataGridView_CompCase.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView_CompCase.Size = new System.Drawing.Size(404, 106);
-            this.dataGridView_CompCase.TabIndex = 0;
-            // 
-            // Column_CompCaseMotherboardsFormFactor
-            // 
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft;
-            this.Column_CompCaseMotherboardsFormFactor.DefaultCellStyle = dataGridViewCellStyle10;
-            this.Column_CompCaseMotherboardsFormFactor.HeaderText = "Форм-фактор совместимых плат";
-            this.Column_CompCaseMotherboardsFormFactor.Name = "Column_CompCaseMotherboardsFormFactor";
-            this.Column_CompCaseMotherboardsFormFactor.ReadOnly = true;
-            this.Column_CompCaseMotherboardsFormFactor.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Column_CompCaseMotherboardsFormFactor.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Column_CompCaseMotherboardsFormFactor.Width = 200;
-            // 
-            // Column_CompCaseStandardSize
-            // 
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column_CompCaseStandardSize.DefaultCellStyle = dataGridViewCellStyle11;
-            this.Column_CompCaseStandardSize.HeaderText = "Типоразмер";
-            this.Column_CompCaseStandardSize.Name = "Column_CompCaseStandardSize";
-            this.Column_CompCaseStandardSize.ReadOnly = true;
-            this.Column_CompCaseStandardSize.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Column_CompCaseStandardSize.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.dataGridView_CompCase.Size = new System.Drawing.Size(422, 149);
+            this.dataGridView_CompCase.TabIndex = 2;
             // 
             // Column_CompCaseName
             // 
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column_CompCaseName.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_CompCaseName.DefaultCellStyle = dataGridViewCellStyle1;
             this.Column_CompCaseName.HeaderText = "Название";
             this.Column_CompCaseName.Name = "Column_CompCaseName";
             this.Column_CompCaseName.ReadOnly = true;
             this.Column_CompCaseName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Column_CompCaseName.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
+            // Column_CompCaseInfo
+            // 
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_CompCaseInfo.DefaultCellStyle = dataGridViewCellStyle2;
+            this.Column_CompCaseInfo.HeaderText = "Краткая информация";
+            this.Column_CompCaseInfo.Name = "Column_CompCaseInfo";
+            this.Column_CompCaseInfo.ReadOnly = true;
+            this.Column_CompCaseInfo.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Column_CompCaseInfo.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Column_CompCaseInfo.Width = 300;
+            // 
             // tabPage_PSU
             // 
             this.tabPage_PSU.Controls.Add(this.dataGridView_SupplyUnit);
             this.tabPage_PSU.Location = new System.Drawing.Point(4, 22);
             this.tabPage_PSU.Name = "tabPage_PSU";
-            this.tabPage_PSU.Size = new System.Drawing.Size(910, 454);
+            this.tabPage_PSU.Size = new System.Drawing.Size(677, 454);
             this.tabPage_PSU.TabIndex = 5;
             this.tabPage_PSU.Text = "Блок питания";
             this.tabPage_PSU.UseVisualStyleBackColor = true;
@@ -518,21 +513,42 @@ namespace Prog_Kursovaya_sem3
             this.dataGridView_SupplyUnit.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column_SupplyUnitName,
             this.Column_SupplyUnitInfo});
-            this.dataGridView_SupplyUnit.Location = new System.Drawing.Point(502, 3);
+            this.dataGridView_SupplyUnit.Location = new System.Drawing.Point(3, 3);
             this.dataGridView_SupplyUnit.MultiSelect = false;
             this.dataGridView_SupplyUnit.Name = "dataGridView_SupplyUnit";
             this.dataGridView_SupplyUnit.ReadOnly = true;
             this.dataGridView_SupplyUnit.RowHeadersVisible = false;
             this.dataGridView_SupplyUnit.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView_SupplyUnit.Size = new System.Drawing.Size(405, 106);
+            this.dataGridView_SupplyUnit.Size = new System.Drawing.Size(405, 155);
             this.dataGridView_SupplyUnit.TabIndex = 1;
+            // 
+            // Column_SupplyUnitName
+            // 
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_SupplyUnitName.DefaultCellStyle = dataGridViewCellStyle3;
+            this.Column_SupplyUnitName.HeaderText = "Название";
+            this.Column_SupplyUnitName.Name = "Column_SupplyUnitName";
+            this.Column_SupplyUnitName.ReadOnly = true;
+            this.Column_SupplyUnitName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Column_SupplyUnitName.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Column_SupplyUnitInfo
+            // 
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_SupplyUnitInfo.DefaultCellStyle = dataGridViewCellStyle4;
+            this.Column_SupplyUnitInfo.HeaderText = "Краткая информация";
+            this.Column_SupplyUnitInfo.Name = "Column_SupplyUnitInfo";
+            this.Column_SupplyUnitInfo.ReadOnly = true;
+            this.Column_SupplyUnitInfo.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Column_SupplyUnitInfo.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Column_SupplyUnitInfo.Width = 300;
             // 
             // tabPage_RAM
             // 
             this.tabPage_RAM.Controls.Add(this.dataGridView_RAM);
             this.tabPage_RAM.Location = new System.Drawing.Point(4, 22);
             this.tabPage_RAM.Name = "tabPage_RAM";
-            this.tabPage_RAM.Size = new System.Drawing.Size(910, 454);
+            this.tabPage_RAM.Size = new System.Drawing.Size(677, 454);
             this.tabPage_RAM.TabIndex = 4;
             this.tabPage_RAM.Text = "Оперативная память";
             this.tabPage_RAM.UseVisualStyleBackColor = true;
@@ -547,7 +563,7 @@ namespace Prog_Kursovaya_sem3
             this.dataGridView_RAM.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column_RAMname,
             this.Column_RAMinfo});
-            this.dataGridView_RAM.Location = new System.Drawing.Point(506, 3);
+            this.dataGridView_RAM.Location = new System.Drawing.Point(3, 3);
             this.dataGridView_RAM.MultiSelect = false;
             this.dataGridView_RAM.Name = "dataGridView_RAM";
             this.dataGridView_RAM.ReadOnly = true;
@@ -556,153 +572,10 @@ namespace Prog_Kursovaya_sem3
             this.dataGridView_RAM.Size = new System.Drawing.Size(401, 106);
             this.dataGridView_RAM.TabIndex = 2;
             // 
-            // tabPage_Videocard
-            // 
-            this.tabPage_Videocard.Controls.Add(this.dataGridView_Videocard);
-            this.tabPage_Videocard.Location = new System.Drawing.Point(4, 22);
-            this.tabPage_Videocard.Name = "tabPage_Videocard";
-            this.tabPage_Videocard.Size = new System.Drawing.Size(910, 454);
-            this.tabPage_Videocard.TabIndex = 3;
-            this.tabPage_Videocard.Text = "Видеокарта";
-            this.tabPage_Videocard.UseVisualStyleBackColor = true;
-            // 
-            // tabPage_Motherboard
-            // 
-            this.tabPage_Motherboard.Location = new System.Drawing.Point(4, 22);
-            this.tabPage_Motherboard.Name = "tabPage_Motherboard";
-            this.tabPage_Motherboard.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_Motherboard.Size = new System.Drawing.Size(910, 454);
-            this.tabPage_Motherboard.TabIndex = 1;
-            this.tabPage_Motherboard.Text = "Материнская плата";
-            this.tabPage_Motherboard.UseVisualStyleBackColor = true;
-            // 
-            // tabPage_Processor
-            // 
-            this.tabPage_Processor.Controls.Add(this.button_Reset);
-            this.tabPage_Processor.Controls.Add(this.tabControl2);
-            this.tabPage_Processor.Controls.Add(this.groupBox1);
-            this.tabPage_Processor.Controls.Add(this.button2);
-            this.tabPage_Processor.Location = new System.Drawing.Point(4, 22);
-            this.tabPage_Processor.Name = "tabPage_Processor";
-            this.tabPage_Processor.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_Processor.Size = new System.Drawing.Size(910, 454);
-            this.tabPage_Processor.TabIndex = 0;
-            this.tabPage_Processor.Text = "Процессор";
-            this.tabPage_Processor.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(10, 394);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(165, 26);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Поиск по параметрам";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.button_TextSearchProcessor);
-            this.groupBox1.Location = new System.Drawing.Point(10, 9);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(156, 55);
-            this.groupBox1.TabIndex = 6;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Текстовый поиск";
-            // 
-            // button_TextSearchProcessor
-            // 
-            this.button_TextSearchProcessor.Location = new System.Drawing.Point(15, 19);
-            this.button_TextSearchProcessor.Name = "button_TextSearchProcessor";
-            this.button_TextSearchProcessor.Size = new System.Drawing.Size(30, 26);
-            this.button_TextSearchProcessor.TabIndex = 1;
-            this.button_TextSearchProcessor.Text = "-0";
-            this.button_TextSearchProcessor.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(51, 23);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(89, 20);
-            this.textBox1.TabIndex = 2;
-            // 
-            // tabControl2
-            // 
-            this.tabControl2.Controls.Add(this.tabPage1);
-            this.tabControl2.Controls.Add(this.tabPage2);
-            this.tabControl2.Location = new System.Drawing.Point(10, 80);
-            this.tabControl2.Name = "tabControl2";
-            this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(263, 195);
-            this.tabControl2.TabIndex = 7;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(255, 169);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Controls.Add(this.checkedListBox1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(255, 169);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // checkedListBox1
-            // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Location = new System.Drawing.Point(9, 31);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(151, 79);
-            this.checkedListBox1.TabIndex = 3;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 15);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 13);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Тип сокета";
-            // 
-            // button_Reset
-            // 
-            this.button_Reset.Location = new System.Drawing.Point(10, 426);
-            this.button_Reset.Name = "button_Reset";
-            this.button_Reset.Size = new System.Drawing.Size(163, 23);
-            this.button_Reset.TabIndex = 8;
-            this.button_Reset.Text = "Сброс рез-тов поиска";
-            this.button_Reset.UseVisualStyleBackColor = true;
-            // 
-            // tabControl1
-            // 
-            this.tabControl1.Controls.Add(this.tabPage_Processor);
-            this.tabControl1.Controls.Add(this.tabPage_Motherboard);
-            this.tabControl1.Controls.Add(this.tabPage_Videocard);
-            this.tabControl1.Controls.Add(this.tabPage_RAM);
-            this.tabControl1.Controls.Add(this.tabPage_PSU);
-            this.tabControl1.Controls.Add(this.tabPage_CompCase);
-            this.tabControl1.Location = new System.Drawing.Point(12, 12);
-            this.tabControl1.Multiline = true;
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(918, 480);
-            this.tabControl1.TabIndex = 1;
-            // 
             // Column_RAMname
             // 
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column_RAMname.DefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_RAMname.DefaultCellStyle = dataGridViewCellStyle5;
             this.Column_RAMname.HeaderText = "Название";
             this.Column_RAMname.Name = "Column_RAMname";
             this.Column_RAMname.ReadOnly = true;
@@ -712,8 +585,8 @@ namespace Prog_Kursovaya_sem3
             // 
             // Column_RAMinfo
             // 
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column_RAMinfo.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_RAMinfo.DefaultCellStyle = dataGridViewCellStyle6;
             this.Column_RAMinfo.HeaderText = "Краткая информация";
             this.Column_RAMinfo.Name = "Column_RAMinfo";
             this.Column_RAMinfo.ReadOnly = true;
@@ -721,26 +594,15 @@ namespace Prog_Kursovaya_sem3
             this.Column_RAMinfo.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.Column_RAMinfo.Width = 248;
             // 
-            // Column_SupplyUnitName
+            // tabPage_Videocard
             // 
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column_SupplyUnitName.DefaultCellStyle = dataGridViewCellStyle15;
-            this.Column_SupplyUnitName.HeaderText = "Название";
-            this.Column_SupplyUnitName.Name = "Column_SupplyUnitName";
-            this.Column_SupplyUnitName.ReadOnly = true;
-            this.Column_SupplyUnitName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Column_SupplyUnitName.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // Column_SupplyUnitInfo
-            // 
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column_SupplyUnitInfo.DefaultCellStyle = dataGridViewCellStyle16;
-            this.Column_SupplyUnitInfo.HeaderText = "Краткая информация";
-            this.Column_SupplyUnitInfo.Name = "Column_SupplyUnitInfo";
-            this.Column_SupplyUnitInfo.ReadOnly = true;
-            this.Column_SupplyUnitInfo.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Column_SupplyUnitInfo.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Column_SupplyUnitInfo.Width = 300;
+            this.tabPage_Videocard.Controls.Add(this.dataGridView_Videocard);
+            this.tabPage_Videocard.Location = new System.Drawing.Point(4, 22);
+            this.tabPage_Videocard.Name = "tabPage_Videocard";
+            this.tabPage_Videocard.Size = new System.Drawing.Size(677, 454);
+            this.tabPage_Videocard.TabIndex = 3;
+            this.tabPage_Videocard.Text = "Видеокарта";
+            this.tabPage_Videocard.UseVisualStyleBackColor = true;
             // 
             // dataGridView_Videocard
             // 
@@ -752,36 +614,207 @@ namespace Prog_Kursovaya_sem3
             this.dataGridView_Videocard.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column_VideocardName,
             this.Column_VideocardInfo});
-            this.dataGridView_Videocard.Location = new System.Drawing.Point(506, 3);
+            this.dataGridView_Videocard.Location = new System.Drawing.Point(3, 3);
             this.dataGridView_Videocard.MultiSelect = false;
             this.dataGridView_Videocard.Name = "dataGridView_Videocard";
             this.dataGridView_Videocard.ReadOnly = true;
             this.dataGridView_Videocard.RowHeadersVisible = false;
             this.dataGridView_Videocard.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView_Videocard.Size = new System.Drawing.Size(401, 106);
+            this.dataGridView_Videocard.Size = new System.Drawing.Size(475, 106);
             this.dataGridView_Videocard.TabIndex = 3;
             // 
             // Column_VideocardName
             // 
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column_VideocardName.DefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_VideocardName.DefaultCellStyle = dataGridViewCellStyle7;
             this.Column_VideocardName.HeaderText = "Название";
             this.Column_VideocardName.Name = "Column_VideocardName";
             this.Column_VideocardName.ReadOnly = true;
             this.Column_VideocardName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Column_VideocardName.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Column_VideocardName.Width = 150;
+            this.Column_VideocardName.Width = 220;
             // 
             // Column_VideocardInfo
             // 
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column_VideocardInfo.DefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_VideocardInfo.DefaultCellStyle = dataGridViewCellStyle8;
             this.Column_VideocardInfo.HeaderText = "Краткая информация";
             this.Column_VideocardInfo.Name = "Column_VideocardInfo";
             this.Column_VideocardInfo.ReadOnly = true;
             this.Column_VideocardInfo.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Column_VideocardInfo.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.Column_VideocardInfo.Width = 248;
+            // 
+            // tabPage_Motherboard
+            // 
+            this.tabPage_Motherboard.Controls.Add(this.dataGridView_Motherboard);
+            this.tabPage_Motherboard.Location = new System.Drawing.Point(4, 22);
+            this.tabPage_Motherboard.Name = "tabPage_Motherboard";
+            this.tabPage_Motherboard.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage_Motherboard.Size = new System.Drawing.Size(677, 454);
+            this.tabPage_Motherboard.TabIndex = 1;
+            this.tabPage_Motherboard.Text = "Материнская плата";
+            this.tabPage_Motherboard.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView_Motherboard
+            // 
+            this.dataGridView_Motherboard.AllowUserToAddRows = false;
+            this.dataGridView_Motherboard.AllowUserToDeleteRows = false;
+            this.dataGridView_Motherboard.AllowUserToResizeColumns = false;
+            this.dataGridView_Motherboard.AllowUserToResizeRows = false;
+            this.dataGridView_Motherboard.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_Motherboard.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column_MotherboardName,
+            this.Column_MotherboardInfo});
+            this.dataGridView_Motherboard.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView_Motherboard.MultiSelect = false;
+            this.dataGridView_Motherboard.Name = "dataGridView_Motherboard";
+            this.dataGridView_Motherboard.ReadOnly = true;
+            this.dataGridView_Motherboard.RowHeadersVisible = false;
+            this.dataGridView_Motherboard.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView_Motherboard.Size = new System.Drawing.Size(502, 106);
+            this.dataGridView_Motherboard.TabIndex = 4;
+            // 
+            // tabPage_Processor
+            // 
+            this.tabPage_Processor.Controls.Add(this.dataGridView_Processor);
+            this.tabPage_Processor.Location = new System.Drawing.Point(4, 22);
+            this.tabPage_Processor.Name = "tabPage_Processor";
+            this.tabPage_Processor.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage_Processor.Size = new System.Drawing.Size(677, 454);
+            this.tabPage_Processor.TabIndex = 0;
+            this.tabPage_Processor.Text = "Процессор";
+            this.tabPage_Processor.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView_Processor
+            // 
+            this.dataGridView_Processor.AllowUserToAddRows = false;
+            this.dataGridView_Processor.AllowUserToDeleteRows = false;
+            this.dataGridView_Processor.AllowUserToResizeColumns = false;
+            this.dataGridView_Processor.AllowUserToResizeRows = false;
+            this.dataGridView_Processor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_Processor.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column_ProcessorName,
+            this.Column_ProcessorInfo});
+            this.dataGridView_Processor.Location = new System.Drawing.Point(6, 6);
+            this.dataGridView_Processor.MultiSelect = false;
+            this.dataGridView_Processor.Name = "dataGridView_Processor";
+            this.dataGridView_Processor.ReadOnly = true;
+            this.dataGridView_Processor.RowHeadersVisible = false;
+            this.dataGridView_Processor.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView_Processor.Size = new System.Drawing.Size(441, 140);
+            this.dataGridView_Processor.TabIndex = 9;
+            // 
+            // Column_ProcessorName
+            // 
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_ProcessorName.DefaultCellStyle = dataGridViewCellStyle11;
+            this.Column_ProcessorName.HeaderText = "Название";
+            this.Column_ProcessorName.Name = "Column_ProcessorName";
+            this.Column_ProcessorName.ReadOnly = true;
+            this.Column_ProcessorName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Column_ProcessorName.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Column_ProcessorName.Width = 160;
+            // 
+            // Column_ProcessorInfo
+            // 
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_ProcessorInfo.DefaultCellStyle = dataGridViewCellStyle12;
+            this.Column_ProcessorInfo.HeaderText = "Краткая информация";
+            this.Column_ProcessorInfo.Name = "Column_ProcessorInfo";
+            this.Column_ProcessorInfo.ReadOnly = true;
+            this.Column_ProcessorInfo.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Column_ProcessorInfo.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Column_ProcessorInfo.Width = 260;
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage_Processor);
+            this.tabControl1.Controls.Add(this.tabPage_Motherboard);
+            this.tabControl1.Controls.Add(this.tabPage_Videocard);
+            this.tabControl1.Controls.Add(this.tabPage_RAM);
+            this.tabControl1.Controls.Add(this.tabPage_PSU);
+            this.tabControl1.Controls.Add(this.tabPage_CompCase);
+            this.tabControl1.Controls.Add(this.tabPage_HardDrive);
+            this.tabControl1.Location = new System.Drawing.Point(12, 12);
+            this.tabControl1.Multiline = true;
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(685, 480);
+            this.tabControl1.TabIndex = 1;
+            // 
+            // Column_MotherboardName
+            // 
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_MotherboardName.DefaultCellStyle = dataGridViewCellStyle9;
+            this.Column_MotherboardName.HeaderText = "Название";
+            this.Column_MotherboardName.Name = "Column_MotherboardName";
+            this.Column_MotherboardName.ReadOnly = true;
+            this.Column_MotherboardName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Column_MotherboardName.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Column_MotherboardName.Width = 180;
+            // 
+            // Column_MotherboardInfo
+            // 
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_MotherboardInfo.DefaultCellStyle = dataGridViewCellStyle10;
+            this.Column_MotherboardInfo.HeaderText = "Краткая информация";
+            this.Column_MotherboardInfo.Name = "Column_MotherboardInfo";
+            this.Column_MotherboardInfo.ReadOnly = true;
+            this.Column_MotherboardInfo.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Column_MotherboardInfo.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Column_MotherboardInfo.Width = 300;
+            // 
+            // tabPage_HardDrive
+            // 
+            this.tabPage_HardDrive.Controls.Add(this.dataGridView_HardDrive);
+            this.tabPage_HardDrive.Location = new System.Drawing.Point(4, 22);
+            this.tabPage_HardDrive.Name = "tabPage_HardDrive";
+            this.tabPage_HardDrive.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage_HardDrive.Size = new System.Drawing.Size(677, 454);
+            this.tabPage_HardDrive.TabIndex = 7;
+            this.tabPage_HardDrive.Text = "Жесткий диск";
+            this.tabPage_HardDrive.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView_HardDrive
+            // 
+            this.dataGridView_HardDrive.AllowUserToAddRows = false;
+            this.dataGridView_HardDrive.AllowUserToDeleteRows = false;
+            this.dataGridView_HardDrive.AllowUserToResizeColumns = false;
+            this.dataGridView_HardDrive.AllowUserToResizeRows = false;
+            this.dataGridView_HardDrive.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_HardDrive.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column_HardDriveName,
+            this.Column_HardDriveInfo});
+            this.dataGridView_HardDrive.Location = new System.Drawing.Point(6, 3);
+            this.dataGridView_HardDrive.MultiSelect = false;
+            this.dataGridView_HardDrive.Name = "dataGridView_HardDrive";
+            this.dataGridView_HardDrive.ReadOnly = true;
+            this.dataGridView_HardDrive.RowHeadersVisible = false;
+            this.dataGridView_HardDrive.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView_HardDrive.Size = new System.Drawing.Size(422, 149);
+            this.dataGridView_HardDrive.TabIndex = 3;
+            // 
+            // Column_HardDriveName
+            // 
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_HardDriveName.DefaultCellStyle = dataGridViewCellStyle13;
+            this.Column_HardDriveName.HeaderText = "Название";
+            this.Column_HardDriveName.Name = "Column_HardDriveName";
+            this.Column_HardDriveName.ReadOnly = true;
+            this.Column_HardDriveName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Column_HardDriveName.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Column_HardDriveInfo
+            // 
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_HardDriveInfo.DefaultCellStyle = dataGridViewCellStyle14;
+            this.Column_HardDriveInfo.HeaderText = "Краткая информация";
+            this.Column_HardDriveInfo.Name = "Column_HardDriveInfo";
+            this.Column_HardDriveInfo.ReadOnly = true;
+            this.Column_HardDriveInfo.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Column_HardDriveInfo.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Column_HardDriveInfo.Width = 300;
             // 
             // Form_MainMenu
             // 
@@ -803,14 +836,14 @@ namespace Prog_Kursovaya_sem3
             this.tabPage_RAM.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_RAM)).EndInit();
             this.tabPage_Videocard.ResumeLayout(false);
-            this.tabPage_Processor.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.tabControl2.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
-            this.tabControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Videocard)).EndInit();
+            this.tabPage_Motherboard.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Motherboard)).EndInit();
+            this.tabPage_Processor.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Processor)).EndInit();
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage_HardDrive.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_HardDrive)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -857,10 +890,6 @@ namespace Prog_Kursovaya_sem3
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator7;
         private System.Windows.Forms.TabPage tabPage_CompCase;
-        private System.Windows.Forms.DataGridView dataGridView_CompCase;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_CompCaseName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_CompCaseStandardSize;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_CompCaseMotherboardsFormFactor;
         private System.Windows.Forms.TabPage tabPage_PSU;
         private System.Windows.Forms.DataGridView dataGridView_SupplyUnit;
         private System.Windows.Forms.TabPage tabPage_RAM;
@@ -868,16 +897,6 @@ namespace Prog_Kursovaya_sem3
         private System.Windows.Forms.TabPage tabPage_Videocard;
         private System.Windows.Forms.TabPage tabPage_Motherboard;
         private System.Windows.Forms.TabPage tabPage_Processor;
-        private System.Windows.Forms.Button button_Reset;
-        private System.Windows.Forms.TabControl tabControl2;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button_TextSearchProcessor;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_RAMname;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_RAMinfo;
@@ -886,6 +905,19 @@ namespace Prog_Kursovaya_sem3
         private System.Windows.Forms.DataGridView dataGridView_Videocard;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_VideocardName;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_VideocardInfo;
+        private System.Windows.Forms.DataGridView dataGridView_Motherboard;
+        private System.Windows.Forms.DataGridView dataGridView_Processor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_ProcessorName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_ProcessorInfo;
+        private System.Windows.Forms.DataGridView dataGridView_CompCase;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_CompCaseName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_CompCaseInfo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_MotherboardName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_MotherboardInfo;
+        private System.Windows.Forms.TabPage tabPage_HardDrive;
+        private System.Windows.Forms.DataGridView dataGridView_HardDrive;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_HardDriveName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_HardDriveInfo;
     }
 }
 

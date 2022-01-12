@@ -3,3 +3,27 @@
 ################################################################################
 
 /Properties/Settings.settings
+/bin/Debug/DataBases/Новый текстовый документ.txt
+/.vs/Prog_Kursovaya_sem3/v16/.suo
+*.db
+/.vs/ProjectSettings.json
+/.vs/slnx.sqlite
+/bin/Debug/Prog_Kursovaya_sem3.exe.config
+/bin/Debug/Prog_Kursovaya_sem3.pdb
+/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+/obj/Debug/DesignTimeResolveAssemblyReferences.cache
+/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+/obj/Debug/Prog_Kursovaya_sem3.csproj.AssemblyReference.cache
+/obj/Debug/Prog_Kursovaya_sem3.csproj.CoreCompileInputs.cache
+/obj/Debug/Prog_Kursovaya_sem3.csproj.FileListAbsolute.txt
+/obj/Debug/Prog_Kursovaya_sem3.csproj.GenerateResource.cache
+/obj/Debug/Prog_Kursovaya_sem3.exe
+/.vs/VSWorkspaceState.json
+/App.config
+/obj/Debug/Prog_Kursovaya_sem3.Form_MainMenu.resources
+/obj/Debug/Prog_Kursovaya_sem3.pdb
+/obj/Debug/Prog_Kursovaya_sem3.Properties.Resources.resources
+/Properties/Resources.Designer.cs
+/Properties/Settings.Designer.cs
+/Properties/Resources.resx
+/obj/Release/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs

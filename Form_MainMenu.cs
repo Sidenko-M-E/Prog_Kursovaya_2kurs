@@ -19,15 +19,19 @@ namespace Prog_Kursovaya_sem3
             InitializeComponent();
         }
 
-
+        List<Processor> processors = new List<Processor>();
         List<CompCase> compCases = new List<CompCase>();
         List<PowerSupplyUnit> powerSupplyUnits = new List<PowerSupplyUnit>();
         List<RAM> RAMs = new List<RAM>();
+        List<Videocard> videocards = new List<Videocard>();
+        List<Motherboard> motherboards = new List<Motherboard>();
+
         private void MainMenu_Load(object sender, EventArgs e)
         {
             if (!System.IO.File.Exists("DataBases/processor.dat") || !System.IO.File.Exists("DataBases/motherboard.dat") ||
                 !System.IO.File.Exists("DataBases/power supply unit.dat") || !System.IO.File.Exists("DataBases/computer case.dat") ||
-                !System.IO.File.Exists("DataBases/RAM.dat") || !System.IO.File.Exists("DataBases/video card.dat"))
+                !System.IO.File.Exists("DataBases/RAM.dat") || !System.IO.File.Exists("DataBases/videocard.dat") ||
+                !System.IO.File.Exists("DataBases/hard drive.dat"))
             {
                 MessageBox.Show(
                     "Базы данных не найдены! Проверьте целостность приложения!",
@@ -38,9 +42,68 @@ namespace Prog_Kursovaya_sem3
                 Application.Exit();
             }
 
-            //Reading the power supply unit.dat
-            FileStream fileStream = new FileStream("DataBases/power supply unit.dat", FileMode.Open);
+
+
+            //Reading the processor.dat
+            FileStream fileStream = new FileStream("DataBases/processor.dat", FileMode.Open);
             StreamReader file = new StreamReader(fileStream);
+            if (file.Peek() < 0)
+                file.Close();
+            else
+            {
+                int i = 0;
+                string[] inputSubStrings;
+                while (file.Peek() >= 0)
+                {
+                    i++;
+                    inputSubStrings = file.ReadLine().Split('/');
+
+                    processors.Add(new Processor(inputSubStrings));
+
+                    dataGridView_Processor.Rows.Add(processors[i - 1].Name,
+                        "[" + processors[i - 1].NumberOfCores + " ядра, " +
+                        processors[i - 1].BaseFrequency + " ГГц, " +
+                         processors[i - 1].MemoryType + ", " +
+                          processors[i - 1].MinRAMFrequency + "-" +
+                          processors[i - 1].MaxRAMFrequency + " МГц, " +
+                           processors[i - 1].EnergyConsumption + " Вт" + "]");
+                }
+                file.Close();
+            }
+
+
+
+            //Reading the motherboard.dat
+            fileStream = new FileStream("DataBases/motherboard.dat", FileMode.Open);
+            file = new StreamReader(fileStream);
+            if (file.Peek() < 0)
+                file.Close();
+            else
+            {
+                int i = 0;
+                string[] inputSubStrings;
+                while (file.Peek() >= 0)
+                {
+                    i++;
+                    inputSubStrings = file.ReadLine().Split('/');
+
+                    motherboards.Add(new Motherboard(inputSubStrings));
+
+                    dataGridView_Motherboard.Rows.Add(motherboards[i - 1].Name,
+                        "[" + motherboards[i - 1].SocketType + ", " +
+                        motherboards[i - 1].ChipsetType + ", " +
+                         motherboards[i - 1].NumberOfRAMSlots + "x" +
+                          motherboards[i - 1].RamType + " - " +
+                           motherboards[i - 1].RamAvailableFrequenciesArray[motherboards[i - 1].RamAvailableFrequenciesArray.Length - 1] + " МГц, " + 
+                           motherboards[i - 1].NumberOfPCIESlots + "xPCI-Ex16" + "]");
+                }
+                file.Close();
+            }
+
+
+            //Reading the power supply unit.dat
+            fileStream = new FileStream("DataBases/power supply unit.dat", FileMode.Open);
+            file = new StreamReader(fileStream);
             if (file.Peek() < 0)
                 file.Close();
             else
@@ -82,7 +145,10 @@ namespace Prog_Kursovaya_sem3
 
                     compCases.Add(new CompCase(inputSubStrings));
 
-                    dataGridView_CompCase.Rows.Add(compCases[i - 1].Name, compCases[i - 1].StandardSize, compCases[i - 1].MotherboardsFormFactorString);
+                    dataGridView_CompCase.Rows.Add(compCases[i - 1].Name, "[" +
+                        compCases[i - 1].StandardSize + ", " +
+                        compCases[i - 1].MotherboardsFormFactorArray[compCases[i - 1].MotherboardsFormFactorArray.Length - 1] + ", " +
+                        compCases[i - 1].Length + "x" + compCases[i - 1].Width + "x" + compCases[i - 1].Height + "]");
                 }
                 file.Close();
             }
@@ -117,9 +183,34 @@ namespace Prog_Kursovaya_sem3
 
 
 
+            //Reading the videocard.dat
+            fileStream = new FileStream("DataBases/videocard.dat", FileMode.Open);
+            file = new StreamReader(fileStream);
+            if (file.Peek() < 0)
+                file.Close();
+            else
+            {
+                int i = 0;
+                string[] inputSubStrings;
+                while (file.Peek() >= 0)
+                {
+                    i++;
 
-            
-            
+                    inputSubStrings = file.ReadLine().Split('/');
+
+                    videocards.Add(new Videocard(inputSubStrings));
+                    dataGridView_Videocard.Rows.Add(videocards[i-1].Name,
+                        "[" + videocards[i - 1].VideoMemoryCapacity + " Гб, " +
+                        videocards[i - 1].VideoMemoryType + ", " +
+                        videocards[i-1].MemoryBitRate + " бит, " + 
+                        videocards[i - 1].VideoChipFrequency + " МГц, " +
+                        videocards[i - 1].EnergyConsumption + " Вт" + "]");
+                }
+                file.Close();
+                
+            }
+
+
         }
 
     }

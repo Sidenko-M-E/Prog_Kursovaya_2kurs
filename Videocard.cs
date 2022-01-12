@@ -5,8 +5,10 @@
         private string name;
         private int videoMemoryCapacity;
         private string videoMemoryType;
-        private int bandwidth;
+        private double maxBandwidth;
         private int techProcess;
+        private int memoryBitRate;
+        private int videoChipFrequency;
         private int length;
         private string supplyConnectorsType;
         private int energyConsumption;
@@ -46,16 +48,16 @@
                 videoMemoryType = new string(value.ToCharArray());
             }
         }
-        public int Bandwidth
+        public double MaxBandwidth
         {
             get
             {
-                return bandwidth;
+                return maxBandwidth;
             }
             set
             {
                 if ((value >= 1) && (value <= 100))
-                    bandwidth = value;
+                    maxBandwidth = value;
             }
         }
         public int TechProcess
@@ -70,6 +72,18 @@
                     techProcess = value;
             }
         }
+        public int MemoryBitRate
+        {
+            get
+            {
+                return memoryBitRate;
+            }
+            set
+            {
+                if ((value >= 64) && (value <= 353))
+                    memoryBitRate = value;
+            }
+        }
         public int Length
         {
             get
@@ -82,15 +96,27 @@
                     length = value;
             }
         }
+        public int VideoChipFrequency
+        {
+            get
+            {
+                return videoChipFrequency;
+            }
+            set
+            {
+                if ((value >= 300) && (value <= 4000))
+                    videoChipFrequency = value;
+            }
+        }
         public string SupplyConnectorsType
         {
             get
             {
-                return (new string(videoMemoryType.ToCharArray()));
+                return (new string(supplyConnectorsType.ToCharArray()));
             }
             set
             {
-                videoMemoryType = new string(value.ToCharArray());
+                supplyConnectorsType = new string(value.ToCharArray());
             }
         }
         public int EnergyConsumption
@@ -111,16 +137,13 @@
             Name = inputSubStrings[0];
             VideoMemoryCapacity = int.Parse(inputSubStrings[1]);
             VideoMemoryType = inputSubStrings[2];
-            Bandwidth = int.Parse(inputSubStrings[3]);
-            TechProcess;
-        Length;
-        DupplyConnectorsType;
-        EnergyConsumption;
-    
-            MemoryCapacity = int.Parse(inputSubStrings[1]);
-            MemoryType = inputSubStrings[2];
-            AvailableFrequenciesString = inputSubStrings[3];
-            Timings = inputSubStrings[4];
+            MaxBandwidth = double.Parse(inputSubStrings[3]);
+            TechProcess = int.Parse(inputSubStrings[4]);
+            MemoryBitRate = int.Parse(inputSubStrings[5]);
+            Length = int.Parse(inputSubStrings[6]);
+            VideoChipFrequency = int.Parse(inputSubStrings[7]);
+            SupplyConnectorsType = inputSubStrings[8];
+            EnergyConsumption = int.Parse(inputSubStrings[9]);
         }
     }
 }

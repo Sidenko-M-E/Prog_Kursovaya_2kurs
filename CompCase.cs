@@ -4,11 +4,15 @@
     {
         private string name;
         private string standardSize;
+        private int length;
+        private int width;
+        private int height;
         private string[] motherboardsFormFactor;
         private string[] powerSupplyFormFactor;
         private int videocardMaxLength;
         private int numberOfTwoAndHalfSlots;
         private int numberOfThreeAndHalfSlots;
+        private int numberOfHorizonExpansionSlots;
 
         public string Name 
         {
@@ -30,6 +34,42 @@
             set
             {
                 standardSize = new string(value.ToCharArray());
+            }
+        }
+        public int Length
+        {
+            get
+            {
+                return length;
+            }
+            set
+            {
+                if ((value >= 0) && (value <= 600))
+                   length = value;
+            }
+        }
+        public int Width
+        {
+            get
+            {
+                return width;
+            }
+            set
+            {
+                if ((value >= 0) && (value <= 600))
+                    width = value;
+            }
+        }
+        public int Height
+        {
+            get
+            {
+                return height;
+            }
+            set
+            {
+                if ((value >= 0) && (value <= 600))
+                    height = value;
             }
         }
         public string MotherboardsFormFactorString
@@ -158,17 +198,33 @@
                     numberOfThreeAndHalfSlots = value;
             }
         }
+        public int NumberOfHorizonExpansionSlots
+        {
+            get
+            {
+                return numberOfHorizonExpansionSlots;
+            }
+            set
+            {
+                if ((value >= 0) && (value <= 15))
+                    numberOfHorizonExpansionSlots = value;
+            }
+        }
 
 
         public CompCase(string[] inputSubStrings)
         {
             Name = inputSubStrings[0];
             StandardSize = inputSubStrings[1];
-            MotherboardsFormFactorString = inputSubStrings[2];
-            PowerSupplyFormFactorString = inputSubStrings[3];
-            VideocardMaxLength = int.Parse(inputSubStrings[4]);
-            NumberOfTwoAndHalfSlots = int.Parse(inputSubStrings[5]);
-            NumberOfThreeAndHalfSlots = int.Parse(inputSubStrings[6]);
+            Length = int.Parse(inputSubStrings[2]);
+            Width = int.Parse(inputSubStrings[3]);
+            Height = int.Parse(inputSubStrings[4]);
+            MotherboardsFormFactorString = inputSubStrings[5];
+            PowerSupplyFormFactorString = inputSubStrings[6];
+            VideocardMaxLength = int.Parse(inputSubStrings[7]);
+            NumberOfTwoAndHalfSlots = int.Parse(inputSubStrings[8]);
+            NumberOfThreeAndHalfSlots = int.Parse(inputSubStrings[9]);
+            NumberOfHorizonExpansionSlots = int.Parse(inputSubStrings[10]);
         }
     }
 }
