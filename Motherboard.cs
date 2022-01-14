@@ -3,14 +3,16 @@
     public class Motherboard
     {
         private string name;
-        private int numberOfSATASlots;
+       
         private string formFactor;
         private string socketType;
         private string chipsetType;
+
         private string processorSupplyConnectorsType;
         private int numberOfPCIESlots;
-
+        private int numberOfSATASlots;
         private int numberOfRAMSlots;
+
         private string ramFormFactor;
         private string ramType;
         private int ramMaxCapacity;
@@ -168,7 +170,7 @@
                     if (i == ramAvailableFrequencies.Length - 1)
                         returnValue += ramAvailableFrequencies[i];
                     else
-                        returnValue += ramAvailableFrequencies[i] + ',';
+                        returnValue += ramAvailableFrequencies[i] + ",";
                 }
                 return (returnValue);
             }

@@ -68,7 +68,7 @@
                     if (i == availableFrequencies.Length - 1)
                         returnValue += availableFrequencies[i];
                     else
-                        returnValue += availableFrequencies[i] + ',';
+                        returnValue += availableFrequencies[i] + ",";
                 }
                 return (returnValue);
             }

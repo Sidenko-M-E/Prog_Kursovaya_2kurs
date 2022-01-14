@@ -10,6 +10,7 @@
         private int memoryBitRate;
         private int videoChipFrequency;
         private int length;
+        private int occupiedExpansionSlots;
         private string supplyConnectorsType;
         private int energyConsumption;
 
@@ -56,7 +57,7 @@
             }
             set
             {
-                if ((value >= 1) && (value <= 100))
+                if ((value >= 1) && (value <= 500))
                     maxBandwidth = value;
             }
         }
@@ -94,6 +95,18 @@
             {
                 if ((value >= 80) && (value <= 500))
                     length = value;
+            }
+        }
+        public int OccupiedExpansionSlots
+        {
+            get
+            {
+                return occupiedExpansionSlots;
+            }
+            set
+            {
+                if ((value >= 1) && (value <= 8))
+                    occupiedExpansionSlots = value;
             }
         }
         public int VideoChipFrequency
@@ -141,9 +154,10 @@
             TechProcess = int.Parse(inputSubStrings[4]);
             MemoryBitRate = int.Parse(inputSubStrings[5]);
             Length = int.Parse(inputSubStrings[6]);
-            VideoChipFrequency = int.Parse(inputSubStrings[7]);
-            SupplyConnectorsType = inputSubStrings[8];
-            EnergyConsumption = int.Parse(inputSubStrings[9]);
+            OccupiedExpansionSlots = int.Parse(inputSubStrings[7]);
+            VideoChipFrequency = int.Parse(inputSubStrings[8]);
+            SupplyConnectorsType = inputSubStrings[9];
+            EnergyConsumption = int.Parse(inputSubStrings[10]);
         }
         public Videocard(Videocard inputObject)
         {
@@ -154,6 +168,7 @@
             TechProcess = inputObject.TechProcess;
             MemoryBitRate = inputObject.MemoryBitRate;
             Length = inputObject.Length;
+            OccupiedExpansionSlots = inputObject.OccupiedExpansionSlots;
             VideoChipFrequency = inputObject.VideoChipFrequency;
             SupplyConnectorsType = inputObject.SupplyConnectorsType;
             EnergyConsumption = inputObject.EnergyConsumption;

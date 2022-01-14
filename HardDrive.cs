@@ -104,5 +104,15 @@
             InterfaceBrandwidth = int.Parse(inputSubStrings[5]);
             EnergyConsumption = double.Parse(inputSubStrings[6]);
         }
+        public HardDrive(HardDrive inputObject)
+        {
+            Name = inputObject.Name;
+            MemoryCapacity = inputObject.MemoryCapacity;
+            FormFactor = inputObject.FormFactor;
+            CacheSize = inputObject.CacheSize;
+            MaxDataTransferRate = inputObject.MaxDataTransferRate;
+            InterfaceBrandwidth = inputObject.InterfaceBrandwidth;
+            EnergyConsumption = inputObject.EnergyConsumption;
+        }
     }
 }

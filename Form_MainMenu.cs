@@ -287,7 +287,7 @@ namespace Prog_Kursovaya_sem3
         {
             if (e.ColumnIndex >= 0 && e.RowIndex >= 0)
             {
-                var motherboardInfo = new Form_MotherboardInfo(motherboards[e.RowIndex]);
+                var motherboardInfo = new Form_Info(motherboards[e.RowIndex]);
                 if (motherboardInfo.ShowDialog() == DialogResult.Yes)
                     MainMenu_AddMotherboardToAssembling();
             }
@@ -303,13 +303,13 @@ namespace Prog_Kursovaya_sem3
         {
             MessageBox.Show("Добавили элемент к сборке");
         }
-
+        
         //RAM
         private void dataGridView_RAM_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             if (e.ColumnIndex >= 0 && e.RowIndex >= 0)
             {
-                var RAMInfo = new Form_RAMInfo(RAMs[e.RowIndex]);
+                var RAMInfo = new Form_Info(RAMs[e.RowIndex]);
                 if (RAMInfo.ShowDialog() == DialogResult.Yes)
                     MainMenu_AddRAMToAssembling();
             }
@@ -331,7 +331,7 @@ namespace Prog_Kursovaya_sem3
         {
             if (e.ColumnIndex >= 0 && e.RowIndex >= 0)
             {
-                var videocardInfo = new Form_VideocardInfo(RAMs[e.RowIndex]);
+                var videocardInfo = new Form_Info(videocards[e.RowIndex]);
                 if (videocardInfo.ShowDialog() == DialogResult.Yes)
                     MainMenu_AddRAMToAssembling();
 
@@ -354,7 +354,7 @@ namespace Prog_Kursovaya_sem3
         {
             if (e.ColumnIndex >= 0 && e.RowIndex >= 0)
             {
-                var powerSupplyUnitInfo = new Form_PowerSupplyUnitInfo(RAMs[e.RowIndex]);
+                var powerSupplyUnitInfo = new Form_Info(powerSupplyUnits[e.RowIndex]);
                 if (powerSupplyUnitInfo.ShowDialog() == DialogResult.Yes)
                     MainMenu_AddPowerSupplyUnitToAssembling();
 
@@ -377,7 +377,7 @@ namespace Prog_Kursovaya_sem3
         {
             if (e.ColumnIndex >= 0 && e.RowIndex >= 0)
             {
-                var hardDriveInfo = new Form_HardDriveInfo(RAMs[e.RowIndex]);
+                var hardDriveInfo = new Form_Info(hardDrives[e.RowIndex]);
                 if (hardDriveInfo.ShowDialog() == DialogResult.Yes)
                     MainMenu_AddHardDriveToAssembling();
 
@@ -400,7 +400,7 @@ namespace Prog_Kursovaya_sem3
         {
             if (e.ColumnIndex >= 0 && e.RowIndex >= 0)
             {
-                var solidStateDriveInfo = new Form_SolidStateDriveInfo(RAMs[e.RowIndex]);
+                var solidStateDriveInfo = new Form_Info(solidStateDrives[e.RowIndex]);
                 if (solidStateDriveInfo.ShowDialog() == DialogResult.Yes)
                     MainMenu_AddSolidStateDriveToAssembling();
 
@@ -423,7 +423,7 @@ namespace Prog_Kursovaya_sem3
         {
             if (e.ColumnIndex >= 0 && e.RowIndex >= 0)
             {
-                var compCaseInfo = new Form_CompCaseInfo(RAMs[e.RowIndex]);
+                var compCaseInfo = new Form_Info(compCases[e.RowIndex]);
                 if (compCaseInfo.ShowDialog() == DialogResult.Yes)
                     MainMenu_AddCompCaseToAssembling();
 
@@ -440,15 +440,5 @@ namespace Prog_Kursovaya_sem3
         {
             MessageBox.Show("Добавили элемент к сборке");
         }
-
-
-
-
-
-
-
-
-
-
     }
 }
