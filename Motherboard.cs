@@ -1,6 +1,6 @@
 ﻿namespace Prog_Kursovaya_sem3
 {
-    class Motherboard
+    public class Motherboard
     {
         private string name;
         private int numberOfSATASlots;
@@ -206,6 +206,22 @@
             RamType = inputSubStrings[9];
             RamMaxCapacity = int.Parse(inputSubStrings[10]);
             RamAvailableFrequenciesString = inputSubStrings[11];
+        }
+        public Motherboard(Motherboard inputObject)
+        {
+            Name = inputObject.Name;
+            NumberOfSATASlots = inputObject.NumberOfSATASlots;
+            FormFactor = inputObject.FormFactor;
+            SocketType = inputObject.SocketType;
+            ChipsetType = inputObject.ChipsetType;
+            ProcessorSupplyConnectorsType = inputObject.ProcessorSupplyConnectorsType;
+            NumberOfPCIESlots = inputObject.NumberOfPCIESlots;
+
+            NumberOfRAMSlots = inputObject.NumberOfRAMSlots;
+            RamFormFactor = inputObject.RamFormFactor;
+            RamType = inputObject.RamType;
+            RamMaxCapacity = inputObject.RamMaxCapacity;
+            RamAvailableFrequenciesString = inputObject.RamAvailableFrequenciesString;
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Prog_Kursovaya_sem3
 {
-    class RAM
+    public class RAM
     {
         private string name;
         private string memoryType;
@@ -109,6 +109,14 @@
             MemoryType = inputSubStrings[2];
             AvailableFrequenciesString = inputSubStrings[3];
             Timings = inputSubStrings[4];
+        }
+        public RAM(RAM inputObject)
+        {
+            Name = inputObject.Name;
+            MemoryCapacity = inputObject.MemoryCapacity;
+            MemoryType = inputObject.MemoryType;
+            AvailableFrequenciesString = inputObject.AvailableFrequenciesString;
+            Timings = inputObject.Timings;
         }
     }
 }

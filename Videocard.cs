@@ -1,6 +1,6 @@
 ﻿namespace Prog_Kursovaya_sem3
 {
-    class Videocard
+    public class Videocard
     {
         private string name;
         private int videoMemoryCapacity;
@@ -144,6 +144,19 @@
             VideoChipFrequency = int.Parse(inputSubStrings[7]);
             SupplyConnectorsType = inputSubStrings[8];
             EnergyConsumption = int.Parse(inputSubStrings[9]);
+        }
+        public Videocard(Videocard inputObject)
+        {
+            Name = inputObject.Name;
+            VideoMemoryCapacity = inputObject.VideoMemoryCapacity;
+            VideoMemoryType = inputObject.VideoMemoryType;
+            MaxBandwidth = inputObject.MaxBandwidth;
+            TechProcess = inputObject.TechProcess;
+            MemoryBitRate = inputObject.MemoryBitRate;
+            Length = inputObject.Length;
+            VideoChipFrequency = inputObject.VideoChipFrequency;
+            SupplyConnectorsType = inputObject.SupplyConnectorsType;
+            EnergyConsumption = inputObject.EnergyConsumption;
         }
     }
 }

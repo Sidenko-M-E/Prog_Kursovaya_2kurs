@@ -1,6 +1,6 @@
 ﻿namespace Prog_Kursovaya_sem3
 {
-    class PowerSupplyUnit
+    public class PowerSupplyUnit
     {
         private string name;
         private string formFactor;
@@ -86,7 +86,16 @@
             TotalCapacity = int.Parse(inputSubStrings[2]);
             ProcessorSupplyConnectorsType = inputSubStrings[3];
             VideocardSupplyConnectorsType = inputSubStrings[4];
-            numberOfSATASlots = int.Parse(inputSubStrings[5]);
+            NumberOfSATASlots = int.Parse(inputSubStrings[5]);
+        }
+        public PowerSupplyUnit(PowerSupplyUnit inputObject)
+        {
+            Name = inputObject.Name;
+            FormFactor = inputObject.FormFactor;
+            TotalCapacity = inputObject.TotalCapacity;
+            ProcessorSupplyConnectorsType = inputObject.ProcessorSupplyConnectorsType;
+            VideocardSupplyConnectorsType = inputObject.VideocardSupplyConnectorsType;
+            NumberOfSATASlots = inputObject.NumberOfSATASlots;
         }
     }
 }

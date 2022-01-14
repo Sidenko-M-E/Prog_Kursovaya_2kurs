@@ -1,15 +1,15 @@
 ﻿namespace Prog_Kursovaya_sem3
 {
-    class Processor
+    public class Processor
     {
         private string name;
         private string socketType;
         private int numberOfCores;
-        private double baseFrequency;
         private int numberOfThreads;
+        private double baseFrequency;
         private int techprocess;
         private string memoryType;
-        private int memoryCapacity;
+        private int maxRAMCapacityGb;
         private int minRAMFrequency;
         private int maxRAMFrequency;
         private int energyConsumption;
@@ -95,16 +95,16 @@
                 memoryType = new string(value.ToCharArray());
             }
         }
-        public int MemoryCapacity
+        public int MaxRamCapacityGb
         {
             get
             {
-                return memoryCapacity;
+                return maxRAMCapacityGb;
             }
             set
             {
                 if ((value >= 1) && (value <= 128))
-                    memoryCapacity = value;
+                    maxRAMCapacityGb = value;
             }
         }
         public int MinRAMFrequency
@@ -154,10 +154,24 @@
             NumberOfThreads = int.Parse(inputSubStrings[4]);
             Techprocess = int.Parse(inputSubStrings[5]);
             MemoryType = inputSubStrings[6];
-            MemoryCapacity = int.Parse(inputSubStrings[7]);
+            MaxRamCapacityGb = int.Parse(inputSubStrings[7]);
             MinRAMFrequency = int.Parse(inputSubStrings[8]);
             MaxRAMFrequency = int.Parse(inputSubStrings[9]);
             EnergyConsumption = int.Parse(inputSubStrings[10]);
+        }
+        public Processor(Processor inputObject)
+        {
+            Name = inputObject.Name;
+            SocketType = inputObject.SocketType;
+            NumberOfCores = inputObject.NumberOfCores;
+            BaseFrequency = inputObject.BaseFrequency;
+            NumberOfThreads = inputObject.NumberOfThreads;
+            Techprocess = inputObject.Techprocess;
+            MemoryType = inputObject.MemoryType;
+            MaxRamCapacityGb = inputObject.MaxRamCapacityGb;
+            MinRAMFrequency = inputObject.MinRAMFrequency;
+            MaxRAMFrequency = inputObject.MaxRAMFrequency;
+            EnergyConsumption = inputObject.EnergyConsumption;
         }
     }
 }

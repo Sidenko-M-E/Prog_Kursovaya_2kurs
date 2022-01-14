@@ -1,6 +1,6 @@
 ﻿namespace Prog_Kursovaya_sem3
 {
-    class CompCase
+    public class CompCase
     {
         private string name;
         private string standardSize;
@@ -225,6 +225,20 @@
             NumberOfTwoAndHalfSlots = int.Parse(inputSubStrings[8]);
             NumberOfThreeAndHalfSlots = int.Parse(inputSubStrings[9]);
             NumberOfHorizonExpansionSlots = int.Parse(inputSubStrings[10]);
+        }
+        public CompCase(CompCase inputObject)
+        {
+            Name = inputObject.Name;
+            StandardSize = inputObject.StandardSize;
+            Length = inputObject.Length;
+            Width = inputObject.Width;
+            Height = inputObject.Height;
+            MotherboardsFormFactorString = inputObject.MotherboardsFormFactorString;
+            PowerSupplyFormFactorString = inputObject.PowerSupplyFormFactorString;
+            VideocardMaxLength = inputObject.VideocardMaxLength;
+            NumberOfTwoAndHalfSlots = inputObject.NumberOfTwoAndHalfSlots;
+            NumberOfThreeAndHalfSlots = inputObject.NumberOfThreeAndHalfSlots;
+            NumberOfHorizonExpansionSlots = inputObject.NumberOfHorizonExpansionSlots;
         }
     }
 }
