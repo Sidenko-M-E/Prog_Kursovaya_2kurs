@@ -9,6 +9,8 @@
         private string chipsetType;
 
         private string processorSupplyConnectorsType;
+        private int numberOfThreePinSlotsForCooling;
+        private int numberOfFourPinSlotsForCooling;
         private int numberOfPCIESlots;
         private int numberOfSATASlots;
         private int numberOfRAMSlots;
@@ -86,6 +88,31 @@
                 processorSupplyConnectorsType = new string(value.ToCharArray());
             }
         }
+        public int NumberOfThreePinSlotsForCooling
+        {
+            get
+            {
+                return numberOfThreePinSlotsForCooling;
+            }
+            set
+            {
+                if ((value >= 0) && (value <= 6))
+                    numberOfThreePinSlotsForCooling = value;
+            }
+        }
+        public int NumberOfFourPinSlotsForCooling
+        {
+            get
+            {
+                return numberOfFourPinSlotsForCooling;
+            }
+            set
+            {
+                if ((value >= 0) && (value <= 6))
+                    numberOfFourPinSlotsForCooling = value;
+            }
+        }
+
         public int NumberOfPCIESlots
         {
             get
@@ -201,13 +228,15 @@
             SocketType = inputSubStrings[3];
             ChipsetType = inputSubStrings[4];
             ProcessorSupplyConnectorsType = inputSubStrings[5];
-            NumberOfPCIESlots = int.Parse(inputSubStrings[6]);
+            NumberOfThreePinSlotsForCooling = int.Parse(inputSubStrings[6]);
+            NumberOfFourPinSlotsForCooling = int.Parse(inputSubStrings[7]);
+            NumberOfPCIESlots = int.Parse(inputSubStrings[8]);
 
-            NumberOfRAMSlots = int.Parse(inputSubStrings[7]);
-            RamFormFactor = inputSubStrings[8];
-            RamType = inputSubStrings[9];
-            RamMaxCapacity = int.Parse(inputSubStrings[10]);
-            RamAvailableFrequenciesString = inputSubStrings[11];
+            NumberOfRAMSlots = int.Parse(inputSubStrings[9]);
+            RamFormFactor = inputSubStrings[10];
+            RamType = inputSubStrings[11];
+            RamMaxCapacity = int.Parse(inputSubStrings[12]);
+            RamAvailableFrequenciesString = inputSubStrings[13];
         }
         public Motherboard(Motherboard inputObject)
         {
@@ -217,6 +246,8 @@
             SocketType = inputObject.SocketType;
             ChipsetType = inputObject.ChipsetType;
             ProcessorSupplyConnectorsType = inputObject.ProcessorSupplyConnectorsType;
+            NumberOfThreePinSlotsForCooling = inputObject.NumberOfThreePinSlotsForCooling;
+            NumberOfFourPinSlotsForCooling = inputObject.NumberOfFourPinSlotsForCooling;
             NumberOfPCIESlots = inputObject.NumberOfPCIESlots;
 
             NumberOfRAMSlots = inputObject.NumberOfRAMSlots;

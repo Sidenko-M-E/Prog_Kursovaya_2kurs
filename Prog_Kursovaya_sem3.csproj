@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CompCase.cs" />
+    <Compile Include="Cooling.cs" />
     <Compile Include="Form_MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>

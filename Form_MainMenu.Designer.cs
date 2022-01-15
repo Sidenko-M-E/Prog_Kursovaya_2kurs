@@ -29,67 +29,31 @@ namespace Prog_Kursovaya_sem3
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_MainMenu));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripDropDownButtonProcessor = new System.Windows.Forms.ToolStripDropDownButton();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripDropDownButton2 = new System.Windows.Forms.ToolStripDropDownButton();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripDropDownButton4 = new System.Windows.Forms.ToolStripDropDownButton();
-            this.toolStripMenuItem11 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem12 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem13 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem14 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem15 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripDropDownButton3 = new System.Windows.Forms.ToolStripDropDownButton();
-            this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem9 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem10 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripDropDownButton6 = new System.Windows.Forms.ToolStripDropDownButton();
-            this.toolStripMenuItem21 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem22 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem23 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem24 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem25 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripDropDownButton5 = new System.Windows.Forms.ToolStripDropDownButton();
-            this.toolStripMenuItem16 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem17 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem18 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem19 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem20 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
             this.tabPage_CompCase = new System.Windows.Forms.TabPage();
+            this.button_CompCaseAddToAssembling = new System.Windows.Forms.Button();
             this.dataGridView_CompCase = new System.Windows.Forms.DataGridView();
             this.Column_CompCaseName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column_CompCaseInfo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage_PSU = new System.Windows.Forms.TabPage();
+            this.button_PowerSupplyUnitAddToAssembling = new System.Windows.Forms.Button();
             this.dataGridView_PowerSupplyUnit = new System.Windows.Forms.DataGridView();
             this.Column_SupplyUnitName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column_SupplyUnitInfo = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -115,18 +79,59 @@ namespace Prog_Kursovaya_sem3
             this.Column_ProcessorInfo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage_HardDrive = new System.Windows.Forms.TabPage();
+            this.button_HardDriveAddToAssembling = new System.Windows.Forms.Button();
             this.dataGridView_HardDrive = new System.Windows.Forms.DataGridView();
             this.Column_HardDriveName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column_HardDriveInfo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage_SSD = new System.Windows.Forms.TabPage();
+            this.button_SolidStateDriveAddToAssembling = new System.Windows.Forms.Button();
             this.dataGridView_SolidStateDrive = new System.Windows.Forms.DataGridView();
             this.Column_SolidStateDriveName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column_SolidStateDriveInfo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button_PowerSupplyUnitAddToAssembling = new System.Windows.Forms.Button();
-            this.button_CompCaseAddToAssembling = new System.Windows.Forms.Button();
-            this.button_HardDriveAddToAssembling = new System.Windows.Forms.Button();
-            this.button_SolidStateDriveAddToAssembling = new System.Windows.Forms.Button();
-            this.toolStrip1.SuspendLayout();
+            this.tabPage_Cooling = new System.Windows.Forms.TabPage();
+            this.button_CoolingAddToAssembling = new System.Windows.Forms.Button();
+            this.dataGridView_Cooling = new System.Windows.Forms.DataGridView();
+            this.Column_CoolingName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column_CoolingInfo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupBox_Processor = new System.Windows.Forms.GroupBox();
+            this.button_AssemblingProcessorInfo = new System.Windows.Forms.Button();
+            this.label_AssemblingProcessorName = new System.Windows.Forms.Label();
+            this.checkBox_AssemblingProcessorEnabled = new System.Windows.Forms.CheckBox();
+            this.groupBox_Cooling = new System.Windows.Forms.GroupBox();
+            this.button_AssemblingCoolingInfo = new System.Windows.Forms.Button();
+            this.label_AssemblingCoolingName = new System.Windows.Forms.Label();
+            this.checkBox_AssemblingCoolingEnabled = new System.Windows.Forms.CheckBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.groupBox_Motherboard = new System.Windows.Forms.GroupBox();
+            this.button_AssemblingMotherboardInfo = new System.Windows.Forms.Button();
+            this.label_AssemblingMotherboardName = new System.Windows.Forms.Label();
+            this.checkBox_AssemblingMotherboardEnabled = new System.Windows.Forms.CheckBox();
+            this.groupBox_PSU = new System.Windows.Forms.GroupBox();
+            this.button_AssemblingPSUInfo = new System.Windows.Forms.Button();
+            this.label_AssemblingPSUName = new System.Windows.Forms.Label();
+            this.checkBox_AssemblingPSUEnabled = new System.Windows.Forms.CheckBox();
+            this.groupBox_Videocard = new System.Windows.Forms.GroupBox();
+            this.button_AssemblingVideocardInfo = new System.Windows.Forms.Button();
+            this.label_AssemblingVideocardName = new System.Windows.Forms.Label();
+            this.checkBox_AssemblingVideocardEnabled = new System.Windows.Forms.CheckBox();
+            this.groupBox_CompCase = new System.Windows.Forms.GroupBox();
+            this.button_AssemblingCompCaseInfo = new System.Windows.Forms.Button();
+            this.label_AssemblingCompCaseName = new System.Windows.Forms.Label();
+            this.checkBox_AssemblingCompCaseEnabled = new System.Windows.Forms.CheckBox();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.button7 = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.checkBox7 = new System.Windows.Forms.CheckBox();
+            this.groupBox_RAM = new System.Windows.Forms.GroupBox();
+            this.label_RAMName = new System.Windows.Forms.Label();
+            this.label_RAMInstalled = new System.Windows.Forms.Label();
+            this.numericUpDown_InstalledRAMs = new System.Windows.Forms.NumericUpDown();
+            this.button_AssemblingRAMInfo = new System.Windows.Forms.Button();
+            this.label_AssemblingRAMName = new System.Windows.Forms.Label();
+            this.checkBox_AssemblingRAMEnabled = new System.Windows.Forms.CheckBox();
             this.tabPage_CompCase.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_CompCase)).BeginInit();
             this.tabPage_PSU.SuspendLayout();
@@ -144,319 +149,19 @@ namespace Prog_Kursovaya_sem3
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_HardDrive)).BeginInit();
             this.tabPage_SSD.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_SolidStateDrive)).BeginInit();
+            this.tabPage_Cooling.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Cooling)).BeginInit();
+            this.groupBox_Processor.SuspendLayout();
+            this.groupBox_Cooling.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox_Motherboard.SuspendLayout();
+            this.groupBox_PSU.SuspendLayout();
+            this.groupBox_Videocard.SuspendLayout();
+            this.groupBox_CompCase.SuspendLayout();
+            this.groupBox8.SuspendLayout();
+            this.groupBox_RAM.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_InstalledRAMs)).BeginInit();
             this.SuspendLayout();
-            // 
-            // toolStrip1
-            // 
-            this.toolStrip1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.toolStrip1.AutoSize = false;
-            this.toolStrip1.CanOverflow = false;
-            this.toolStrip1.Dock = System.Windows.Forms.DockStyle.None;
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripSeparator1,
-            this.toolStripDropDownButtonProcessor,
-            this.toolStripSeparator2,
-            this.toolStripDropDownButton2,
-            this.toolStripSeparator3,
-            this.toolStripDropDownButton4,
-            this.toolStripSeparator4,
-            this.toolStripDropDownButton3,
-            this.toolStripSeparator5,
-            this.toolStripDropDownButton6,
-            this.toolStripSeparator6,
-            this.toolStripDropDownButton5,
-            this.toolStripSeparator7});
-            this.toolStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow;
-            this.toolStrip1.Location = new System.Drawing.Point(1000, 293);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(178, 208);
-            this.toolStrip1.TabIndex = 0;
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(176, 6);
-            // 
-            // toolStripDropDownButtonProcessor
-            // 
-            this.toolStripDropDownButtonProcessor.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.toolStripDropDownButtonProcessor.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripDropDownButtonProcessor.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButtonProcessor.Image")));
-            this.toolStripDropDownButtonProcessor.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripDropDownButtonProcessor.Name = "toolStripDropDownButtonProcessor";
-            this.toolStripDropDownButtonProcessor.Size = new System.Drawing.Size(176, 19);
-            this.toolStripDropDownButtonProcessor.Text = "Процессор";
-            this.toolStripDropDownButtonProcessor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(176, 6);
-            // 
-            // toolStripDropDownButton2
-            // 
-            this.toolStripDropDownButton2.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.toolStripDropDownButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripDropDownButton2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1,
-            this.toolStripMenuItem2,
-            this.toolStripMenuItem3,
-            this.toolStripMenuItem4,
-            this.toolStripMenuItem5});
-            this.toolStripDropDownButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton2.Image")));
-            this.toolStripDropDownButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripDropDownButton2.Name = "toolStripDropDownButton2";
-            this.toolStripDropDownButton2.Size = new System.Drawing.Size(176, 19);
-            this.toolStripDropDownButton2.Text = "Материнская плата";
-            this.toolStripDropDownButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(88, 22);
-            this.toolStripMenuItem1.Text = "gg";
-            // 
-            // toolStripMenuItem2
-            // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(88, 22);
-            this.toolStripMenuItem2.Text = "gg";
-            // 
-            // toolStripMenuItem3
-            // 
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(88, 22);
-            this.toolStripMenuItem3.Text = "gg";
-            // 
-            // toolStripMenuItem4
-            // 
-            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(88, 22);
-            this.toolStripMenuItem4.Text = "gg";
-            // 
-            // toolStripMenuItem5
-            // 
-            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(88, 22);
-            this.toolStripMenuItem5.Text = "gg";
-            // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(176, 6);
-            // 
-            // toolStripDropDownButton4
-            // 
-            this.toolStripDropDownButton4.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.toolStripDropDownButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripDropDownButton4.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem11,
-            this.toolStripMenuItem12,
-            this.toolStripMenuItem13,
-            this.toolStripMenuItem14,
-            this.toolStripMenuItem15});
-            this.toolStripDropDownButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton4.Image")));
-            this.toolStripDropDownButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripDropDownButton4.Name = "toolStripDropDownButton4";
-            this.toolStripDropDownButton4.Size = new System.Drawing.Size(176, 19);
-            this.toolStripDropDownButton4.Text = "Охлаждение процессора";
-            this.toolStripDropDownButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // toolStripMenuItem11
-            // 
-            this.toolStripMenuItem11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.toolStripMenuItem11.Name = "toolStripMenuItem11";
-            this.toolStripMenuItem11.Size = new System.Drawing.Size(88, 22);
-            this.toolStripMenuItem11.Text = "gg";
-            // 
-            // toolStripMenuItem12
-            // 
-            this.toolStripMenuItem12.Name = "toolStripMenuItem12";
-            this.toolStripMenuItem12.Size = new System.Drawing.Size(88, 22);
-            this.toolStripMenuItem12.Text = "gg";
-            // 
-            // toolStripMenuItem13
-            // 
-            this.toolStripMenuItem13.Name = "toolStripMenuItem13";
-            this.toolStripMenuItem13.Size = new System.Drawing.Size(88, 22);
-            this.toolStripMenuItem13.Text = "gg";
-            // 
-            // toolStripMenuItem14
-            // 
-            this.toolStripMenuItem14.Name = "toolStripMenuItem14";
-            this.toolStripMenuItem14.Size = new System.Drawing.Size(88, 22);
-            this.toolStripMenuItem14.Text = "gg";
-            // 
-            // toolStripMenuItem15
-            // 
-            this.toolStripMenuItem15.Name = "toolStripMenuItem15";
-            this.toolStripMenuItem15.Size = new System.Drawing.Size(88, 22);
-            this.toolStripMenuItem15.Text = "gg";
-            // 
-            // toolStripSeparator4
-            // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(176, 6);
-            // 
-            // toolStripDropDownButton3
-            // 
-            this.toolStripDropDownButton3.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.toolStripDropDownButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripDropDownButton3.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem6,
-            this.toolStripMenuItem7,
-            this.toolStripMenuItem8,
-            this.toolStripMenuItem9,
-            this.toolStripMenuItem10});
-            this.toolStripDropDownButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton3.Image")));
-            this.toolStripDropDownButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripDropDownButton3.Name = "toolStripDropDownButton3";
-            this.toolStripDropDownButton3.Size = new System.Drawing.Size(176, 19);
-            this.toolStripDropDownButton3.Text = "Видеокарта";
-            this.toolStripDropDownButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // toolStripMenuItem6
-            // 
-            this.toolStripMenuItem6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.toolStripMenuItem6.Name = "toolStripMenuItem6";
-            this.toolStripMenuItem6.Size = new System.Drawing.Size(88, 22);
-            this.toolStripMenuItem6.Text = "gg";
-            // 
-            // toolStripMenuItem7
-            // 
-            this.toolStripMenuItem7.Name = "toolStripMenuItem7";
-            this.toolStripMenuItem7.Size = new System.Drawing.Size(88, 22);
-            this.toolStripMenuItem7.Text = "gg";
-            // 
-            // toolStripMenuItem8
-            // 
-            this.toolStripMenuItem8.Name = "toolStripMenuItem8";
-            this.toolStripMenuItem8.Size = new System.Drawing.Size(88, 22);
-            this.toolStripMenuItem8.Text = "gg";
-            // 
-            // toolStripMenuItem9
-            // 
-            this.toolStripMenuItem9.Name = "toolStripMenuItem9";
-            this.toolStripMenuItem9.Size = new System.Drawing.Size(88, 22);
-            this.toolStripMenuItem9.Text = "gg";
-            // 
-            // toolStripMenuItem10
-            // 
-            this.toolStripMenuItem10.Name = "toolStripMenuItem10";
-            this.toolStripMenuItem10.Size = new System.Drawing.Size(88, 22);
-            this.toolStripMenuItem10.Text = "gg";
-            // 
-            // toolStripSeparator5
-            // 
-            this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(176, 6);
-            // 
-            // toolStripDropDownButton6
-            // 
-            this.toolStripDropDownButton6.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.toolStripDropDownButton6.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripDropDownButton6.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem21,
-            this.toolStripMenuItem22,
-            this.toolStripMenuItem23,
-            this.toolStripMenuItem24,
-            this.toolStripMenuItem25});
-            this.toolStripDropDownButton6.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton6.Image")));
-            this.toolStripDropDownButton6.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripDropDownButton6.Name = "toolStripDropDownButton6";
-            this.toolStripDropDownButton6.Size = new System.Drawing.Size(176, 19);
-            this.toolStripDropDownButton6.Text = "Оперативная память";
-            this.toolStripDropDownButton6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // toolStripMenuItem21
-            // 
-            this.toolStripMenuItem21.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.toolStripMenuItem21.Name = "toolStripMenuItem21";
-            this.toolStripMenuItem21.Size = new System.Drawing.Size(88, 22);
-            this.toolStripMenuItem21.Text = "gg";
-            // 
-            // toolStripMenuItem22
-            // 
-            this.toolStripMenuItem22.Name = "toolStripMenuItem22";
-            this.toolStripMenuItem22.Size = new System.Drawing.Size(88, 22);
-            this.toolStripMenuItem22.Text = "gg";
-            // 
-            // toolStripMenuItem23
-            // 
-            this.toolStripMenuItem23.Name = "toolStripMenuItem23";
-            this.toolStripMenuItem23.Size = new System.Drawing.Size(88, 22);
-            this.toolStripMenuItem23.Text = "gg";
-            // 
-            // toolStripMenuItem24
-            // 
-            this.toolStripMenuItem24.Name = "toolStripMenuItem24";
-            this.toolStripMenuItem24.Size = new System.Drawing.Size(88, 22);
-            this.toolStripMenuItem24.Text = "gg";
-            // 
-            // toolStripMenuItem25
-            // 
-            this.toolStripMenuItem25.Name = "toolStripMenuItem25";
-            this.toolStripMenuItem25.Size = new System.Drawing.Size(88, 22);
-            this.toolStripMenuItem25.Text = "gg";
-            // 
-            // toolStripSeparator6
-            // 
-            this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(176, 6);
-            // 
-            // toolStripDropDownButton5
-            // 
-            this.toolStripDropDownButton5.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.toolStripDropDownButton5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripDropDownButton5.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem16,
-            this.toolStripMenuItem17,
-            this.toolStripMenuItem18,
-            this.toolStripMenuItem19,
-            this.toolStripMenuItem20});
-            this.toolStripDropDownButton5.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton5.Image")));
-            this.toolStripDropDownButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripDropDownButton5.Name = "toolStripDropDownButton5";
-            this.toolStripDropDownButton5.Size = new System.Drawing.Size(176, 19);
-            this.toolStripDropDownButton5.Text = "Блок питания";
-            this.toolStripDropDownButton5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // toolStripMenuItem16
-            // 
-            this.toolStripMenuItem16.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.toolStripMenuItem16.Name = "toolStripMenuItem16";
-            this.toolStripMenuItem16.Size = new System.Drawing.Size(88, 22);
-            this.toolStripMenuItem16.Text = "gg";
-            // 
-            // toolStripMenuItem17
-            // 
-            this.toolStripMenuItem17.Name = "toolStripMenuItem17";
-            this.toolStripMenuItem17.Size = new System.Drawing.Size(88, 22);
-            this.toolStripMenuItem17.Text = "gg";
-            // 
-            // toolStripMenuItem18
-            // 
-            this.toolStripMenuItem18.Name = "toolStripMenuItem18";
-            this.toolStripMenuItem18.Size = new System.Drawing.Size(88, 22);
-            this.toolStripMenuItem18.Text = "gg";
-            // 
-            // toolStripMenuItem19
-            // 
-            this.toolStripMenuItem19.Name = "toolStripMenuItem19";
-            this.toolStripMenuItem19.Size = new System.Drawing.Size(88, 22);
-            this.toolStripMenuItem19.Text = "gg";
-            // 
-            // toolStripMenuItem20
-            // 
-            this.toolStripMenuItem20.Name = "toolStripMenuItem20";
-            this.toolStripMenuItem20.Size = new System.Drawing.Size(88, 22);
-            this.toolStripMenuItem20.Text = "gg";
-            // 
-            // toolStripSeparator7
-            // 
-            this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(176, 6);
             // 
             // tabPage_CompCase
             // 
@@ -469,6 +174,16 @@ namespace Prog_Kursovaya_sem3
             this.tabPage_CompCase.TabIndex = 6;
             this.tabPage_CompCase.Text = "Корпус";
             this.tabPage_CompCase.UseVisualStyleBackColor = true;
+            // 
+            // button_CompCaseAddToAssembling
+            // 
+            this.button_CompCaseAddToAssembling.Location = new System.Drawing.Point(3, 142);
+            this.button_CompCaseAddToAssembling.Name = "button_CompCaseAddToAssembling";
+            this.button_CompCaseAddToAssembling.Size = new System.Drawing.Size(127, 31);
+            this.button_CompCaseAddToAssembling.TabIndex = 12;
+            this.button_CompCaseAddToAssembling.Text = "Добавить к сборке";
+            this.button_CompCaseAddToAssembling.UseVisualStyleBackColor = true;
+            this.button_CompCaseAddToAssembling.Click += new System.EventHandler(this.button_CompCaseAddToAssembling_Click);
             // 
             // dataGridView_CompCase
             // 
@@ -485,6 +200,7 @@ namespace Prog_Kursovaya_sem3
             this.dataGridView_CompCase.Name = "dataGridView_CompCase";
             this.dataGridView_CompCase.ReadOnly = true;
             this.dataGridView_CompCase.RowHeadersVisible = false;
+            this.dataGridView_CompCase.RowHeadersWidth = 51;
             this.dataGridView_CompCase.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView_CompCase.Size = new System.Drawing.Size(503, 133);
             this.dataGridView_CompCase.TabIndex = 2;
@@ -492,9 +208,10 @@ namespace Prog_Kursovaya_sem3
             // 
             // Column_CompCaseName
             // 
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column_CompCaseName.DefaultCellStyle = dataGridViewCellStyle17;
-            this.Column_CompCaseName.HeaderText = "Название";
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_CompCaseName.DefaultCellStyle = dataGridViewCellStyle1;
+            this.Column_CompCaseName.HeaderText = "Наименование";
+            this.Column_CompCaseName.MinimumWidth = 6;
             this.Column_CompCaseName.Name = "Column_CompCaseName";
             this.Column_CompCaseName.ReadOnly = true;
             this.Column_CompCaseName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -503,9 +220,10 @@ namespace Prog_Kursovaya_sem3
             // 
             // Column_CompCaseInfo
             // 
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column_CompCaseInfo.DefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_CompCaseInfo.DefaultCellStyle = dataGridViewCellStyle2;
             this.Column_CompCaseInfo.HeaderText = "Краткая информация";
+            this.Column_CompCaseInfo.MinimumWidth = 6;
             this.Column_CompCaseInfo.Name = "Column_CompCaseInfo";
             this.Column_CompCaseInfo.ReadOnly = true;
             this.Column_CompCaseInfo.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -523,6 +241,16 @@ namespace Prog_Kursovaya_sem3
             this.tabPage_PSU.Text = "Блок питания";
             this.tabPage_PSU.UseVisualStyleBackColor = true;
             // 
+            // button_PowerSupplyUnitAddToAssembling
+            // 
+            this.button_PowerSupplyUnitAddToAssembling.Location = new System.Drawing.Point(3, 142);
+            this.button_PowerSupplyUnitAddToAssembling.Name = "button_PowerSupplyUnitAddToAssembling";
+            this.button_PowerSupplyUnitAddToAssembling.Size = new System.Drawing.Size(127, 31);
+            this.button_PowerSupplyUnitAddToAssembling.TabIndex = 12;
+            this.button_PowerSupplyUnitAddToAssembling.Text = "Добавить к сборке";
+            this.button_PowerSupplyUnitAddToAssembling.UseVisualStyleBackColor = true;
+            this.button_PowerSupplyUnitAddToAssembling.Click += new System.EventHandler(this.button_PowerSupplyUnitAddToAssembling_Click);
+            // 
             // dataGridView_PowerSupplyUnit
             // 
             this.dataGridView_PowerSupplyUnit.AllowUserToAddRows = false;
@@ -538,6 +266,7 @@ namespace Prog_Kursovaya_sem3
             this.dataGridView_PowerSupplyUnit.Name = "dataGridView_PowerSupplyUnit";
             this.dataGridView_PowerSupplyUnit.ReadOnly = true;
             this.dataGridView_PowerSupplyUnit.RowHeadersVisible = false;
+            this.dataGridView_PowerSupplyUnit.RowHeadersWidth = 51;
             this.dataGridView_PowerSupplyUnit.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView_PowerSupplyUnit.Size = new System.Drawing.Size(503, 133);
             this.dataGridView_PowerSupplyUnit.TabIndex = 1;
@@ -545,9 +274,10 @@ namespace Prog_Kursovaya_sem3
             // 
             // Column_SupplyUnitName
             // 
-            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column_SupplyUnitName.DefaultCellStyle = dataGridViewCellStyle19;
-            this.Column_SupplyUnitName.HeaderText = "Название";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_SupplyUnitName.DefaultCellStyle = dataGridViewCellStyle3;
+            this.Column_SupplyUnitName.HeaderText = "Наименование";
+            this.Column_SupplyUnitName.MinimumWidth = 6;
             this.Column_SupplyUnitName.Name = "Column_SupplyUnitName";
             this.Column_SupplyUnitName.ReadOnly = true;
             this.Column_SupplyUnitName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -556,9 +286,10 @@ namespace Prog_Kursovaya_sem3
             // 
             // Column_SupplyUnitInfo
             // 
-            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column_SupplyUnitInfo.DefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_SupplyUnitInfo.DefaultCellStyle = dataGridViewCellStyle4;
             this.Column_SupplyUnitInfo.HeaderText = "Краткая информация";
+            this.Column_SupplyUnitInfo.MinimumWidth = 6;
             this.Column_SupplyUnitInfo.Name = "Column_SupplyUnitInfo";
             this.Column_SupplyUnitInfo.ReadOnly = true;
             this.Column_SupplyUnitInfo.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -601,6 +332,7 @@ namespace Prog_Kursovaya_sem3
             this.dataGridView_RAM.Name = "dataGridView_RAM";
             this.dataGridView_RAM.ReadOnly = true;
             this.dataGridView_RAM.RowHeadersVisible = false;
+            this.dataGridView_RAM.RowHeadersWidth = 51;
             this.dataGridView_RAM.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView_RAM.Size = new System.Drawing.Size(503, 133);
             this.dataGridView_RAM.TabIndex = 2;
@@ -608,9 +340,10 @@ namespace Prog_Kursovaya_sem3
             // 
             // Column_RAMname
             // 
-            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column_RAMname.DefaultCellStyle = dataGridViewCellStyle21;
-            this.Column_RAMname.HeaderText = "Название";
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_RAMname.DefaultCellStyle = dataGridViewCellStyle5;
+            this.Column_RAMname.HeaderText = "Наименование";
+            this.Column_RAMname.MinimumWidth = 6;
             this.Column_RAMname.Name = "Column_RAMname";
             this.Column_RAMname.ReadOnly = true;
             this.Column_RAMname.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -619,9 +352,10 @@ namespace Prog_Kursovaya_sem3
             // 
             // Column_RAMinfo
             // 
-            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column_RAMinfo.DefaultCellStyle = dataGridViewCellStyle22;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_RAMinfo.DefaultCellStyle = dataGridViewCellStyle6;
             this.Column_RAMinfo.HeaderText = "Краткая информация";
+            this.Column_RAMinfo.MinimumWidth = 6;
             this.Column_RAMinfo.Name = "Column_RAMinfo";
             this.Column_RAMinfo.ReadOnly = true;
             this.Column_RAMinfo.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -664,6 +398,7 @@ namespace Prog_Kursovaya_sem3
             this.dataGridView_Videocard.Name = "dataGridView_Videocard";
             this.dataGridView_Videocard.ReadOnly = true;
             this.dataGridView_Videocard.RowHeadersVisible = false;
+            this.dataGridView_Videocard.RowHeadersWidth = 51;
             this.dataGridView_Videocard.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView_Videocard.Size = new System.Drawing.Size(503, 133);
             this.dataGridView_Videocard.TabIndex = 3;
@@ -671,9 +406,10 @@ namespace Prog_Kursovaya_sem3
             // 
             // Column_VideocardName
             // 
-            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column_VideocardName.DefaultCellStyle = dataGridViewCellStyle23;
-            this.Column_VideocardName.HeaderText = "Название";
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_VideocardName.DefaultCellStyle = dataGridViewCellStyle7;
+            this.Column_VideocardName.HeaderText = "Наименование";
+            this.Column_VideocardName.MinimumWidth = 6;
             this.Column_VideocardName.Name = "Column_VideocardName";
             this.Column_VideocardName.ReadOnly = true;
             this.Column_VideocardName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -682,9 +418,10 @@ namespace Prog_Kursovaya_sem3
             // 
             // Column_VideocardInfo
             // 
-            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column_VideocardInfo.DefaultCellStyle = dataGridViewCellStyle24;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_VideocardInfo.DefaultCellStyle = dataGridViewCellStyle8;
             this.Column_VideocardInfo.HeaderText = "Краткая информация";
+            this.Column_VideocardInfo.MinimumWidth = 6;
             this.Column_VideocardInfo.Name = "Column_VideocardInfo";
             this.Column_VideocardInfo.ReadOnly = true;
             this.Column_VideocardInfo.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -728,6 +465,7 @@ namespace Prog_Kursovaya_sem3
             this.dataGridView_Motherboard.Name = "dataGridView_Motherboard";
             this.dataGridView_Motherboard.ReadOnly = true;
             this.dataGridView_Motherboard.RowHeadersVisible = false;
+            this.dataGridView_Motherboard.RowHeadersWidth = 51;
             this.dataGridView_Motherboard.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView_Motherboard.Size = new System.Drawing.Size(503, 133);
             this.dataGridView_Motherboard.TabIndex = 4;
@@ -735,9 +473,10 @@ namespace Prog_Kursovaya_sem3
             // 
             // Column_MotherboardName
             // 
-            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column_MotherboardName.DefaultCellStyle = dataGridViewCellStyle25;
-            this.Column_MotherboardName.HeaderText = "Название";
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_MotherboardName.DefaultCellStyle = dataGridViewCellStyle9;
+            this.Column_MotherboardName.HeaderText = "Наименование";
+            this.Column_MotherboardName.MinimumWidth = 6;
             this.Column_MotherboardName.Name = "Column_MotherboardName";
             this.Column_MotherboardName.ReadOnly = true;
             this.Column_MotherboardName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -746,9 +485,10 @@ namespace Prog_Kursovaya_sem3
             // 
             // Column_MotherboardInfo
             // 
-            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column_MotherboardInfo.DefaultCellStyle = dataGridViewCellStyle26;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_MotherboardInfo.DefaultCellStyle = dataGridViewCellStyle10;
             this.Column_MotherboardInfo.HeaderText = "Краткая информация";
+            this.Column_MotherboardInfo.MinimumWidth = 6;
             this.Column_MotherboardInfo.Name = "Column_MotherboardInfo";
             this.Column_MotherboardInfo.ReadOnly = true;
             this.Column_MotherboardInfo.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -793,6 +533,7 @@ namespace Prog_Kursovaya_sem3
             this.dataGridView_Processor.Name = "dataGridView_Processor";
             this.dataGridView_Processor.ReadOnly = true;
             this.dataGridView_Processor.RowHeadersVisible = false;
+            this.dataGridView_Processor.RowHeadersWidth = 51;
             this.dataGridView_Processor.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView_Processor.Size = new System.Drawing.Size(503, 133);
             this.dataGridView_Processor.TabIndex = 9;
@@ -800,9 +541,10 @@ namespace Prog_Kursovaya_sem3
             // 
             // Column_ProcessorName
             // 
-            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column_ProcessorName.DefaultCellStyle = dataGridViewCellStyle27;
-            this.Column_ProcessorName.HeaderText = "Название";
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_ProcessorName.DefaultCellStyle = dataGridViewCellStyle11;
+            this.Column_ProcessorName.HeaderText = "Наименование";
+            this.Column_ProcessorName.MinimumWidth = 6;
             this.Column_ProcessorName.Name = "Column_ProcessorName";
             this.Column_ProcessorName.ReadOnly = true;
             this.Column_ProcessorName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -811,9 +553,10 @@ namespace Prog_Kursovaya_sem3
             // 
             // Column_ProcessorInfo
             // 
-            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column_ProcessorInfo.DefaultCellStyle = dataGridViewCellStyle28;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_ProcessorInfo.DefaultCellStyle = dataGridViewCellStyle12;
             this.Column_ProcessorInfo.HeaderText = "Краткая информация";
+            this.Column_ProcessorInfo.MinimumWidth = 6;
             this.Column_ProcessorInfo.Name = "Column_ProcessorInfo";
             this.Column_ProcessorInfo.ReadOnly = true;
             this.Column_ProcessorInfo.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -830,6 +573,7 @@ namespace Prog_Kursovaya_sem3
             this.tabControl1.Controls.Add(this.tabPage_CompCase);
             this.tabControl1.Controls.Add(this.tabPage_HardDrive);
             this.tabControl1.Controls.Add(this.tabPage_SSD);
+            this.tabControl1.Controls.Add(this.tabPage_Cooling);
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Multiline = true;
             this.tabControl1.Name = "tabControl1";
@@ -850,6 +594,16 @@ namespace Prog_Kursovaya_sem3
             this.tabPage_HardDrive.Text = "Жесткий диск";
             this.tabPage_HardDrive.UseVisualStyleBackColor = true;
             // 
+            // button_HardDriveAddToAssembling
+            // 
+            this.button_HardDriveAddToAssembling.Location = new System.Drawing.Point(3, 142);
+            this.button_HardDriveAddToAssembling.Name = "button_HardDriveAddToAssembling";
+            this.button_HardDriveAddToAssembling.Size = new System.Drawing.Size(127, 31);
+            this.button_HardDriveAddToAssembling.TabIndex = 12;
+            this.button_HardDriveAddToAssembling.Text = "Добавить к сборке";
+            this.button_HardDriveAddToAssembling.UseVisualStyleBackColor = true;
+            this.button_HardDriveAddToAssembling.Click += new System.EventHandler(this.button_HardDriveAddToAssembling_Click);
+            // 
             // dataGridView_HardDrive
             // 
             this.dataGridView_HardDrive.AllowUserToAddRows = false;
@@ -865,6 +619,7 @@ namespace Prog_Kursovaya_sem3
             this.dataGridView_HardDrive.Name = "dataGridView_HardDrive";
             this.dataGridView_HardDrive.ReadOnly = true;
             this.dataGridView_HardDrive.RowHeadersVisible = false;
+            this.dataGridView_HardDrive.RowHeadersWidth = 51;
             this.dataGridView_HardDrive.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView_HardDrive.Size = new System.Drawing.Size(503, 133);
             this.dataGridView_HardDrive.TabIndex = 3;
@@ -872,9 +627,10 @@ namespace Prog_Kursovaya_sem3
             // 
             // Column_HardDriveName
             // 
-            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column_HardDriveName.DefaultCellStyle = dataGridViewCellStyle29;
-            this.Column_HardDriveName.HeaderText = "Название";
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_HardDriveName.DefaultCellStyle = dataGridViewCellStyle13;
+            this.Column_HardDriveName.HeaderText = "Наименование";
+            this.Column_HardDriveName.MinimumWidth = 6;
             this.Column_HardDriveName.Name = "Column_HardDriveName";
             this.Column_HardDriveName.ReadOnly = true;
             this.Column_HardDriveName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -883,9 +639,10 @@ namespace Prog_Kursovaya_sem3
             // 
             // Column_HardDriveInfo
             // 
-            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column_HardDriveInfo.DefaultCellStyle = dataGridViewCellStyle30;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_HardDriveInfo.DefaultCellStyle = dataGridViewCellStyle14;
             this.Column_HardDriveInfo.HeaderText = "Краткая информация";
+            this.Column_HardDriveInfo.MinimumWidth = 6;
             this.Column_HardDriveInfo.Name = "Column_HardDriveInfo";
             this.Column_HardDriveInfo.ReadOnly = true;
             this.Column_HardDriveInfo.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -903,6 +660,16 @@ namespace Prog_Kursovaya_sem3
             this.tabPage_SSD.Text = "SSD";
             this.tabPage_SSD.UseVisualStyleBackColor = true;
             // 
+            // button_SolidStateDriveAddToAssembling
+            // 
+            this.button_SolidStateDriveAddToAssembling.Location = new System.Drawing.Point(3, 142);
+            this.button_SolidStateDriveAddToAssembling.Name = "button_SolidStateDriveAddToAssembling";
+            this.button_SolidStateDriveAddToAssembling.Size = new System.Drawing.Size(127, 31);
+            this.button_SolidStateDriveAddToAssembling.TabIndex = 12;
+            this.button_SolidStateDriveAddToAssembling.Text = "Добавить к сборке";
+            this.button_SolidStateDriveAddToAssembling.UseVisualStyleBackColor = true;
+            this.button_SolidStateDriveAddToAssembling.Click += new System.EventHandler(this.button_SolidStateDriveAddToAssembling_Click);
+            // 
             // dataGridView_SolidStateDrive
             // 
             this.dataGridView_SolidStateDrive.AllowUserToAddRows = false;
@@ -918,6 +685,7 @@ namespace Prog_Kursovaya_sem3
             this.dataGridView_SolidStateDrive.Name = "dataGridView_SolidStateDrive";
             this.dataGridView_SolidStateDrive.ReadOnly = true;
             this.dataGridView_SolidStateDrive.RowHeadersVisible = false;
+            this.dataGridView_SolidStateDrive.RowHeadersWidth = 51;
             this.dataGridView_SolidStateDrive.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView_SolidStateDrive.Size = new System.Drawing.Size(503, 133);
             this.dataGridView_SolidStateDrive.TabIndex = 4;
@@ -925,9 +693,10 @@ namespace Prog_Kursovaya_sem3
             // 
             // Column_SolidStateDriveName
             // 
-            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column_SolidStateDriveName.DefaultCellStyle = dataGridViewCellStyle31;
-            this.Column_SolidStateDriveName.HeaderText = "Название";
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_SolidStateDriveName.DefaultCellStyle = dataGridViewCellStyle15;
+            this.Column_SolidStateDriveName.HeaderText = "Наименование";
+            this.Column_SolidStateDriveName.MinimumWidth = 6;
             this.Column_SolidStateDriveName.Name = "Column_SolidStateDriveName";
             this.Column_SolidStateDriveName.ReadOnly = true;
             this.Column_SolidStateDriveName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -936,68 +705,494 @@ namespace Prog_Kursovaya_sem3
             // 
             // Column_SolidStateDriveInfo
             // 
-            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column_SolidStateDriveInfo.DefaultCellStyle = dataGridViewCellStyle32;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_SolidStateDriveInfo.DefaultCellStyle = dataGridViewCellStyle16;
             this.Column_SolidStateDriveInfo.HeaderText = "Краткая информация";
+            this.Column_SolidStateDriveInfo.MinimumWidth = 6;
             this.Column_SolidStateDriveInfo.Name = "Column_SolidStateDriveInfo";
             this.Column_SolidStateDriveInfo.ReadOnly = true;
             this.Column_SolidStateDriveInfo.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Column_SolidStateDriveInfo.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.Column_SolidStateDriveInfo.Width = 300;
             // 
-            // button_PowerSupplyUnitAddToAssembling
+            // tabPage_Cooling
             // 
-            this.button_PowerSupplyUnitAddToAssembling.Location = new System.Drawing.Point(3, 142);
-            this.button_PowerSupplyUnitAddToAssembling.Name = "button_PowerSupplyUnitAddToAssembling";
-            this.button_PowerSupplyUnitAddToAssembling.Size = new System.Drawing.Size(127, 31);
-            this.button_PowerSupplyUnitAddToAssembling.TabIndex = 12;
-            this.button_PowerSupplyUnitAddToAssembling.Text = "Добавить к сборке";
-            this.button_PowerSupplyUnitAddToAssembling.UseVisualStyleBackColor = true;
-            this.button_PowerSupplyUnitAddToAssembling.Click += new System.EventHandler(this.button_PowerSupplyUnitAddToAssembling_Click);
+            this.tabPage_Cooling.Controls.Add(this.button_CoolingAddToAssembling);
+            this.tabPage_Cooling.Controls.Add(this.dataGridView_Cooling);
+            this.tabPage_Cooling.Location = new System.Drawing.Point(4, 40);
+            this.tabPage_Cooling.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage_Cooling.Name = "tabPage_Cooling";
+            this.tabPage_Cooling.Size = new System.Drawing.Size(509, 436);
+            this.tabPage_Cooling.TabIndex = 9;
+            this.tabPage_Cooling.Text = "Кулер";
+            this.tabPage_Cooling.UseVisualStyleBackColor = true;
             // 
-            // button_CompCaseAddToAssembling
+            // button_CoolingAddToAssembling
             // 
-            this.button_CompCaseAddToAssembling.Location = new System.Drawing.Point(3, 142);
-            this.button_CompCaseAddToAssembling.Name = "button_CompCaseAddToAssembling";
-            this.button_CompCaseAddToAssembling.Size = new System.Drawing.Size(127, 31);
-            this.button_CompCaseAddToAssembling.TabIndex = 12;
-            this.button_CompCaseAddToAssembling.Text = "Добавить к сборке";
-            this.button_CompCaseAddToAssembling.UseVisualStyleBackColor = true;
-            this.button_CompCaseAddToAssembling.Click += new System.EventHandler(this.button_CompCaseAddToAssembling_Click);
+            this.button_CoolingAddToAssembling.Location = new System.Drawing.Point(3, 142);
+            this.button_CoolingAddToAssembling.Name = "button_CoolingAddToAssembling";
+            this.button_CoolingAddToAssembling.Size = new System.Drawing.Size(127, 31);
+            this.button_CoolingAddToAssembling.TabIndex = 14;
+            this.button_CoolingAddToAssembling.Text = "Добавить к сборке";
+            this.button_CoolingAddToAssembling.UseVisualStyleBackColor = true;
+            this.button_CoolingAddToAssembling.Click += new System.EventHandler(this.button_CoolingAddToAssembling_Click);
             // 
-            // button_HardDriveAddToAssembling
+            // dataGridView_Cooling
             // 
-            this.button_HardDriveAddToAssembling.Location = new System.Drawing.Point(3, 142);
-            this.button_HardDriveAddToAssembling.Name = "button_HardDriveAddToAssembling";
-            this.button_HardDriveAddToAssembling.Size = new System.Drawing.Size(127, 31);
-            this.button_HardDriveAddToAssembling.TabIndex = 12;
-            this.button_HardDriveAddToAssembling.Text = "Добавить к сборке";
-            this.button_HardDriveAddToAssembling.UseVisualStyleBackColor = true;
-            this.button_HardDriveAddToAssembling.Click += new System.EventHandler(this.button_HardDriveAddToAssembling_Click);
+            this.dataGridView_Cooling.AllowUserToAddRows = false;
+            this.dataGridView_Cooling.AllowUserToDeleteRows = false;
+            this.dataGridView_Cooling.AllowUserToResizeColumns = false;
+            this.dataGridView_Cooling.AllowUserToResizeRows = false;
+            this.dataGridView_Cooling.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_Cooling.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column_CoolingName,
+            this.Column_CoolingInfo});
+            this.dataGridView_Cooling.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView_Cooling.MultiSelect = false;
+            this.dataGridView_Cooling.Name = "dataGridView_Cooling";
+            this.dataGridView_Cooling.ReadOnly = true;
+            this.dataGridView_Cooling.RowHeadersVisible = false;
+            this.dataGridView_Cooling.RowHeadersWidth = 51;
+            this.dataGridView_Cooling.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView_Cooling.Size = new System.Drawing.Size(503, 133);
+            this.dataGridView_Cooling.TabIndex = 13;
+            this.dataGridView_Cooling.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView_Cooling_CellMouseDoubleClick);
             // 
-            // button_SolidStateDriveAddToAssembling
+            // Column_CoolingName
             // 
-            this.button_SolidStateDriveAddToAssembling.Location = new System.Drawing.Point(3, 142);
-            this.button_SolidStateDriveAddToAssembling.Name = "button_SolidStateDriveAddToAssembling";
-            this.button_SolidStateDriveAddToAssembling.Size = new System.Drawing.Size(127, 31);
-            this.button_SolidStateDriveAddToAssembling.TabIndex = 12;
-            this.button_SolidStateDriveAddToAssembling.Text = "Добавить к сборке";
-            this.button_SolidStateDriveAddToAssembling.UseVisualStyleBackColor = true;
-            this.button_SolidStateDriveAddToAssembling.Click += new System.EventHandler(this.button_SolidStateDriveAddToAssembling_Click);
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_CoolingName.DefaultCellStyle = dataGridViewCellStyle17;
+            this.Column_CoolingName.HeaderText = "Наименование";
+            this.Column_CoolingName.MinimumWidth = 6;
+            this.Column_CoolingName.Name = "Column_CoolingName";
+            this.Column_CoolingName.ReadOnly = true;
+            this.Column_CoolingName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Column_CoolingName.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Column_CoolingName.Width = 180;
+            // 
+            // Column_CoolingInfo
+            // 
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_CoolingInfo.DefaultCellStyle = dataGridViewCellStyle18;
+            this.Column_CoolingInfo.HeaderText = "Краткая информация";
+            this.Column_CoolingInfo.MinimumWidth = 6;
+            this.Column_CoolingInfo.Name = "Column_CoolingInfo";
+            this.Column_CoolingInfo.ReadOnly = true;
+            this.Column_CoolingInfo.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Column_CoolingInfo.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Column_CoolingInfo.Width = 300;
+            // 
+            // groupBox_Processor
+            // 
+            this.groupBox_Processor.Controls.Add(this.button_AssemblingProcessorInfo);
+            this.groupBox_Processor.Controls.Add(this.label_AssemblingProcessorName);
+            this.groupBox_Processor.Controls.Add(this.checkBox_AssemblingProcessorEnabled);
+            this.groupBox_Processor.Location = new System.Drawing.Point(535, 24);
+            this.groupBox_Processor.Name = "groupBox_Processor";
+            this.groupBox_Processor.Size = new System.Drawing.Size(172, 73);
+            this.groupBox_Processor.TabIndex = 2;
+            this.groupBox_Processor.TabStop = false;
+            this.groupBox_Processor.Text = "Процессор";
+            // 
+            // button_AssemblingProcessorInfo
+            // 
+            this.button_AssemblingProcessorInfo.Location = new System.Drawing.Point(16, 40);
+            this.button_AssemblingProcessorInfo.Name = "button_AssemblingProcessorInfo";
+            this.button_AssemblingProcessorInfo.Size = new System.Drawing.Size(142, 22);
+            this.button_AssemblingProcessorInfo.TabIndex = 2;
+            this.button_AssemblingProcessorInfo.Text = "Информация";
+            this.button_AssemblingProcessorInfo.UseVisualStyleBackColor = true;
+            this.button_AssemblingProcessorInfo.Click += new System.EventHandler(this.button_AssemblingProcessorInfo_Click);
+            // 
+            // label_AssemblingProcessorName
+            // 
+            this.label_AssemblingProcessorName.AutoSize = true;
+            this.label_AssemblingProcessorName.Location = new System.Drawing.Point(13, 20);
+            this.label_AssemblingProcessorName.Name = "label_AssemblingProcessorName";
+            this.label_AssemblingProcessorName.Size = new System.Drawing.Size(58, 13);
+            this.label_AssemblingProcessorName.TabIndex = 1;
+            this.label_AssemblingProcessorName.Text = "не задано";
+            // 
+            // checkBox_AssemblingProcessorEnabled
+            // 
+            this.checkBox_AssemblingProcessorEnabled.AutoSize = true;
+            this.checkBox_AssemblingProcessorEnabled.Location = new System.Drawing.Point(75, 0);
+            this.checkBox_AssemblingProcessorEnabled.Name = "checkBox_AssemblingProcessorEnabled";
+            this.checkBox_AssemblingProcessorEnabled.Size = new System.Drawing.Size(15, 14);
+            this.checkBox_AssemblingProcessorEnabled.TabIndex = 0;
+            this.checkBox_AssemblingProcessorEnabled.UseVisualStyleBackColor = true;
+            this.checkBox_AssemblingProcessorEnabled.Click += new System.EventHandler(this.checkBox_AssemblingProcessorEnabled_Click);
+            // 
+            // groupBox_Cooling
+            // 
+            this.groupBox_Cooling.Controls.Add(this.button_AssemblingCoolingInfo);
+            this.groupBox_Cooling.Controls.Add(this.label_AssemblingCoolingName);
+            this.groupBox_Cooling.Controls.Add(this.checkBox_AssemblingCoolingEnabled);
+            this.groupBox_Cooling.Location = new System.Drawing.Point(535, 367);
+            this.groupBox_Cooling.Name = "groupBox_Cooling";
+            this.groupBox_Cooling.Size = new System.Drawing.Size(172, 73);
+            this.groupBox_Cooling.TabIndex = 3;
+            this.groupBox_Cooling.TabStop = false;
+            this.groupBox_Cooling.Text = "Кулер";
+            // 
+            // button_AssemblingCoolingInfo
+            // 
+            this.button_AssemblingCoolingInfo.Location = new System.Drawing.Point(16, 40);
+            this.button_AssemblingCoolingInfo.Name = "button_AssemblingCoolingInfo";
+            this.button_AssemblingCoolingInfo.Size = new System.Drawing.Size(142, 22);
+            this.button_AssemblingCoolingInfo.TabIndex = 2;
+            this.button_AssemblingCoolingInfo.Text = "Информация";
+            this.button_AssemblingCoolingInfo.UseVisualStyleBackColor = true;
+            this.button_AssemblingCoolingInfo.Click += new System.EventHandler(this.button_AssemblingCoolingInfo_Click);
+            // 
+            // label_AssemblingCoolingName
+            // 
+            this.label_AssemblingCoolingName.AutoSize = true;
+            this.label_AssemblingCoolingName.Location = new System.Drawing.Point(13, 20);
+            this.label_AssemblingCoolingName.Name = "label_AssemblingCoolingName";
+            this.label_AssemblingCoolingName.Size = new System.Drawing.Size(58, 13);
+            this.label_AssemblingCoolingName.TabIndex = 1;
+            this.label_AssemblingCoolingName.Text = "не задано";
+            // 
+            // checkBox_AssemblingCoolingEnabled
+            // 
+            this.checkBox_AssemblingCoolingEnabled.AutoSize = true;
+            this.checkBox_AssemblingCoolingEnabled.Location = new System.Drawing.Point(56, 0);
+            this.checkBox_AssemblingCoolingEnabled.Name = "checkBox_AssemblingCoolingEnabled";
+            this.checkBox_AssemblingCoolingEnabled.Size = new System.Drawing.Size(15, 14);
+            this.checkBox_AssemblingCoolingEnabled.TabIndex = 0;
+            this.checkBox_AssemblingCoolingEnabled.UseVisualStyleBackColor = true;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.button2);
+            this.groupBox3.Controls.Add(this.label2);
+            this.groupBox3.Controls.Add(this.checkBox2);
+            this.groupBox3.Location = new System.Drawing.Point(849, 86);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(158, 73);
+            this.groupBox3.TabIndex = 4;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Жесткий диск";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(16, 40);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(128, 22);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "Информация";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(13, 20);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(101, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "AMD A8-9600 OEM";
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(137, 10);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(15, 14);
+            this.checkBox2.TabIndex = 0;
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // groupBox_Motherboard
+            // 
+            this.groupBox_Motherboard.Controls.Add(this.button_AssemblingMotherboardInfo);
+            this.groupBox_Motherboard.Controls.Add(this.label_AssemblingMotherboardName);
+            this.groupBox_Motherboard.Controls.Add(this.checkBox_AssemblingMotherboardEnabled);
+            this.groupBox_Motherboard.Location = new System.Drawing.Point(535, 117);
+            this.groupBox_Motherboard.Name = "groupBox_Motherboard";
+            this.groupBox_Motherboard.Size = new System.Drawing.Size(172, 73);
+            this.groupBox_Motherboard.TabIndex = 5;
+            this.groupBox_Motherboard.TabStop = false;
+            this.groupBox_Motherboard.Text = "Материнская плата";
+            // 
+            // button_AssemblingMotherboardInfo
+            // 
+            this.button_AssemblingMotherboardInfo.Location = new System.Drawing.Point(16, 40);
+            this.button_AssemblingMotherboardInfo.Name = "button_AssemblingMotherboardInfo";
+            this.button_AssemblingMotherboardInfo.Size = new System.Drawing.Size(142, 22);
+            this.button_AssemblingMotherboardInfo.TabIndex = 2;
+            this.button_AssemblingMotherboardInfo.Text = "Информация";
+            this.button_AssemblingMotherboardInfo.UseVisualStyleBackColor = true;
+            this.button_AssemblingMotherboardInfo.Click += new System.EventHandler(this.button_AssemblingMotherboardInfo_Click);
+            // 
+            // label_AssemblingMotherboardName
+            // 
+            this.label_AssemblingMotherboardName.AutoSize = true;
+            this.label_AssemblingMotherboardName.Location = new System.Drawing.Point(13, 20);
+            this.label_AssemblingMotherboardName.Name = "label_AssemblingMotherboardName";
+            this.label_AssemblingMotherboardName.Size = new System.Drawing.Size(58, 13);
+            this.label_AssemblingMotherboardName.TabIndex = 1;
+            this.label_AssemblingMotherboardName.Text = "не задано";
+            // 
+            // checkBox_AssemblingMotherboardEnabled
+            // 
+            this.checkBox_AssemblingMotherboardEnabled.AutoSize = true;
+            this.checkBox_AssemblingMotherboardEnabled.Location = new System.Drawing.Point(116, 0);
+            this.checkBox_AssemblingMotherboardEnabled.Name = "checkBox_AssemblingMotherboardEnabled";
+            this.checkBox_AssemblingMotherboardEnabled.Size = new System.Drawing.Size(15, 14);
+            this.checkBox_AssemblingMotherboardEnabled.TabIndex = 0;
+            this.checkBox_AssemblingMotherboardEnabled.UseVisualStyleBackColor = true;
+            // 
+            // groupBox_PSU
+            // 
+            this.groupBox_PSU.Controls.Add(this.button_AssemblingPSUInfo);
+            this.groupBox_PSU.Controls.Add(this.label_AssemblingPSUName);
+            this.groupBox_PSU.Controls.Add(this.checkBox_AssemblingPSUEnabled);
+            this.groupBox_PSU.Location = new System.Drawing.Point(750, 367);
+            this.groupBox_PSU.Name = "groupBox_PSU";
+            this.groupBox_PSU.Size = new System.Drawing.Size(172, 73);
+            this.groupBox_PSU.TabIndex = 6;
+            this.groupBox_PSU.TabStop = false;
+            this.groupBox_PSU.Text = "Блок питания";
+            // 
+            // button_AssemblingPSUInfo
+            // 
+            this.button_AssemblingPSUInfo.Location = new System.Drawing.Point(16, 40);
+            this.button_AssemblingPSUInfo.Name = "button_AssemblingPSUInfo";
+            this.button_AssemblingPSUInfo.Size = new System.Drawing.Size(142, 22);
+            this.button_AssemblingPSUInfo.TabIndex = 2;
+            this.button_AssemblingPSUInfo.Text = "Информация";
+            this.button_AssemblingPSUInfo.UseVisualStyleBackColor = true;
+            this.button_AssemblingPSUInfo.Click += new System.EventHandler(this.button_AssemblingPSUInfo_Click);
+            // 
+            // label_AssemblingPSUName
+            // 
+            this.label_AssemblingPSUName.AutoSize = true;
+            this.label_AssemblingPSUName.Location = new System.Drawing.Point(13, 20);
+            this.label_AssemblingPSUName.Name = "label_AssemblingPSUName";
+            this.label_AssemblingPSUName.Size = new System.Drawing.Size(58, 13);
+            this.label_AssemblingPSUName.TabIndex = 1;
+            this.label_AssemblingPSUName.Text = "не задано";
+            // 
+            // checkBox_AssemblingPSUEnabled
+            // 
+            this.checkBox_AssemblingPSUEnabled.AutoSize = true;
+            this.checkBox_AssemblingPSUEnabled.Location = new System.Drawing.Point(86, 0);
+            this.checkBox_AssemblingPSUEnabled.Name = "checkBox_AssemblingPSUEnabled";
+            this.checkBox_AssemblingPSUEnabled.Size = new System.Drawing.Size(15, 14);
+            this.checkBox_AssemblingPSUEnabled.TabIndex = 0;
+            this.checkBox_AssemblingPSUEnabled.UseVisualStyleBackColor = true;
+            // 
+            // groupBox_Videocard
+            // 
+            this.groupBox_Videocard.Controls.Add(this.button_AssemblingVideocardInfo);
+            this.groupBox_Videocard.Controls.Add(this.label_AssemblingVideocardName);
+            this.groupBox_Videocard.Controls.Add(this.checkBox_AssemblingVideocardEnabled);
+            this.groupBox_Videocard.Location = new System.Drawing.Point(535, 459);
+            this.groupBox_Videocard.Name = "groupBox_Videocard";
+            this.groupBox_Videocard.Size = new System.Drawing.Size(243, 73);
+            this.groupBox_Videocard.TabIndex = 7;
+            this.groupBox_Videocard.TabStop = false;
+            this.groupBox_Videocard.Text = "Видеокарта";
+            // 
+            // button_AssemblingVideocardInfo
+            // 
+            this.button_AssemblingVideocardInfo.Location = new System.Drawing.Point(16, 40);
+            this.button_AssemblingVideocardInfo.Name = "button_AssemblingVideocardInfo";
+            this.button_AssemblingVideocardInfo.Size = new System.Drawing.Size(215, 22);
+            this.button_AssemblingVideocardInfo.TabIndex = 2;
+            this.button_AssemblingVideocardInfo.Text = "Информация";
+            this.button_AssemblingVideocardInfo.UseVisualStyleBackColor = true;
+            this.button_AssemblingVideocardInfo.Click += new System.EventHandler(this.button_AssemblingVideocardInfo_Click);
+            // 
+            // label_AssemblingVideocardName
+            // 
+            this.label_AssemblingVideocardName.AutoSize = true;
+            this.label_AssemblingVideocardName.Location = new System.Drawing.Point(13, 20);
+            this.label_AssemblingVideocardName.Name = "label_AssemblingVideocardName";
+            this.label_AssemblingVideocardName.Size = new System.Drawing.Size(101, 13);
+            this.label_AssemblingVideocardName.TabIndex = 1;
+            this.label_AssemblingVideocardName.Text = "AMD A8-9600 OEM";
+            // 
+            // checkBox_AssemblingVideocardEnabled
+            // 
+            this.checkBox_AssemblingVideocardEnabled.AutoSize = true;
+            this.checkBox_AssemblingVideocardEnabled.Location = new System.Drawing.Point(79, 0);
+            this.checkBox_AssemblingVideocardEnabled.Name = "checkBox_AssemblingVideocardEnabled";
+            this.checkBox_AssemblingVideocardEnabled.Size = new System.Drawing.Size(15, 14);
+            this.checkBox_AssemblingVideocardEnabled.TabIndex = 0;
+            this.checkBox_AssemblingVideocardEnabled.UseVisualStyleBackColor = true;
+            // 
+            // groupBox_CompCase
+            // 
+            this.groupBox_CompCase.Controls.Add(this.button_AssemblingCompCaseInfo);
+            this.groupBox_CompCase.Controls.Add(this.label_AssemblingCompCaseName);
+            this.groupBox_CompCase.Controls.Add(this.checkBox_AssemblingCompCaseEnabled);
+            this.groupBox_CompCase.Location = new System.Drawing.Point(791, 268);
+            this.groupBox_CompCase.Name = "groupBox_CompCase";
+            this.groupBox_CompCase.Size = new System.Drawing.Size(172, 73);
+            this.groupBox_CompCase.TabIndex = 8;
+            this.groupBox_CompCase.TabStop = false;
+            this.groupBox_CompCase.Text = "Корпус";
+            // 
+            // button_AssemblingCompCaseInfo
+            // 
+            this.button_AssemblingCompCaseInfo.Location = new System.Drawing.Point(16, 40);
+            this.button_AssemblingCompCaseInfo.Name = "button_AssemblingCompCaseInfo";
+            this.button_AssemblingCompCaseInfo.Size = new System.Drawing.Size(142, 22);
+            this.button_AssemblingCompCaseInfo.TabIndex = 2;
+            this.button_AssemblingCompCaseInfo.Text = "Информация";
+            this.button_AssemblingCompCaseInfo.UseVisualStyleBackColor = true;
+            this.button_AssemblingCompCaseInfo.Click += new System.EventHandler(this.button_AssemblingCompCaseInfo_Click);
+            // 
+            // label_AssemblingCompCaseName
+            // 
+            this.label_AssemblingCompCaseName.AutoSize = true;
+            this.label_AssemblingCompCaseName.Location = new System.Drawing.Point(13, 20);
+            this.label_AssemblingCompCaseName.Name = "label_AssemblingCompCaseName";
+            this.label_AssemblingCompCaseName.Size = new System.Drawing.Size(58, 13);
+            this.label_AssemblingCompCaseName.TabIndex = 1;
+            this.label_AssemblingCompCaseName.Text = "не задано";
+            // 
+            // checkBox_AssemblingCompCaseEnabled
+            // 
+            this.checkBox_AssemblingCompCaseEnabled.AutoSize = true;
+            this.checkBox_AssemblingCompCaseEnabled.Location = new System.Drawing.Point(56, 0);
+            this.checkBox_AssemblingCompCaseEnabled.Name = "checkBox_AssemblingCompCaseEnabled";
+            this.checkBox_AssemblingCompCaseEnabled.Size = new System.Drawing.Size(15, 14);
+            this.checkBox_AssemblingCompCaseEnabled.TabIndex = 0;
+            this.checkBox_AssemblingCompCaseEnabled.UseVisualStyleBackColor = true;
+            // 
+            // groupBox8
+            // 
+            this.groupBox8.Controls.Add(this.button7);
+            this.groupBox8.Controls.Add(this.label7);
+            this.groupBox8.Controls.Add(this.checkBox7);
+            this.groupBox8.Location = new System.Drawing.Point(849, 166);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(158, 73);
+            this.groupBox8.TabIndex = 9;
+            this.groupBox8.TabStop = false;
+            this.groupBox8.Text = "Твердотельный накопитель";
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(16, 40);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(128, 22);
+            this.button7.TabIndex = 2;
+            this.button7.Text = "Информация";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(13, 20);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(101, 13);
+            this.label7.TabIndex = 1;
+            this.label7.Text = "AMD A8-9600 OEM";
+            // 
+            // checkBox7
+            // 
+            this.checkBox7.AutoSize = true;
+            this.checkBox7.Location = new System.Drawing.Point(137, 10);
+            this.checkBox7.Name = "checkBox7";
+            this.checkBox7.Size = new System.Drawing.Size(15, 14);
+            this.checkBox7.TabIndex = 0;
+            this.checkBox7.UseVisualStyleBackColor = true;
+            // 
+            // groupBox_RAM
+            // 
+            this.groupBox_RAM.Controls.Add(this.label_RAMName);
+            this.groupBox_RAM.Controls.Add(this.label_RAMInstalled);
+            this.groupBox_RAM.Controls.Add(this.numericUpDown_InstalledRAMs);
+            this.groupBox_RAM.Controls.Add(this.button_AssemblingRAMInfo);
+            this.groupBox_RAM.Controls.Add(this.label_AssemblingRAMName);
+            this.groupBox_RAM.Controls.Add(this.checkBox_AssemblingRAMEnabled);
+            this.groupBox_RAM.Location = new System.Drawing.Point(535, 201);
+            this.groupBox_RAM.Name = "groupBox_RAM";
+            this.groupBox_RAM.Size = new System.Drawing.Size(209, 115);
+            this.groupBox_RAM.TabIndex = 10;
+            this.groupBox_RAM.TabStop = false;
+            this.groupBox_RAM.Text = "Оперативная память";
+            // 
+            // label_RAMName
+            // 
+            this.label_RAMName.AutoSize = true;
+            this.label_RAMName.Location = new System.Drawing.Point(17, 27);
+            this.label_RAMName.Name = "label_RAMName";
+            this.label_RAMName.Size = new System.Drawing.Size(86, 13);
+            this.label_RAMName.TabIndex = 11;
+            this.label_RAMName.Text = "Наименование:";
+            // 
+            // label_RAMInstalled
+            // 
+            this.label_RAMInstalled.AutoSize = true;
+            this.label_RAMInstalled.Location = new System.Drawing.Point(17, 55);
+            this.label_RAMInstalled.Name = "label_RAMInstalled";
+            this.label_RAMInstalled.Size = new System.Drawing.Size(77, 13);
+            this.label_RAMInstalled.TabIndex = 4;
+            this.label_RAMInstalled.Text = "Установлено:";
+            // 
+            // numericUpDown_InstalledRAMs
+            // 
+            this.numericUpDown_InstalledRAMs.Location = new System.Drawing.Point(95, 53);
+            this.numericUpDown_InstalledRAMs.Maximum = new decimal(new int[] {
+            8,
+            0,
+            0,
+            0});
+            this.numericUpDown_InstalledRAMs.Name = "numericUpDown_InstalledRAMs";
+            this.numericUpDown_InstalledRAMs.Size = new System.Drawing.Size(49, 20);
+            this.numericUpDown_InstalledRAMs.TabIndex = 3;
+            // 
+            // button_AssemblingRAMInfo
+            // 
+            this.button_AssemblingRAMInfo.Location = new System.Drawing.Point(16, 82);
+            this.button_AssemblingRAMInfo.Name = "button_AssemblingRAMInfo";
+            this.button_AssemblingRAMInfo.Size = new System.Drawing.Size(183, 22);
+            this.button_AssemblingRAMInfo.TabIndex = 2;
+            this.button_AssemblingRAMInfo.Text = "Информация";
+            this.button_AssemblingRAMInfo.UseVisualStyleBackColor = true;
+            this.button_AssemblingRAMInfo.Click += new System.EventHandler(this.button_AssemblingRAMInfo_Click);
+            // 
+            // label_AssemblingRAMName
+            // 
+            this.label_AssemblingRAMName.AutoSize = true;
+            this.label_AssemblingRAMName.Location = new System.Drawing.Point(102, 27);
+            this.label_AssemblingRAMName.Name = "label_AssemblingRAMName";
+            this.label_AssemblingRAMName.Size = new System.Drawing.Size(58, 13);
+            this.label_AssemblingRAMName.TabIndex = 1;
+            this.label_AssemblingRAMName.Text = "не задано";
+            // 
+            // checkBox_AssemblingRAMEnabled
+            // 
+            this.checkBox_AssemblingRAMEnabled.AutoSize = true;
+            this.checkBox_AssemblingRAMEnabled.Location = new System.Drawing.Point(126, 0);
+            this.checkBox_AssemblingRAMEnabled.Name = "checkBox_AssemblingRAMEnabled";
+            this.checkBox_AssemblingRAMEnabled.Size = new System.Drawing.Size(15, 14);
+            this.checkBox_AssemblingRAMEnabled.TabIndex = 0;
+            this.checkBox_AssemblingRAMEnabled.UseVisualStyleBackColor = true;
             // 
             // Form_MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1206, 510);
+            this.ClientSize = new System.Drawing.Size(1042, 627);
+            this.Controls.Add(this.groupBox_RAM);
+            this.Controls.Add(this.groupBox8);
+            this.Controls.Add(this.groupBox_CompCase);
+            this.Controls.Add(this.groupBox_Videocard);
+            this.Controls.Add(this.groupBox_PSU);
+            this.Controls.Add(this.groupBox_Motherboard);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox_Cooling);
+            this.Controls.Add(this.groupBox_Processor);
             this.Controls.Add(this.tabControl1);
-            this.Controls.Add(this.toolStrip1);
             this.Name = "Form_MainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Конструктор ПК";
             this.Load += new System.EventHandler(this.MainMenu_Load);
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
             this.tabPage_CompCase.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_CompCase)).EndInit();
             this.tabPage_PSU.ResumeLayout(false);
@@ -1015,51 +1210,32 @@ namespace Prog_Kursovaya_sem3
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_HardDrive)).EndInit();
             this.tabPage_SSD.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_SolidStateDrive)).EndInit();
+            this.tabPage_Cooling.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Cooling)).EndInit();
+            this.groupBox_Processor.ResumeLayout(false);
+            this.groupBox_Processor.PerformLayout();
+            this.groupBox_Cooling.ResumeLayout(false);
+            this.groupBox_Cooling.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox_Motherboard.ResumeLayout(false);
+            this.groupBox_Motherboard.PerformLayout();
+            this.groupBox_PSU.ResumeLayout(false);
+            this.groupBox_PSU.PerformLayout();
+            this.groupBox_Videocard.ResumeLayout(false);
+            this.groupBox_Videocard.PerformLayout();
+            this.groupBox_CompCase.ResumeLayout(false);
+            this.groupBox_CompCase.PerformLayout();
+            this.groupBox8.ResumeLayout(false);
+            this.groupBox8.PerformLayout();
+            this.groupBox_RAM.ResumeLayout(false);
+            this.groupBox_RAM.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_InstalledRAMs)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButtonProcessor;
-        private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton2;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem5;
-        private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton4;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem11;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem12;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem13;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem14;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem15;
-        private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton3;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem6;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem7;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem8;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem9;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem10;
-        private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton6;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem21;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem22;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem23;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem24;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem25;
-        private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton5;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem16;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem17;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem18;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem19;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem20;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator7;
         private System.Windows.Forms.TabPage tabPage_CompCase;
         private System.Windows.Forms.TabPage tabPage_PSU;
         private System.Windows.Forms.DataGridView dataGridView_PowerSupplyUnit;
@@ -1073,26 +1249,10 @@ namespace Prog_Kursovaya_sem3
         private System.Windows.Forms.DataGridView dataGridView_Motherboard;
         private System.Windows.Forms.DataGridView dataGridView_Processor;
         private System.Windows.Forms.DataGridView dataGridView_CompCase;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_MotherboardName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_MotherboardInfo;
         private System.Windows.Forms.TabPage tabPage_HardDrive;
         private System.Windows.Forms.DataGridView dataGridView_HardDrive;
         private System.Windows.Forms.TabPage tabPage_SSD;
         private System.Windows.Forms.DataGridView dataGridView_SolidStateDrive;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_VideocardName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_VideocardInfo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_ProcessorName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_ProcessorInfo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_CompCaseName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_CompCaseInfo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_SupplyUnitName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_SupplyUnitInfo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_HardDriveName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_HardDriveInfo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_RAMname;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_RAMinfo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_SolidStateDriveName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_SolidStateDriveInfo;
         private System.Windows.Forms.Button button_ProcessorAddToAssembling;
         private System.Windows.Forms.Button button_RAMAddToAssembling;
         private System.Windows.Forms.Button button_VideocardAddToAssembling;
@@ -1101,6 +1261,66 @@ namespace Prog_Kursovaya_sem3
         private System.Windows.Forms.Button button_PowerSupplyUnitAddToAssembling;
         private System.Windows.Forms.Button button_HardDriveAddToAssembling;
         private System.Windows.Forms.Button button_SolidStateDriveAddToAssembling;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_CompCaseName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_CompCaseInfo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_SupplyUnitName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_SupplyUnitInfo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_RAMname;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_RAMinfo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_VideocardName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_VideocardInfo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_MotherboardName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_MotherboardInfo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_ProcessorName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_ProcessorInfo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_HardDriveName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_HardDriveInfo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_SolidStateDriveName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_SolidStateDriveInfo;
+        private System.Windows.Forms.TabPage tabPage_Cooling;
+        private System.Windows.Forms.Button button_CoolingAddToAssembling;
+        private System.Windows.Forms.DataGridView dataGridView_Cooling;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_CoolingName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_CoolingInfo;
+        private System.Windows.Forms.GroupBox groupBox_Processor;
+        private System.Windows.Forms.CheckBox checkBox_AssemblingProcessorEnabled;
+        private System.Windows.Forms.Label label_AssemblingProcessorName;
+        private System.Windows.Forms.Button button_AssemblingProcessorInfo;
+        private System.Windows.Forms.GroupBox groupBox_Cooling;
+        private System.Windows.Forms.Button button_AssemblingCoolingInfo;
+        private System.Windows.Forms.Label label_AssemblingCoolingName;
+        private System.Windows.Forms.CheckBox checkBox_AssemblingCoolingEnabled;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.GroupBox groupBox_Motherboard;
+        private System.Windows.Forms.Button button_AssemblingMotherboardInfo;
+        private System.Windows.Forms.Label label_AssemblingMotherboardName;
+        private System.Windows.Forms.CheckBox checkBox_AssemblingMotherboardEnabled;
+        private System.Windows.Forms.GroupBox groupBox_PSU;
+        private System.Windows.Forms.Button button_AssemblingPSUInfo;
+        private System.Windows.Forms.Label label_AssemblingPSUName;
+        private System.Windows.Forms.CheckBox checkBox_AssemblingPSUEnabled;
+        private System.Windows.Forms.GroupBox groupBox_Videocard;
+        private System.Windows.Forms.Button button_AssemblingVideocardInfo;
+        private System.Windows.Forms.Label label_AssemblingVideocardName;
+        private System.Windows.Forms.CheckBox checkBox_AssemblingVideocardEnabled;
+        private System.Windows.Forms.GroupBox groupBox_CompCase;
+        private System.Windows.Forms.Button button_AssemblingCompCaseInfo;
+        private System.Windows.Forms.Label label_AssemblingCompCaseName;
+        private System.Windows.Forms.CheckBox checkBox_AssemblingCompCaseEnabled;
+        private System.Windows.Forms.GroupBox groupBox8;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.CheckBox checkBox7;
+        private System.Windows.Forms.GroupBox groupBox_RAM;
+        private System.Windows.Forms.Button button_AssemblingRAMInfo;
+        private System.Windows.Forms.Label label_AssemblingRAMName;
+        private System.Windows.Forms.CheckBox checkBox_AssemblingRAMEnabled;
+        private System.Windows.Forms.Label label_RAMInstalled;
+        private System.Windows.Forms.NumericUpDown numericUpDown_InstalledRAMs;
+        private System.Windows.Forms.Label label_RAMName;
     }
 }
 

@@ -10,6 +10,7 @@
         private string[] motherboardsFormFactor;
         private string[] powerSupplyFormFactor;
         private int videocardMaxLength;
+        private int coolingMaxHeight;
         private int numberOfTwoAndHalfSlots;
         private int numberOfThreeAndHalfSlots;
         private int numberOfHorizonExpansionSlots;
@@ -174,6 +175,18 @@
                     videocardMaxLength = value;
             }
         }
+        public int CoolingMaxHeight
+        {
+            get
+            {
+                return coolingMaxHeight;
+            }
+            set
+            {
+                if ((value >= 0) && (value <= 1000))
+                    coolingMaxHeight = value;
+            }
+        }
         public int NumberOfTwoAndHalfSlots
         {
             get
@@ -222,9 +235,10 @@
             MotherboardsFormFactorString = inputSubStrings[5];
             PowerSupplyFormFactorString = inputSubStrings[6];
             VideocardMaxLength = int.Parse(inputSubStrings[7]);
-            NumberOfTwoAndHalfSlots = int.Parse(inputSubStrings[8]);
-            NumberOfThreeAndHalfSlots = int.Parse(inputSubStrings[9]);
-            NumberOfHorizonExpansionSlots = int.Parse(inputSubStrings[10]);
+            CoolingMaxHeight = int.Parse(inputSubStrings[8]);
+            NumberOfTwoAndHalfSlots = int.Parse(inputSubStrings[9]);
+            NumberOfThreeAndHalfSlots = int.Parse(inputSubStrings[10]);
+            NumberOfHorizonExpansionSlots = int.Parse(inputSubStrings[11]);
         }
         public CompCase(CompCase inputObject)
         {
@@ -236,6 +250,7 @@
             MotherboardsFormFactorString = inputObject.MotherboardsFormFactorString;
             PowerSupplyFormFactorString = inputObject.PowerSupplyFormFactorString;
             VideocardMaxLength = inputObject.VideocardMaxLength;
+            CoolingMaxHeight = inputObject.CoolingMaxHeight;
             NumberOfTwoAndHalfSlots = inputObject.NumberOfTwoAndHalfSlots;
             NumberOfThreeAndHalfSlots = inputObject.NumberOfThreeAndHalfSlots;
             NumberOfHorizonExpansionSlots = inputObject.NumberOfHorizonExpansionSlots;

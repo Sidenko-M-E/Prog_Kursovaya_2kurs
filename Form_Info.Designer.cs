@@ -33,6 +33,7 @@ namespace Prog_Kursovaya_sem3
             this.button_InfoYes = new System.Windows.Forms.Button();
             this.label_InfoQuestion = new System.Windows.Forms.Label();
             this.richTextBox_Info = new System.Windows.Forms.RichTextBox();
+            this.button_InfoExit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button_InfoNo
@@ -74,11 +75,22 @@ namespace Prog_Kursovaya_sem3
             this.richTextBox_Info.TabIndex = 3;
             this.richTextBox_Info.Text = "";
             // 
+            // button_InfoExit
+            // 
+            this.button_InfoExit.Location = new System.Drawing.Point(94, 262);
+            this.button_InfoExit.Name = "button_InfoExit";
+            this.button_InfoExit.Size = new System.Drawing.Size(136, 24);
+            this.button_InfoExit.TabIndex = 4;
+            this.button_InfoExit.Text = "Вернуться назад";
+            this.button_InfoExit.UseVisualStyleBackColor = true;
+            this.button_InfoExit.Click += new System.EventHandler(this.button_InfoExit_Click);
+            // 
             // Form_Info
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(323, 307);
+            this.Controls.Add(this.button_InfoExit);
             this.Controls.Add(this.richTextBox_Info);
             this.Controls.Add(this.label_InfoQuestion);
             this.Controls.Add(this.button_InfoYes);
@@ -86,7 +98,7 @@ namespace Prog_Kursovaya_sem3
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Form_ProcessorInfo";
+            this.Name = "Form_Info";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Информация об элементе";
@@ -102,5 +114,6 @@ namespace Prog_Kursovaya_sem3
         private System.Windows.Forms.Button button_InfoYes;
         private System.Windows.Forms.Label label_InfoQuestion;
         private System.Windows.Forms.RichTextBox richTextBox_Info;
+        private System.Windows.Forms.Button button_InfoExit;
     }
 }

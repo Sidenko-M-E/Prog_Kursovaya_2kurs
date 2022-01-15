@@ -12,7 +12,8 @@ namespace Prog_Kursovaya_sem3
 {
     public partial class Form_Info : Form
     {
-        private int workingMode;
+        private bool workingMode;
+        private int displayInfoType;
 
         private Processor processor;
         private Motherboard motherboard;
@@ -22,63 +23,107 @@ namespace Prog_Kursovaya_sem3
         private HardDrive hardDrive;
         private SolidStateDrive solidStateDrive;
         private CompCase compCase;
+        private Cooling cooling;
 
         public Form_Info()
         {
             InitializeComponent();
         }
-        public Form_Info(Processor inputObject)
+        public Form_Info(Processor inputObject, bool FormWorkingMode)
         {
             InitializeComponent();
-            workingMode = 1;
+            displayInfoType = 1;
+            workingMode = FormWorkingMode;
             processor = new Processor(inputObject);
         }
-        public Form_Info(Motherboard inputObject)
+        public Form_Info(Motherboard inputObject, bool FormWorkingMode)
         {
             InitializeComponent();
-            workingMode = 2;
+            displayInfoType = 2;
+            workingMode = FormWorkingMode;
             motherboard = new Motherboard(inputObject);
         }
-        public Form_Info(RAM inputObject)
+        public Form_Info(RAM inputObject, bool FormWorkingMode)
         {
             InitializeComponent();
-            workingMode = 3;
+            displayInfoType = 3;
+            workingMode = FormWorkingMode;
             ram = new RAM(inputObject);
         }
-        public Form_Info(Videocard inputObject)
+        public Form_Info(Videocard inputObject, bool FormWorkingMode)
         {
             InitializeComponent();
-            workingMode = 4;
+            displayInfoType = 4;
+            workingMode = FormWorkingMode;
             videocard = new Videocard(inputObject);
         }
-        public Form_Info(PowerSupplyUnit inputObject)
+        public Form_Info(PowerSupplyUnit inputObject, bool FormWorkingMode)
         {
             InitializeComponent();
-            workingMode = 5;
+            displayInfoType = 5;
+            workingMode = FormWorkingMode;
             powerSupplyUnit = new PowerSupplyUnit(inputObject);
         }
-        public Form_Info(HardDrive inputObject)
+        public Form_Info(HardDrive inputObject, bool FormWorkingMode)
         {
             InitializeComponent();
-            workingMode = 6;
+            displayInfoType = 6;
+            workingMode = FormWorkingMode;
             hardDrive = new HardDrive(inputObject);
         }
-        public Form_Info(SolidStateDrive inputObject)
+        public Form_Info(SolidStateDrive inputObject, bool FormWorkingMode)
         {
             InitializeComponent();
-            workingMode = 7;
+            displayInfoType = 7;
+            workingMode = FormWorkingMode;
             solidStateDrive = new SolidStateDrive(inputObject);
         }
-        public Form_Info(CompCase inputObject)
+        public Form_Info(CompCase inputObject, bool FormWorkingMode)
         {
             InitializeComponent();
-            workingMode = 8;
+            displayInfoType = 9;
+            workingMode = FormWorkingMode;
             compCase = new CompCase(inputObject);
+        }
+        public Form_Info(Cooling inputObject, bool FormWorkingMode)
+        {
+            InitializeComponent();
+            displayInfoType = 8;
+            workingMode = FormWorkingMode;
+            cooling = new Cooling(inputObject);
         }
 
         private void Form_Info_Load(object sender, EventArgs e)
         {
-            switch (workingMode) {
+            if (workingMode)
+            {
+                button_InfoNo.Enabled = true;
+                button_InfoNo.Visible = true;
+
+                button_InfoYes.Enabled = true;
+                button_InfoYes.Enabled = true;
+
+                label_InfoQuestion.Visible = true;
+
+                button_InfoExit.Enabled = false;
+                button_InfoExit.Visible = false;
+            }
+            else 
+            {
+                button_InfoNo.Enabled = false;
+                button_InfoNo.Visible = false;
+
+                button_InfoYes.Enabled = false;
+                button_InfoYes.Visible = false;
+
+                label_InfoQuestion.Visible = false;
+
+                button_InfoExit.Enabled = true;
+                button_InfoExit.Visible = true;
+            }
+
+
+            switch (displayInfoType) {
                 case 1:
                     {
                         richTextBox_Info.Text =
@@ -106,6 +151,8 @@ namespace Prog_Kursovaya_sem3
                        "Чипсет:  " + motherboard.ChipsetType + "\n" +
                        "\nИнтерфейс подключения:\n" +
                        "Разъем питания процессора:  " + motherboard.ProcessorSupplyConnectorsType + "\n" +
+                       "Кол-во 3-pin слотов для системы охлаждения:" + motherboard.NumberOfThreePinSlotsForCooling + "\n" +
+                       "Кол-во 4-pin слотов для системы охлаждения:" + motherboard.NumberOfFourPinSlotsForCooling + "\n" +
                        "Кол-во слотов PCI-Ex16:  " + motherboard.NumberOfPCIESlots + "\n" +
                        "Кол-во слотов SATA:  " + motherboard.NumberOfPCIESlots + "\n" +
                        "Кол-во слотов оперативной памяти: " + motherboard.NumberOfRAMSlots + "\n" +
@@ -188,17 +235,34 @@ namespace Prog_Kursovaya_sem3
                 case 8:
                     {
                         richTextBox_Info.Text =
+                        "Наименование:  " + cooling.Name + "\n" +
+                        "Рассеиваемая мощность:  " + cooling.DissipationPower + " Вт\n" +
+                        "Миниальная скорость вращения:  " + cooling.MinRotationSpeed + " об/с\n" +
+                        "Максимальная скорость вращения:  " + cooling.MaxRotationSpeed + " об/с\n" +
+                        "Максимальный уровень шума:  " + cooling.MaxNoiseLevel + "дБ\n" +
+                        "Рекомендованный тип сокета:  " + cooling.RecomendedSocketType + "\n" +
+                        "Тип конструкции:  " + cooling.ConstructionType + "\n" +
+                        "Кол-во тепловых трубок:  " + cooling.NumberOfHeatPipes + "\n" +
+                        "Длина x Ширина x Высота:  " + cooling.Length + " x " + cooling.Width + " x " + cooling.Height + " мм\n" +
+                        "Разъемы для подключения:  " + cooling.ConnectorType;
+                        break;
+                    }
+
+                case 9:
+                    {
+                        richTextBox_Info.Text =
                         "Наименование:  " + compCase.Name + "\n" +
                         "Типоразмер:  " + compCase.StandardSize + "\n" +
                         "Длина x Ширина x Высота:  " + compCase.Length + " x " + compCase.Width + " x " + compCase.Height + " мм\n" +
                         "Поддерживаемые типы мат. плат:  " + compCase.MotherboardsFormFactorString + "\n" +
                         "Поддерживаемые типы блоков питания:  " + compCase.PowerSupplyFormFactorString + "\n" +
-                        "Максимальная длина устанавливаемой видеокарты: " + compCase + " мм\n" +
+                        "Максимальная длина устанавливаемой видеокарты: " + compCase.VideocardMaxLength + " мм\n" +
+                        "Максимальная высота процессорного кулера: " + compCase.CoolingMaxHeight + " мм\n" +
                         "Кол-во 2.5\" слотов:  " + compCase.NumberOfTwoAndHalfSlots + "\n" +
                         "Кол-во 3.5\" слотов:  " + compCase.NumberOfThreeAndHalfSlots + "\n" +
                         "Кол-во горизонтальных слотов расширения:  " + compCase.NumberOfHorizonExpansionSlots + "\n";
                         break;
-                    }   
+                    }
             } 
         }
 
@@ -209,6 +273,10 @@ namespace Prog_Kursovaya_sem3
         private void button_InfoYes_Click(object sender, EventArgs e)
         {
             DialogResult = DialogResult.Yes;
+            this.Close();
+        }
+        private void button_InfoExit_Click(object sender, EventArgs e)
+        {
             this.Close();
         }
     }
