@@ -32,7 +32,8 @@ namespace Prog_Kursovaya_sem3
         RAM assemblingRAM;
         Videocard assemblingVideocard;
         PowerSupplyUnit assemblingPSU;
-        HardDrive assemblingHDD;
+        HardDrive assemblingTwoAndHalfHDD;
+        HardDrive assemblingThreeAndHalfHDD;
         SolidStateDrive assemblingSSD;
         Cooling assemblingCooling;
         CompCase assemblingCompCase;
@@ -344,6 +345,33 @@ namespace Prog_Kursovaya_sem3
                 checkBox_AssemblingCoolingEnabled.Enabled = false;
                 checkBox_AssemblingCoolingEnabled.Checked = false;
 
+                //SSD
+                label_AssemblingSSDName.Text = "не задано";
+                button_AssemblingSSDInfo.Enabled = false;
+                checkBox_AssemblingSSDEnabled.Enabled = false;
+                checkBox_AssemblingSSDEnabled.Checked = false;
+                numericUpDown_InstalledSSD.Value = 0;
+                numericUpDown_InstalledSSD.Minimum = 0;
+                numericUpDown_InstalledSSD.Enabled = false;
+
+                //2.5" HDD
+                label_AssemblingTwoAndHalfHDDName.Text = "не задано";
+                button_AssemblingTwoAndHalfHDDInfo.Enabled = false;
+                checkBox_AssemblingTwoAndHalfHDDEnabled.Enabled = false;
+                checkBox_AssemblingTwoAndHalfHDDEnabled.Checked = false;
+                numericUpDown_InstalledTwoAndHalfHDD.Value = 0;
+                numericUpDown_InstalledTwoAndHalfHDD.Minimum = 0;
+                numericUpDown_InstalledTwoAndHalfHDD.Enabled = false;
+
+                //3.5" HDD
+                label_AssemblingThreeAndHalfHDDName.Text = "не задано";
+                button_AssemblingThreeAndHalfHDDInfo.Enabled = false;
+                checkBox_AssemblingThreeAndHalfHDDEnabled.Enabled = false;
+                checkBox_AssemblingThreeAndHalfHDDEnabled.Checked = false;
+                numericUpDown_InstalledThreeAndHalfHDD.Value = 0;
+                numericUpDown_InstalledThreeAndHalfHDD.Minimum = 0;
+                numericUpDown_InstalledThreeAndHalfHDD.Enabled = false;
+
                 //Computer case
                 label_AssemblingCompCaseName.Text = "не задано";
                 button_AssemblingCompCaseInfo.Enabled = false;
@@ -494,7 +522,7 @@ namespace Prog_Kursovaya_sem3
             {
                 var hardDriveInfo = new Form_Info(hardDrives[e.RowIndex], true);
                 if (hardDriveInfo.ShowDialog() == DialogResult.Yes)
-                    MainMenu_AddHardDriveToAssembling();
+                    MainMenu_AddHardDriveToAssembling(hardDrives[e.RowIndex]);
 
             }
         }
@@ -503,22 +531,42 @@ namespace Prog_Kursovaya_sem3
             if (MessageBox.Show("Вы точно хотите добавить жесткий диск:\n" +
                 dataGridView_HardDrive.SelectedRows[0].Cells[0].Value +
                 "\nк сборке?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                MainMenu_AddHardDriveToAssembling();
+                MainMenu_AddHardDriveToAssembling(hardDrives[dataGridView_HardDrive.SelectedCells[0].RowIndex]);
         }
-        private void MainMenu_AddHardDriveToAssembling()
+        private void MainMenu_AddHardDriveToAssembling(HardDrive inputObject)
         {
-            MessageBox.Show("Добавили элемент к сборке");
+            if (inputObject.FormFactor == "3.5\"")
+            {
+                assemblingThreeAndHalfHDD = new HardDrive(inputObject);
+                label_AssemblingThreeAndHalfHDDName.Text = assemblingThreeAndHalfHDD.Name;
+                button_AssemblingThreeAndHalfHDDInfo.Enabled = true;
+                checkBox_AssemblingThreeAndHalfHDDEnabled.Enabled = true;
+                checkBox_AssemblingThreeAndHalfHDDEnabled.Checked = true;
+                numericUpDown_InstalledThreeAndHalfHDD.Enabled = true;
+                numericUpDown_InstalledThreeAndHalfHDD.Value = 1;
+                numericUpDown_InstalledThreeAndHalfHDD.Minimum = 1;
+            }
+            else
+            {
+                assemblingTwoAndHalfHDD = new HardDrive(inputObject);
+                label_AssemblingTwoAndHalfHDDName.Text = assemblingTwoAndHalfHDD.Name;
+                button_AssemblingTwoAndHalfHDDInfo.Enabled = true;
+                checkBox_AssemblingTwoAndHalfHDDEnabled.Enabled = true;
+                checkBox_AssemblingTwoAndHalfHDDEnabled.Checked = true;
+                numericUpDown_InstalledTwoAndHalfHDD.Enabled = true;
+                numericUpDown_InstalledTwoAndHalfHDD.Value = 1;
+                numericUpDown_InstalledTwoAndHalfHDD.Minimum = 1;
+            }
         }
 
-        //Solid state drive
+        //Solid state drive*
         private void dataGridView_SolidStateDrive_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             if (e.ColumnIndex >= 0 && e.RowIndex >= 0)
             {
                 var solidStateDriveInfo = new Form_Info(solidStateDrives[e.RowIndex], true);
                 if (solidStateDriveInfo.ShowDialog() == DialogResult.Yes)
-                    MainMenu_AddSolidStateDriveToAssembling();
-
+                    MainMenu_AddSolidStateDriveToAssembling(solidStateDrives[e.RowIndex]);
             }
         }
         private void button_SolidStateDriveAddToAssembling_Click(object sender, EventArgs e)
@@ -526,11 +574,18 @@ namespace Prog_Kursovaya_sem3
             if (MessageBox.Show("Вы точно хотите добавить твердотельный накопитель:\n" +
                 dataGridView_SolidStateDrive.SelectedRows[0].Cells[0].Value +
                 "\nк сборке?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                MainMenu_AddSolidStateDriveToAssembling();
+                MainMenu_AddSolidStateDriveToAssembling(solidStateDrives[dataGridView_SolidStateDrive.SelectedCells[0].RowIndex]);
         }
-        private void MainMenu_AddSolidStateDriveToAssembling()
+        private void MainMenu_AddSolidStateDriveToAssembling(SolidStateDrive inputObject)
         {
-            MessageBox.Show("Добавили элемент к сборке");
+            assemblingSSD = new SolidStateDrive(inputObject);
+            label_AssemblingSSDName.Text = assemblingSSD.Name;
+            button_AssemblingSSDInfo.Enabled = true;
+            checkBox_AssemblingSSDEnabled.Enabled = true;
+            checkBox_AssemblingSSDEnabled.Checked = true;
+            numericUpDown_InstalledSSD.Enabled = true;
+            numericUpDown_InstalledSSD.Value = 1;
+            numericUpDown_InstalledSSD.Minimum = 1;
         }
 
         //Cooling*
@@ -611,6 +666,25 @@ namespace Prog_Kursovaya_sem3
             var powerSupplyUnitInfo = new Form_Info(assemblingPSU, false);
             powerSupplyUnitInfo.ShowDialog();
         }
+
+
+        private void button_AssemblingSSDInfo_Click(object sender, EventArgs e)
+        {
+            var solidStateDriveInfo = new Form_Info(assemblingSSD, false);
+            solidStateDriveInfo.ShowDialog();
+        }
+        private void button_AssemblingTwoAndHalfHDDInfo_Click(object sender, EventArgs e)
+        {
+            var hardDriveInfo = new Form_Info(assemblingTwoAndHalfHDD, false);
+            hardDriveInfo.ShowDialog();
+        }
+        private void button_AssemblingThreeAndHalfHDDInfo_Click(object sender, EventArgs e)
+        {
+            var hardDriveInfo = new Form_Info(assemblingThreeAndHalfHDD, false);
+            hardDriveInfo.ShowDialog();
+        }
+
+
         private void button_AssemblingCoolingInfo_Click(object sender, EventArgs e)
         {
             var coolingInfo = new Form_Info(assemblingCooling, false);
@@ -629,6 +703,273 @@ namespace Prog_Kursovaya_sem3
 
         }
 
-        
+        private void Assembling()
+        {
+
+            if (checkBox_AssemblingProcessorEnabled.Checked == true)
+            {
+                if (checkBox_AssemblingMotherboardEnabled.Checked == true)
+                {
+                    if (assemblingProcessor.SocketType != assemblingMotherboard.SocketType)
+                        MessageBox.Show("НЕсовпадает тип сокета!");
+                    if(!assemblingProcessor.SupportedChipsetsArray.Contains(assemblingMotherboard.ChipsetType))
+                        Console.Write("P-M");
+                    if (assemblingProcessor.MemoryType != assemblingMotherboard.RamType)
+                        Console.Write("P-M");
+                    if ((assemblingProcessor.MaxRAMFrequency < assemblingMotherboard.RamAvailableFrequenciesArray[0]) ||
+                        (assemblingProcessor.MinRAMFrequency > assemblingMotherboard.RamAvailableFrequenciesArray[assemblingMotherboard.RamAvailableFrequenciesArray.Length - 1]))
+                        Console.Write("P-M");
+                }
+
+                if (checkBox_AssemblingRAMEnabled.Checked == true)
+                {
+                    if (assemblingProcessor.MemoryType != assemblingRAM.MemoryType)
+                        Console.Write("P-R");
+                    if (assemblingProcessor.MaxRamCapacityGb < assemblingRAM.MemoryCapacity*numericUpDown_InstalledRAMs.Value)
+                        Console.Write("P-R");
+                }
+
+                if (checkBox_AssemblingCoolingEnabled.Checked == true)
+                {
+                    if (assemblingProcessor.EnergyConsumption > assemblingCooling.DissipationPower)
+                        Console.Write("P-C");
+                }
+            }
+
+            if (checkBox_AssemblingMotherboardEnabled.Checked == true)
+            {
+                
+                if (checkBox_AssemblingRAMEnabled.Checked == true)
+                {
+                    if (assemblingMotherboard.RamType != assemblingRAM.MemoryType)
+                        Console.Write("ОШИБКА");
+
+                    if ((assemblingMotherboard.RamAvailableFrequenciesArray[assemblingMotherboard.RamAvailableFrequenciesArray.Length - 1] < assemblingRAM.AvailableFrequenciesArray[0]) || 
+                        (assemblingMotherboard.RamAvailableFrequenciesArray[0] > assemblingRAM.AvailableFrequenciesArray[assemblingRAM.AvailableFrequenciesArray.Length - 1]))
+                        Console.Write("ОШИБКА");
+
+                    if (assemblingMotherboard.RamMaxCapacity < assemblingRAM.MemoryCapacity * numericUpDown_InstalledRAMs.Value)
+                        Console.Write("ОШИБКА");
+
+                    if (assemblingMotherboard.NumberOfRAMSlots < numericUpDown_InstalledRAMs.Value)
+                        Console.Write("ОШИБКА");
+                }
+
+                if (checkBox_AssemblingVideocardEnabled.Checked == true)
+                {
+                    if (assemblingMotherboard.NumberOfPCIESlots == 0)
+                        Console.Write("ОШИБКА");
+                }
+
+                if (checkBox_AssemblingPSUEnabled.Checked == true)
+                {
+                    if ((assemblingMotherboard.ProcessorSupplyConnectorsType == "4 pin") &&
+                        (assemblingPSU.ProcessorSupplyConnectorsType == "1x8 pin"))
+                        Console.Write("ОШИБКА");
+
+                    if ((assemblingMotherboard.ProcessorSupplyConnectorsType == "4+4 pin") &&
+                        ((assemblingPSU.ProcessorSupplyConnectorsType == "1x4 pin") ||
+                        (assemblingPSU.ProcessorSupplyConnectorsType == "1x8 pin")))
+                        Console.Write("ОШИБКА");
+
+                    if ((assemblingMotherboard.ProcessorSupplyConnectorsType == "8 pin") &&
+                        (assemblingPSU.ProcessorSupplyConnectorsType == "1x4 pin"))
+                        Console.Write("ОШИБКА");
+
+                    if ((assemblingMotherboard.ProcessorSupplyConnectorsType == "4+8 pin") &&
+                        ((assemblingPSU.ProcessorSupplyConnectorsType == "1x4 pin") ||
+                        (assemblingPSU.ProcessorSupplyConnectorsType == "1x(4+4) pin") ||
+                        (assemblingPSU.ProcessorSupplyConnectorsType == "1x8 pin")))
+                        Console.Write("ОШИБКА");
+
+                    if ((assemblingMotherboard.ProcessorSupplyConnectorsType == "8+8 pin") &&
+                       ((assemblingPSU.ProcessorSupplyConnectorsType == "1x4 pin") ||
+                       (assemblingPSU.ProcessorSupplyConnectorsType == "1x(4+4) pin") ||
+                       (assemblingPSU.ProcessorSupplyConnectorsType == "1x8 pin")))
+                        Console.Write("ОШИБКА");
+                }
+
+                //Checking the drives
+                {
+                    int numberOfSATAOccupiedPorts = 0;
+                    if (checkBox_AssemblingThreeAndHalfHDDEnabled.Checked == true)
+                        numberOfSATAOccupiedPorts += (int)numericUpDown_InstalledThreeAndHalfHDD.Value;
+
+                    if (checkBox_AssemblingTwoAndHalfHDDEnabled.Checked == true)
+                        numberOfSATAOccupiedPorts += (int)numericUpDown_InstalledTwoAndHalfHDD.Value;
+
+                    if (checkBox_AssemblingSSDEnabled.Checked == true)
+                        numberOfSATAOccupiedPorts += (int)numericUpDown_InstalledSSD.Value;
+
+                    if (assemblingMotherboard.NumberOfSATASlots < numberOfSATAOccupiedPorts)
+                        Console.Write("Ошибка");
+                }
+
+                if (checkBox_AssemblingCoolingEnabled.Checked == true)
+                {
+                    if ((assemblingCooling.ConnectorType == "3 pin") && (assemblingMotherboard.NumberOfThreePinSlotsForCooling == 0))
+                        Console.Write("ОШИБКА");
+                    if ((assemblingCooling.ConnectorType == "4 pin") && (assemblingMotherboard.NumberOfFourPinSlotsForCooling == 0))
+                        Console.Write("ОШИБКА");
+                }
+
+                if (checkBox_AssemblingCompCaseEnabled.Checked == true)
+                {
+                    if (!assemblingCompCase.MotherboardsFormFactorArray.Contains(assemblingMotherboard.FormFactor))
+                        Console.Write("ОШИБКА");
+                }
+            }
+
+            if (checkBox_AssemblingVideocardEnabled.Checked == true)
+            {
+                if (checkBox_AssemblingPSUEnabled.Checked == true)
+                {
+                    if ((assemblingVideocard.SupplyConnectorsType == "6 pin") &&
+                         (assemblingPSU.VideocardSupplyConnectorsType == "none") ||
+                         (assemblingPSU.VideocardSupplyConnectorsType == "1x8 pin"))
+                        Console.Write("ОШИБКА");
+
+                    if ((assemblingVideocard.SupplyConnectorsType == "1x8 pin") &&
+                        ((assemblingPSU.VideocardSupplyConnectorsType == "none") ||
+                        (assemblingPSU.VideocardSupplyConnectorsType == "1x6 pin") ||
+                        (assemblingPSU.VideocardSupplyConnectorsType == "2x6 pin") ||
+                        (assemblingPSU.VideocardSupplyConnectorsType == "3x6 pin")))
+                        Console.Write("ОШИБКА");
+
+                    if ((assemblingVideocard.SupplyConnectorsType == "2x8 pin") &&
+                        ((assemblingPSU.VideocardSupplyConnectorsType == "none") ||
+                        (assemblingPSU.VideocardSupplyConnectorsType == "1x6 pin") ||
+                        (assemblingPSU.VideocardSupplyConnectorsType == "2x6 pin") ||
+                        (assemblingPSU.VideocardSupplyConnectorsType == "3x6 pin") ||
+                        (assemblingPSU.VideocardSupplyConnectorsType == "1x8 pin") || 
+                        (assemblingPSU.VideocardSupplyConnectorsType == "1x(6+2) pin")))
+                        Console.Write("ОШИБКА");
+
+                    if ((assemblingVideocard.SupplyConnectorsType == "3x8 pin") &&
+                        ((assemblingPSU.VideocardSupplyConnectorsType == "none") ||
+                        (assemblingPSU.VideocardSupplyConnectorsType == "1x6 pin") ||
+                        (assemblingPSU.VideocardSupplyConnectorsType == "2x6 pin") ||
+                        (assemblingPSU.VideocardSupplyConnectorsType == "3x6 pin") ||
+                        (assemblingPSU.VideocardSupplyConnectorsType == "1x8 pin") ||
+                        (assemblingPSU.VideocardSupplyConnectorsType == "1x(6+2) pin") ||
+                        (assemblingPSU.VideocardSupplyConnectorsType == "2x(6+2) pin")))
+                        Console.Write("ОШИБКА");
+
+                    if ((assemblingVideocard.SupplyConnectorsType == "1x(6+8) pin") &&
+                         ((assemblingPSU.VideocardSupplyConnectorsType == "none") ||
+                         (assemblingPSU.VideocardSupplyConnectorsType == "1x6 pin") ||
+                         (assemblingPSU.VideocardSupplyConnectorsType == "2x6 pin") ||
+                         (assemblingPSU.VideocardSupplyConnectorsType == "3x6 pin") ||
+                         (assemblingPSU.VideocardSupplyConnectorsType == "1x8 pin") ||
+                         (assemblingPSU.VideocardSupplyConnectorsType == "1x(6+2) pin")))
+                        Console.Write("ОШИБКА");
+
+                    if ((assemblingVideocard.SupplyConnectorsType == "2x(6+8) pin") &&
+                         ((assemblingPSU.VideocardSupplyConnectorsType == "none") ||
+                         (assemblingPSU.VideocardSupplyConnectorsType == "1x6 pin") ||
+                         (assemblingPSU.VideocardSupplyConnectorsType == "2x6 pin") ||
+                         (assemblingPSU.VideocardSupplyConnectorsType == "3x6 pin") ||
+                         (assemblingPSU.VideocardSupplyConnectorsType == "1x8 pin") ||
+                         (assemblingPSU.VideocardSupplyConnectorsType == "1x(6+2) pin") ||
+                          (assemblingPSU.VideocardSupplyConnectorsType == "2x(6+2) pin") ||
+                           (assemblingPSU.VideocardSupplyConnectorsType == "3x(6+2) pin")))
+                        Console.Write("ОШИБКА");
+                }
+
+                if (checkBox_AssemblingCompCaseEnabled.Checked == true)
+                {
+                    if (assemblingVideocard.Length > assemblingCompCase.VideocardMaxLength)
+                        Console.Write("ОШИБКА");
+
+                    if (assemblingVideocard.OccupiedExpansionSlots > assemblingCompCase.NumberOfHorizonExpansionSlots)
+                        Console.Write("ОШИБКА");
+                }
+            }
+
+            if (checkBox_AssemblingPSUEnabled.Checked == true)
+            {
+                if (checkBox_AssemblingCompCaseEnabled.Checked == true)
+                {
+                    if (!assemblingCompCase.PowerSupplyFormFactorArray.Contains(assemblingPSU.FormFactor))
+                        Console.Write("ОШИБКА");
+                }
+
+                //Checking the drives
+                {
+                    int numberOfSATAOccupiedPorts = 0;
+                    if (checkBox_AssemblingThreeAndHalfHDDEnabled.Checked == true)
+                        numberOfSATAOccupiedPorts += (int)numericUpDown_InstalledThreeAndHalfHDD.Value;
+
+                    if (checkBox_AssemblingTwoAndHalfHDDEnabled.Checked == true)
+                        numberOfSATAOccupiedPorts += (int)numericUpDown_InstalledTwoAndHalfHDD.Value;
+
+                    if (checkBox_AssemblingSSDEnabled.Checked == true)
+                        numberOfSATAOccupiedPorts += (int)numericUpDown_InstalledSSD.Value;
+
+                    if (assemblingPSU.NumberOfSATASlots < numberOfSATAOccupiedPorts)
+                        Console.Write("Ошибка");
+                }
+
+                //Checking the total capacity of system
+                {
+                    double systemTotalCapacity = 0;
+                    if (checkBox_AssemblingProcessorEnabled.Checked == true)
+                        systemTotalCapacity += assemblingProcessor.EnergyConsumption;
+
+                    if (checkBox_AssemblingRAMEnabled.Checked == true)
+                        systemTotalCapacity += (double)numericUpDown_InstalledRAMs.Value * 7;
+
+                    if (checkBox_AssemblingVideocardEnabled.Checked == true)
+                        systemTotalCapacity += assemblingVideocard.EnergyConsumption;
+
+                    if (checkBox_AssemblingThreeAndHalfHDDEnabled.Checked == true)
+                        systemTotalCapacity += assemblingThreeAndHalfHDD.EnergyConsumption * (double)numericUpDown_InstalledThreeAndHalfHDD.Value;
+
+                    if (checkBox_AssemblingTwoAndHalfHDDEnabled.Checked == true)
+                        systemTotalCapacity += assemblingTwoAndHalfHDD.EnergyConsumption * (double)numericUpDown_InstalledTwoAndHalfHDD.Value;
+
+                    if (checkBox_AssemblingSSDEnabled.Checked == true)
+                        systemTotalCapacity += assemblingSSD.EnergyConsumptionWt * (double)numericUpDown_InstalledSSD.Value;
+
+                    if (checkBox_AssemblingCoolingEnabled.Checked == true)
+                        systemTotalCapacity += 5;
+
+                    if (assemblingPSU.TotalCapacity < systemTotalCapacity*1.2)
+                        Console.Write("Ошибка");
+                }
+            }
+
+            if (checkBox_AssemblingCoolingEnabled.Checked == true)
+            {
+                if (checkBox_AssemblingCompCaseEnabled.Checked == true)
+                {
+                    if (assemblingCooling.Height > assemblingCompCase.CoolingMaxHeight)
+                        Console.Write("ОШИБКА");
+                }
+            }
+
+            if (checkBox_AssemblingCompCaseEnabled.Checked == true)
+            {
+                if (checkBox_AssemblingThreeAndHalfHDDEnabled.Checked == true)
+                {
+                    if (assemblingCompCase.NumberOfThreeAndHalfSlots < numericUpDown_InstalledThreeAndHalfHDD.Value)
+                        Console.Write("ОШИБКА");
+                }
+
+                //Checking the 2.5" slots
+                {
+                    int numberOfOccupiedTwoAndHalfSlots = 0;
+                    if (checkBox_AssemblingTwoAndHalfHDDEnabled.Checked == true)
+                        numberOfOccupiedTwoAndHalfSlots += (int)numericUpDown_InstalledTwoAndHalfHDD.Value;
+
+                    if (checkBox_AssemblingSSDEnabled.Checked == true)
+                        numberOfOccupiedTwoAndHalfSlots += (int)numericUpDown_InstalledSSD.Value;
+
+                    if (assemblingCompCase.NumberOfTwoAndHalfSlots < numberOfOccupiedTwoAndHalfSlots)
+                        Console.Write("ОШИБКА");
+                }
+                
+            }
+        }
     }
 }

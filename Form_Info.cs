@@ -129,6 +129,7 @@ namespace Prog_Kursovaya_sem3
                         richTextBox_Info.Text =
                         "Наименование:  " + processor.Name + "\n" +
                         "Тип сокета:  " + processor.SocketType + "\n" +
+                        "Список поддерживаемых чипсетов:  " + processor.SupportedChipsetsString + "\n" +
                         "Кол-во ядер:  " + processor.NumberOfCores + "\n" +
                         "Кол-во потоков:  " + processor.NumberOfThreads + "\n" +
                         "Базовая частота:  " + processor.BaseFrequency + " ГГц\n" +

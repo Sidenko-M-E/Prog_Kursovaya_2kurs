@@ -4,6 +4,7 @@
     {
         private string name;
         private string socketType;
+        private string[] supportedChipsets;
         private int numberOfCores;
         private int numberOfThreads;
         private double baseFrequency;
@@ -34,6 +35,50 @@
             set
             {
                 socketType = new string(value.ToCharArray());
+            }
+        }
+        public string SupportedChipsetsString
+        {
+            get
+            {
+                string returnValue = "";
+                for (int i = 0; i < supportedChipsets.Length; i++)
+                {
+                    if (i == supportedChipsets.Length - 1)
+                        returnValue += supportedChipsets[i];
+                    else
+                        returnValue += supportedChipsets[i] + ',';
+                }
+                return (returnValue);
+            }
+            set
+            {
+                if (value.IndexOf(',') == (-1))
+                {
+                    supportedChipsets = new string[1];
+                    supportedChipsets[0] = new string(value.ToCharArray());
+                }
+
+                else
+                {
+                    supportedChipsets = value.Split(',');
+                }
+            }
+        }
+        public string[] SupportedChipsetsArray
+        {
+            get
+            {
+                string[] returnArray = new string[supportedChipsets.Length];
+                for (int i = 0; i < supportedChipsets.Length; i++)
+                    returnArray[i] = new string(supportedChipsets[i].ToCharArray());
+                return (returnArray);
+            }
+            set
+            {
+                supportedChipsets = new string[value.Length];
+                for (int i = 0; i < value.Length; i++)
+                    supportedChipsets[i] = new string(value[i].ToCharArray());
             }
         }
         public int NumberOfCores
@@ -149,20 +194,22 @@
         {
             Name = inputSubStrings[0];
             SocketType = inputSubStrings[1];
-            NumberOfCores = int.Parse(inputSubStrings[2]);
-            BaseFrequency = double.Parse(inputSubStrings[3]);
-            NumberOfThreads = int.Parse(inputSubStrings[4]);
-            Techprocess = int.Parse(inputSubStrings[5]);
-            MemoryType = inputSubStrings[6];
-            MaxRamCapacityGb = int.Parse(inputSubStrings[7]);
-            MinRAMFrequency = int.Parse(inputSubStrings[8]);
-            MaxRAMFrequency = int.Parse(inputSubStrings[9]);
-            EnergyConsumption = int.Parse(inputSubStrings[10]);
+            SupportedChipsetsString = inputSubStrings[2];
+            NumberOfCores = int.Parse(inputSubStrings[3]);
+            BaseFrequency = double.Parse(inputSubStrings[4]);
+            NumberOfThreads = int.Parse(inputSubStrings[5]);
+            Techprocess = int.Parse(inputSubStrings[6]);
+            MemoryType = inputSubStrings[7];
+            MaxRamCapacityGb = int.Parse(inputSubStrings[8]);
+            MinRAMFrequency = int.Parse(inputSubStrings[9]);
+            MaxRAMFrequency = int.Parse(inputSubStrings[10]);
+            EnergyConsumption = int.Parse(inputSubStrings[11]);
         }
         public Processor(Processor inputObject)
         {
             Name = inputObject.Name;
             SocketType = inputObject.SocketType;
+            SupportedChipsetsArray = inputObject.SupportedChipsetsArray;
             NumberOfCores = inputObject.NumberOfCores;
             BaseFrequency = inputObject.BaseFrequency;
             NumberOfThreads = inputObject.NumberOfThreads;

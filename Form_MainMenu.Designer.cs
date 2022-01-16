@@ -101,10 +101,6 @@ namespace Prog_Kursovaya_sem3
             this.button_AssemblingCoolingInfo = new System.Windows.Forms.Button();
             this.label_AssemblingCoolingName = new System.Windows.Forms.Label();
             this.checkBox_AssemblingCoolingEnabled = new System.Windows.Forms.CheckBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.groupBox_Motherboard = new System.Windows.Forms.GroupBox();
             this.button_AssemblingMotherboardInfo = new System.Windows.Forms.Button();
             this.label_AssemblingMotherboardName = new System.Windows.Forms.Label();
@@ -121,10 +117,6 @@ namespace Prog_Kursovaya_sem3
             this.button_AssemblingCompCaseInfo = new System.Windows.Forms.Button();
             this.label_AssemblingCompCaseName = new System.Windows.Forms.Label();
             this.checkBox_AssemblingCompCaseEnabled = new System.Windows.Forms.CheckBox();
-            this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.button7 = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
             this.groupBox_RAM = new System.Windows.Forms.GroupBox();
             this.label_RAMName = new System.Windows.Forms.Label();
             this.label_RAMInstalled = new System.Windows.Forms.Label();
@@ -132,6 +124,32 @@ namespace Prog_Kursovaya_sem3
             this.button_AssemblingRAMInfo = new System.Windows.Forms.Button();
             this.label_AssemblingRAMName = new System.Windows.Forms.Label();
             this.checkBox_AssemblingRAMEnabled = new System.Windows.Forms.CheckBox();
+            this.groupBox_TwoAndHalfHDD = new System.Windows.Forms.GroupBox();
+            this.label_TwoAndHalfHDDName = new System.Windows.Forms.Label();
+            this.label_TwoAndHalfHDDInstalled = new System.Windows.Forms.Label();
+            this.numericUpDown_InstalledTwoAndHalfHDD = new System.Windows.Forms.NumericUpDown();
+            this.button_AssemblingTwoAndHalfHDDInfo = new System.Windows.Forms.Button();
+            this.label_AssemblingTwoAndHalfHDDName = new System.Windows.Forms.Label();
+            this.checkBox_AssemblingTwoAndHalfHDDEnabled = new System.Windows.Forms.CheckBox();
+            this.groupBox_ThreeAndHalfHDD = new System.Windows.Forms.GroupBox();
+            this.label_ThreeAndHalfHDDName = new System.Windows.Forms.Label();
+            this.label_ThreeAndHalfHDDInstalled = new System.Windows.Forms.Label();
+            this.numericUpDown_InstalledThreeAndHalfHDD = new System.Windows.Forms.NumericUpDown();
+            this.button_AssemblingThreeAndHalfHDDInfo = new System.Windows.Forms.Button();
+            this.label_AssemblingThreeAndHalfHDDName = new System.Windows.Forms.Label();
+            this.checkBox_AssemblingThreeAndHalfHDDEnabled = new System.Windows.Forms.CheckBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label_SSDName = new System.Windows.Forms.Label();
+            this.label_SSDInstalled = new System.Windows.Forms.Label();
+            this.numericUpDown_InstalledSSD = new System.Windows.Forms.NumericUpDown();
+            this.button_AssemblingSSDInfo = new System.Windows.Forms.Button();
+            this.label_AssemblingSSDName = new System.Windows.Forms.Label();
+            this.checkBox_AssemblingSSDEnabled = new System.Windows.Forms.CheckBox();
+            this.tabControl2 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage_CompCase.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_CompCase)).BeginInit();
             this.tabPage_PSU.SuspendLayout();
@@ -153,14 +171,19 @@ namespace Prog_Kursovaya_sem3
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Cooling)).BeginInit();
             this.groupBox_Processor.SuspendLayout();
             this.groupBox_Cooling.SuspendLayout();
-            this.groupBox3.SuspendLayout();
             this.groupBox_Motherboard.SuspendLayout();
             this.groupBox_PSU.SuspendLayout();
             this.groupBox_Videocard.SuspendLayout();
             this.groupBox_CompCase.SuspendLayout();
-            this.groupBox8.SuspendLayout();
             this.groupBox_RAM.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_InstalledRAMs)).BeginInit();
+            this.groupBox_TwoAndHalfHDD.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_InstalledTwoAndHalfHDD)).BeginInit();
+            this.groupBox_ThreeAndHalfHDD.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_InstalledThreeAndHalfHDD)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_InstalledSSD)).BeginInit();
+            this.tabControl2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabPage_CompCase
@@ -170,7 +193,7 @@ namespace Prog_Kursovaya_sem3
             this.tabPage_CompCase.Location = new System.Drawing.Point(4, 40);
             this.tabPage_CompCase.Name = "tabPage_CompCase";
             this.tabPage_CompCase.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_CompCase.Size = new System.Drawing.Size(509, 436);
+            this.tabPage_CompCase.Size = new System.Drawing.Size(509, 552);
             this.tabPage_CompCase.TabIndex = 6;
             this.tabPage_CompCase.Text = "Корпус";
             this.tabPage_CompCase.UseVisualStyleBackColor = true;
@@ -236,7 +259,7 @@ namespace Prog_Kursovaya_sem3
             this.tabPage_PSU.Controls.Add(this.dataGridView_PowerSupplyUnit);
             this.tabPage_PSU.Location = new System.Drawing.Point(4, 40);
             this.tabPage_PSU.Name = "tabPage_PSU";
-            this.tabPage_PSU.Size = new System.Drawing.Size(509, 436);
+            this.tabPage_PSU.Size = new System.Drawing.Size(509, 552);
             this.tabPage_PSU.TabIndex = 5;
             this.tabPage_PSU.Text = "Блок питания";
             this.tabPage_PSU.UseVisualStyleBackColor = true;
@@ -302,7 +325,7 @@ namespace Prog_Kursovaya_sem3
             this.tabPage_RAM.Controls.Add(this.dataGridView_RAM);
             this.tabPage_RAM.Location = new System.Drawing.Point(4, 40);
             this.tabPage_RAM.Name = "tabPage_RAM";
-            this.tabPage_RAM.Size = new System.Drawing.Size(509, 436);
+            this.tabPage_RAM.Size = new System.Drawing.Size(509, 552);
             this.tabPage_RAM.TabIndex = 4;
             this.tabPage_RAM.Text = "Оперативная память";
             this.tabPage_RAM.UseVisualStyleBackColor = true;
@@ -368,7 +391,7 @@ namespace Prog_Kursovaya_sem3
             this.tabPage_Videocard.Controls.Add(this.dataGridView_Videocard);
             this.tabPage_Videocard.Location = new System.Drawing.Point(4, 40);
             this.tabPage_Videocard.Name = "tabPage_Videocard";
-            this.tabPage_Videocard.Size = new System.Drawing.Size(509, 436);
+            this.tabPage_Videocard.Size = new System.Drawing.Size(509, 552);
             this.tabPage_Videocard.TabIndex = 3;
             this.tabPage_Videocard.Text = "Видеокарта";
             this.tabPage_Videocard.UseVisualStyleBackColor = true;
@@ -435,7 +458,7 @@ namespace Prog_Kursovaya_sem3
             this.tabPage_Motherboard.Location = new System.Drawing.Point(4, 40);
             this.tabPage_Motherboard.Name = "tabPage_Motherboard";
             this.tabPage_Motherboard.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_Motherboard.Size = new System.Drawing.Size(509, 436);
+            this.tabPage_Motherboard.Size = new System.Drawing.Size(509, 552);
             this.tabPage_Motherboard.TabIndex = 1;
             this.tabPage_Motherboard.Text = "Материнская плата";
             this.tabPage_Motherboard.UseVisualStyleBackColor = true;
@@ -503,7 +526,7 @@ namespace Prog_Kursovaya_sem3
             this.tabPage_Processor.Name = "tabPage_Processor";
             this.tabPage_Processor.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage_Processor.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tabPage_Processor.Size = new System.Drawing.Size(509, 436);
+            this.tabPage_Processor.Size = new System.Drawing.Size(509, 552);
             this.tabPage_Processor.TabIndex = 0;
             this.tabPage_Processor.Text = "Процессор";
             this.tabPage_Processor.UseVisualStyleBackColor = true;
@@ -578,7 +601,7 @@ namespace Prog_Kursovaya_sem3
             this.tabControl1.Multiline = true;
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(517, 480);
+            this.tabControl1.Size = new System.Drawing.Size(517, 596);
             this.tabControl1.SizeMode = System.Windows.Forms.TabSizeMode.FillToRight;
             this.tabControl1.TabIndex = 1;
             // 
@@ -589,7 +612,7 @@ namespace Prog_Kursovaya_sem3
             this.tabPage_HardDrive.Location = new System.Drawing.Point(4, 40);
             this.tabPage_HardDrive.Name = "tabPage_HardDrive";
             this.tabPage_HardDrive.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_HardDrive.Size = new System.Drawing.Size(509, 436);
+            this.tabPage_HardDrive.Size = new System.Drawing.Size(509, 552);
             this.tabPage_HardDrive.TabIndex = 7;
             this.tabPage_HardDrive.Text = "Жесткий диск";
             this.tabPage_HardDrive.UseVisualStyleBackColor = true;
@@ -655,7 +678,7 @@ namespace Prog_Kursovaya_sem3
             this.tabPage_SSD.Controls.Add(this.dataGridView_SolidStateDrive);
             this.tabPage_SSD.Location = new System.Drawing.Point(4, 40);
             this.tabPage_SSD.Name = "tabPage_SSD";
-            this.tabPage_SSD.Size = new System.Drawing.Size(509, 436);
+            this.tabPage_SSD.Size = new System.Drawing.Size(509, 552);
             this.tabPage_SSD.TabIndex = 8;
             this.tabPage_SSD.Text = "SSD";
             this.tabPage_SSD.UseVisualStyleBackColor = true;
@@ -722,7 +745,7 @@ namespace Prog_Kursovaya_sem3
             this.tabPage_Cooling.Location = new System.Drawing.Point(4, 40);
             this.tabPage_Cooling.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage_Cooling.Name = "tabPage_Cooling";
-            this.tabPage_Cooling.Size = new System.Drawing.Size(509, 436);
+            this.tabPage_Cooling.Size = new System.Drawing.Size(509, 552);
             this.tabPage_Cooling.TabIndex = 9;
             this.tabPage_Cooling.Text = "Кулер";
             this.tabPage_Cooling.UseVisualStyleBackColor = true;
@@ -787,7 +810,7 @@ namespace Prog_Kursovaya_sem3
             this.groupBox_Processor.Controls.Add(this.button_AssemblingProcessorInfo);
             this.groupBox_Processor.Controls.Add(this.label_AssemblingProcessorName);
             this.groupBox_Processor.Controls.Add(this.checkBox_AssemblingProcessorEnabled);
-            this.groupBox_Processor.Location = new System.Drawing.Point(535, 24);
+            this.groupBox_Processor.Location = new System.Drawing.Point(759, 260);
             this.groupBox_Processor.Name = "groupBox_Processor";
             this.groupBox_Processor.Size = new System.Drawing.Size(172, 73);
             this.groupBox_Processor.TabIndex = 2;
@@ -828,7 +851,7 @@ namespace Prog_Kursovaya_sem3
             this.groupBox_Cooling.Controls.Add(this.button_AssemblingCoolingInfo);
             this.groupBox_Cooling.Controls.Add(this.label_AssemblingCoolingName);
             this.groupBox_Cooling.Controls.Add(this.checkBox_AssemblingCoolingEnabled);
-            this.groupBox_Cooling.Location = new System.Drawing.Point(535, 367);
+            this.groupBox_Cooling.Location = new System.Drawing.Point(535, 12);
             this.groupBox_Cooling.Name = "groupBox_Cooling";
             this.groupBox_Cooling.Size = new System.Drawing.Size(172, 73);
             this.groupBox_Cooling.TabIndex = 3;
@@ -863,51 +886,12 @@ namespace Prog_Kursovaya_sem3
             this.checkBox_AssemblingCoolingEnabled.TabIndex = 0;
             this.checkBox_AssemblingCoolingEnabled.UseVisualStyleBackColor = true;
             // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.button2);
-            this.groupBox3.Controls.Add(this.label2);
-            this.groupBox3.Controls.Add(this.checkBox2);
-            this.groupBox3.Location = new System.Drawing.Point(849, 86);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(158, 73);
-            this.groupBox3.TabIndex = 4;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Жесткий диск";
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(16, 40);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(128, 22);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Информация";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 20);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(101, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "AMD A8-9600 OEM";
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(137, 10);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(15, 14);
-            this.checkBox2.TabIndex = 0;
-            this.checkBox2.UseVisualStyleBackColor = true;
-            // 
             // groupBox_Motherboard
             // 
             this.groupBox_Motherboard.Controls.Add(this.button_AssemblingMotherboardInfo);
             this.groupBox_Motherboard.Controls.Add(this.label_AssemblingMotherboardName);
             this.groupBox_Motherboard.Controls.Add(this.checkBox_AssemblingMotherboardEnabled);
-            this.groupBox_Motherboard.Location = new System.Drawing.Point(535, 117);
+            this.groupBox_Motherboard.Location = new System.Drawing.Point(759, 339);
             this.groupBox_Motherboard.Name = "groupBox_Motherboard";
             this.groupBox_Motherboard.Size = new System.Drawing.Size(172, 73);
             this.groupBox_Motherboard.TabIndex = 5;
@@ -947,7 +931,7 @@ namespace Prog_Kursovaya_sem3
             this.groupBox_PSU.Controls.Add(this.button_AssemblingPSUInfo);
             this.groupBox_PSU.Controls.Add(this.label_AssemblingPSUName);
             this.groupBox_PSU.Controls.Add(this.checkBox_AssemblingPSUEnabled);
-            this.groupBox_PSU.Location = new System.Drawing.Point(750, 367);
+            this.groupBox_PSU.Location = new System.Drawing.Point(535, 91);
             this.groupBox_PSU.Name = "groupBox_PSU";
             this.groupBox_PSU.Size = new System.Drawing.Size(172, 73);
             this.groupBox_PSU.TabIndex = 6;
@@ -987,7 +971,7 @@ namespace Prog_Kursovaya_sem3
             this.groupBox_Videocard.Controls.Add(this.button_AssemblingVideocardInfo);
             this.groupBox_Videocard.Controls.Add(this.label_AssemblingVideocardName);
             this.groupBox_Videocard.Controls.Add(this.checkBox_AssemblingVideocardEnabled);
-            this.groupBox_Videocard.Location = new System.Drawing.Point(535, 459);
+            this.groupBox_Videocard.Location = new System.Drawing.Point(759, 537);
             this.groupBox_Videocard.Name = "groupBox_Videocard";
             this.groupBox_Videocard.Size = new System.Drawing.Size(243, 73);
             this.groupBox_Videocard.TabIndex = 7;
@@ -1027,7 +1011,7 @@ namespace Prog_Kursovaya_sem3
             this.groupBox_CompCase.Controls.Add(this.button_AssemblingCompCaseInfo);
             this.groupBox_CompCase.Controls.Add(this.label_AssemblingCompCaseName);
             this.groupBox_CompCase.Controls.Add(this.checkBox_AssemblingCompCaseEnabled);
-            this.groupBox_CompCase.Location = new System.Drawing.Point(791, 268);
+            this.groupBox_CompCase.Location = new System.Drawing.Point(535, 170);
             this.groupBox_CompCase.Name = "groupBox_CompCase";
             this.groupBox_CompCase.Size = new System.Drawing.Size(172, 73);
             this.groupBox_CompCase.TabIndex = 8;
@@ -1062,45 +1046,6 @@ namespace Prog_Kursovaya_sem3
             this.checkBox_AssemblingCompCaseEnabled.TabIndex = 0;
             this.checkBox_AssemblingCompCaseEnabled.UseVisualStyleBackColor = true;
             // 
-            // groupBox8
-            // 
-            this.groupBox8.Controls.Add(this.button7);
-            this.groupBox8.Controls.Add(this.label7);
-            this.groupBox8.Controls.Add(this.checkBox7);
-            this.groupBox8.Location = new System.Drawing.Point(849, 166);
-            this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(158, 73);
-            this.groupBox8.TabIndex = 9;
-            this.groupBox8.TabStop = false;
-            this.groupBox8.Text = "Твердотельный накопитель";
-            // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(16, 40);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(128, 22);
-            this.button7.TabIndex = 2;
-            this.button7.Text = "Информация";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(13, 20);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(101, 13);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "AMD A8-9600 OEM";
-            // 
-            // checkBox7
-            // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(137, 10);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(15, 14);
-            this.checkBox7.TabIndex = 0;
-            this.checkBox7.UseVisualStyleBackColor = true;
-            // 
             // groupBox_RAM
             // 
             this.groupBox_RAM.Controls.Add(this.label_RAMName);
@@ -1109,7 +1054,7 @@ namespace Prog_Kursovaya_sem3
             this.groupBox_RAM.Controls.Add(this.button_AssemblingRAMInfo);
             this.groupBox_RAM.Controls.Add(this.label_AssemblingRAMName);
             this.groupBox_RAM.Controls.Add(this.checkBox_AssemblingRAMEnabled);
-            this.groupBox_RAM.Location = new System.Drawing.Point(535, 201);
+            this.groupBox_RAM.Location = new System.Drawing.Point(759, 416);
             this.groupBox_RAM.Name = "groupBox_RAM";
             this.groupBox_RAM.Size = new System.Drawing.Size(209, 115);
             this.groupBox_RAM.TabIndex = 10;
@@ -1174,21 +1119,296 @@ namespace Prog_Kursovaya_sem3
             this.checkBox_AssemblingRAMEnabled.TabIndex = 0;
             this.checkBox_AssemblingRAMEnabled.UseVisualStyleBackColor = true;
             // 
+            // groupBox_TwoAndHalfHDD
+            // 
+            this.groupBox_TwoAndHalfHDD.Controls.Add(this.label_TwoAndHalfHDDName);
+            this.groupBox_TwoAndHalfHDD.Controls.Add(this.label_TwoAndHalfHDDInstalled);
+            this.groupBox_TwoAndHalfHDD.Controls.Add(this.numericUpDown_InstalledTwoAndHalfHDD);
+            this.groupBox_TwoAndHalfHDD.Controls.Add(this.button_AssemblingTwoAndHalfHDDInfo);
+            this.groupBox_TwoAndHalfHDD.Controls.Add(this.label_AssemblingTwoAndHalfHDDName);
+            this.groupBox_TwoAndHalfHDD.Controls.Add(this.checkBox_AssemblingTwoAndHalfHDDEnabled);
+            this.groupBox_TwoAndHalfHDD.Location = new System.Drawing.Point(535, 370);
+            this.groupBox_TwoAndHalfHDD.Name = "groupBox_TwoAndHalfHDD";
+            this.groupBox_TwoAndHalfHDD.Size = new System.Drawing.Size(209, 115);
+            this.groupBox_TwoAndHalfHDD.TabIndex = 11;
+            this.groupBox_TwoAndHalfHDD.TabStop = false;
+            this.groupBox_TwoAndHalfHDD.Text = "Жесткий диск 2.5\"";
+            // 
+            // label_TwoAndHalfHDDName
+            // 
+            this.label_TwoAndHalfHDDName.AutoSize = true;
+            this.label_TwoAndHalfHDDName.Location = new System.Drawing.Point(17, 27);
+            this.label_TwoAndHalfHDDName.Name = "label_TwoAndHalfHDDName";
+            this.label_TwoAndHalfHDDName.Size = new System.Drawing.Size(86, 13);
+            this.label_TwoAndHalfHDDName.TabIndex = 11;
+            this.label_TwoAndHalfHDDName.Text = "Наименование:";
+            // 
+            // label_TwoAndHalfHDDInstalled
+            // 
+            this.label_TwoAndHalfHDDInstalled.AutoSize = true;
+            this.label_TwoAndHalfHDDInstalled.Location = new System.Drawing.Point(17, 55);
+            this.label_TwoAndHalfHDDInstalled.Name = "label_TwoAndHalfHDDInstalled";
+            this.label_TwoAndHalfHDDInstalled.Size = new System.Drawing.Size(77, 13);
+            this.label_TwoAndHalfHDDInstalled.TabIndex = 4;
+            this.label_TwoAndHalfHDDInstalled.Text = "Установлено:";
+            // 
+            // numericUpDown_InstalledTwoAndHalfHDD
+            // 
+            this.numericUpDown_InstalledTwoAndHalfHDD.Location = new System.Drawing.Point(95, 53);
+            this.numericUpDown_InstalledTwoAndHalfHDD.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.numericUpDown_InstalledTwoAndHalfHDD.Name = "numericUpDown_InstalledTwoAndHalfHDD";
+            this.numericUpDown_InstalledTwoAndHalfHDD.Size = new System.Drawing.Size(49, 20);
+            this.numericUpDown_InstalledTwoAndHalfHDD.TabIndex = 3;
+            // 
+            // button_AssemblingTwoAndHalfHDDInfo
+            // 
+            this.button_AssemblingTwoAndHalfHDDInfo.Location = new System.Drawing.Point(16, 82);
+            this.button_AssemblingTwoAndHalfHDDInfo.Name = "button_AssemblingTwoAndHalfHDDInfo";
+            this.button_AssemblingTwoAndHalfHDDInfo.Size = new System.Drawing.Size(183, 22);
+            this.button_AssemblingTwoAndHalfHDDInfo.TabIndex = 2;
+            this.button_AssemblingTwoAndHalfHDDInfo.Text = "Информация";
+            this.button_AssemblingTwoAndHalfHDDInfo.UseVisualStyleBackColor = true;
+            this.button_AssemblingTwoAndHalfHDDInfo.Click += new System.EventHandler(this.button_AssemblingTwoAndHalfHDDInfo_Click);
+            // 
+            // label_AssemblingTwoAndHalfHDDName
+            // 
+            this.label_AssemblingTwoAndHalfHDDName.AutoSize = true;
+            this.label_AssemblingTwoAndHalfHDDName.Location = new System.Drawing.Point(102, 27);
+            this.label_AssemblingTwoAndHalfHDDName.Name = "label_AssemblingTwoAndHalfHDDName";
+            this.label_AssemblingTwoAndHalfHDDName.Size = new System.Drawing.Size(58, 13);
+            this.label_AssemblingTwoAndHalfHDDName.TabIndex = 1;
+            this.label_AssemblingTwoAndHalfHDDName.Text = "не задано";
+            // 
+            // checkBox_AssemblingTwoAndHalfHDDEnabled
+            // 
+            this.checkBox_AssemblingTwoAndHalfHDDEnabled.AutoSize = true;
+            this.checkBox_AssemblingTwoAndHalfHDDEnabled.Location = new System.Drawing.Point(114, 0);
+            this.checkBox_AssemblingTwoAndHalfHDDEnabled.Name = "checkBox_AssemblingTwoAndHalfHDDEnabled";
+            this.checkBox_AssemblingTwoAndHalfHDDEnabled.Size = new System.Drawing.Size(15, 14);
+            this.checkBox_AssemblingTwoAndHalfHDDEnabled.TabIndex = 0;
+            this.checkBox_AssemblingTwoAndHalfHDDEnabled.UseVisualStyleBackColor = true;
+            // 
+            // groupBox_ThreeAndHalfHDD
+            // 
+            this.groupBox_ThreeAndHalfHDD.Controls.Add(this.label_ThreeAndHalfHDDName);
+            this.groupBox_ThreeAndHalfHDD.Controls.Add(this.label_ThreeAndHalfHDDInstalled);
+            this.groupBox_ThreeAndHalfHDD.Controls.Add(this.numericUpDown_InstalledThreeAndHalfHDD);
+            this.groupBox_ThreeAndHalfHDD.Controls.Add(this.button_AssemblingThreeAndHalfHDDInfo);
+            this.groupBox_ThreeAndHalfHDD.Controls.Add(this.label_AssemblingThreeAndHalfHDDName);
+            this.groupBox_ThreeAndHalfHDD.Controls.Add(this.checkBox_AssemblingThreeAndHalfHDDEnabled);
+            this.groupBox_ThreeAndHalfHDD.Location = new System.Drawing.Point(535, 249);
+            this.groupBox_ThreeAndHalfHDD.Name = "groupBox_ThreeAndHalfHDD";
+            this.groupBox_ThreeAndHalfHDD.Size = new System.Drawing.Size(209, 115);
+            this.groupBox_ThreeAndHalfHDD.TabIndex = 12;
+            this.groupBox_ThreeAndHalfHDD.TabStop = false;
+            this.groupBox_ThreeAndHalfHDD.Text = "Жесткий диск 3.5\"";
+            // 
+            // label_ThreeAndHalfHDDName
+            // 
+            this.label_ThreeAndHalfHDDName.AutoSize = true;
+            this.label_ThreeAndHalfHDDName.Location = new System.Drawing.Point(17, 27);
+            this.label_ThreeAndHalfHDDName.Name = "label_ThreeAndHalfHDDName";
+            this.label_ThreeAndHalfHDDName.Size = new System.Drawing.Size(86, 13);
+            this.label_ThreeAndHalfHDDName.TabIndex = 11;
+            this.label_ThreeAndHalfHDDName.Text = "Наименование:";
+            // 
+            // label_ThreeAndHalfHDDInstalled
+            // 
+            this.label_ThreeAndHalfHDDInstalled.AutoSize = true;
+            this.label_ThreeAndHalfHDDInstalled.Location = new System.Drawing.Point(17, 55);
+            this.label_ThreeAndHalfHDDInstalled.Name = "label_ThreeAndHalfHDDInstalled";
+            this.label_ThreeAndHalfHDDInstalled.Size = new System.Drawing.Size(77, 13);
+            this.label_ThreeAndHalfHDDInstalled.TabIndex = 4;
+            this.label_ThreeAndHalfHDDInstalled.Text = "Установлено:";
+            // 
+            // numericUpDown_InstalledThreeAndHalfHDD
+            // 
+            this.numericUpDown_InstalledThreeAndHalfHDD.Location = new System.Drawing.Point(95, 53);
+            this.numericUpDown_InstalledThreeAndHalfHDD.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.numericUpDown_InstalledThreeAndHalfHDD.Name = "numericUpDown_InstalledThreeAndHalfHDD";
+            this.numericUpDown_InstalledThreeAndHalfHDD.Size = new System.Drawing.Size(49, 20);
+            this.numericUpDown_InstalledThreeAndHalfHDD.TabIndex = 3;
+            // 
+            // button_AssemblingThreeAndHalfHDDInfo
+            // 
+            this.button_AssemblingThreeAndHalfHDDInfo.Location = new System.Drawing.Point(16, 82);
+            this.button_AssemblingThreeAndHalfHDDInfo.Name = "button_AssemblingThreeAndHalfHDDInfo";
+            this.button_AssemblingThreeAndHalfHDDInfo.Size = new System.Drawing.Size(183, 22);
+            this.button_AssemblingThreeAndHalfHDDInfo.TabIndex = 2;
+            this.button_AssemblingThreeAndHalfHDDInfo.Text = "Информация";
+            this.button_AssemblingThreeAndHalfHDDInfo.UseVisualStyleBackColor = true;
+            this.button_AssemblingThreeAndHalfHDDInfo.Click += new System.EventHandler(this.button_AssemblingThreeAndHalfHDDInfo_Click);
+            // 
+            // label_AssemblingThreeAndHalfHDDName
+            // 
+            this.label_AssemblingThreeAndHalfHDDName.AutoSize = true;
+            this.label_AssemblingThreeAndHalfHDDName.Location = new System.Drawing.Point(102, 27);
+            this.label_AssemblingThreeAndHalfHDDName.Name = "label_AssemblingThreeAndHalfHDDName";
+            this.label_AssemblingThreeAndHalfHDDName.Size = new System.Drawing.Size(58, 13);
+            this.label_AssemblingThreeAndHalfHDDName.TabIndex = 1;
+            this.label_AssemblingThreeAndHalfHDDName.Text = "не задано";
+            // 
+            // checkBox_AssemblingThreeAndHalfHDDEnabled
+            // 
+            this.checkBox_AssemblingThreeAndHalfHDDEnabled.AutoSize = true;
+            this.checkBox_AssemblingThreeAndHalfHDDEnabled.Location = new System.Drawing.Point(114, 0);
+            this.checkBox_AssemblingThreeAndHalfHDDEnabled.Name = "checkBox_AssemblingThreeAndHalfHDDEnabled";
+            this.checkBox_AssemblingThreeAndHalfHDDEnabled.Size = new System.Drawing.Size(15, 14);
+            this.checkBox_AssemblingThreeAndHalfHDDEnabled.TabIndex = 0;
+            this.checkBox_AssemblingThreeAndHalfHDDEnabled.UseVisualStyleBackColor = true;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label_SSDName);
+            this.groupBox1.Controls.Add(this.label_SSDInstalled);
+            this.groupBox1.Controls.Add(this.numericUpDown_InstalledSSD);
+            this.groupBox1.Controls.Add(this.button_AssemblingSSDInfo);
+            this.groupBox1.Controls.Add(this.label_AssemblingSSDName);
+            this.groupBox1.Controls.Add(this.checkBox_AssemblingSSDEnabled);
+            this.groupBox1.Location = new System.Drawing.Point(535, 493);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(209, 115);
+            this.groupBox1.TabIndex = 13;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Твердотельный накопитель (SSD)";
+            // 
+            // label_SSDName
+            // 
+            this.label_SSDName.AutoSize = true;
+            this.label_SSDName.Location = new System.Drawing.Point(17, 27);
+            this.label_SSDName.Name = "label_SSDName";
+            this.label_SSDName.Size = new System.Drawing.Size(86, 13);
+            this.label_SSDName.TabIndex = 11;
+            this.label_SSDName.Text = "Наименование:";
+            // 
+            // label_SSDInstalled
+            // 
+            this.label_SSDInstalled.AutoSize = true;
+            this.label_SSDInstalled.Location = new System.Drawing.Point(17, 55);
+            this.label_SSDInstalled.Name = "label_SSDInstalled";
+            this.label_SSDInstalled.Size = new System.Drawing.Size(77, 13);
+            this.label_SSDInstalled.TabIndex = 4;
+            this.label_SSDInstalled.Text = "Установлено:";
+            // 
+            // numericUpDown_InstalledSSD
+            // 
+            this.numericUpDown_InstalledSSD.Location = new System.Drawing.Point(95, 53);
+            this.numericUpDown_InstalledSSD.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.numericUpDown_InstalledSSD.Name = "numericUpDown_InstalledSSD";
+            this.numericUpDown_InstalledSSD.Size = new System.Drawing.Size(49, 20);
+            this.numericUpDown_InstalledSSD.TabIndex = 3;
+            // 
+            // button_AssemblingSSDInfo
+            // 
+            this.button_AssemblingSSDInfo.Location = new System.Drawing.Point(16, 82);
+            this.button_AssemblingSSDInfo.Name = "button_AssemblingSSDInfo";
+            this.button_AssemblingSSDInfo.Size = new System.Drawing.Size(183, 22);
+            this.button_AssemblingSSDInfo.TabIndex = 2;
+            this.button_AssemblingSSDInfo.Text = "Информация";
+            this.button_AssemblingSSDInfo.UseVisualStyleBackColor = true;
+            this.button_AssemblingSSDInfo.Click += new System.EventHandler(this.button_AssemblingSSDInfo_Click);
+            // 
+            // label_AssemblingSSDName
+            // 
+            this.label_AssemblingSSDName.AutoSize = true;
+            this.label_AssemblingSSDName.Location = new System.Drawing.Point(102, 27);
+            this.label_AssemblingSSDName.Name = "label_AssemblingSSDName";
+            this.label_AssemblingSSDName.Size = new System.Drawing.Size(58, 13);
+            this.label_AssemblingSSDName.TabIndex = 1;
+            this.label_AssemblingSSDName.Text = "не задано";
+            // 
+            // checkBox_AssemblingSSDEnabled
+            // 
+            this.checkBox_AssemblingSSDEnabled.AutoSize = true;
+            this.checkBox_AssemblingSSDEnabled.Location = new System.Drawing.Point(188, 0);
+            this.checkBox_AssemblingSSDEnabled.Name = "checkBox_AssemblingSSDEnabled";
+            this.checkBox_AssemblingSSDEnabled.Size = new System.Drawing.Size(15, 14);
+            this.checkBox_AssemblingSSDEnabled.TabIndex = 0;
+            this.checkBox_AssemblingSSDEnabled.UseVisualStyleBackColor = true;
+            // 
+            // tabControl2
+            // 
+            this.tabControl2.Controls.Add(this.tabPage1);
+            this.tabControl2.Controls.Add(this.tabPage2);
+            this.tabControl2.Controls.Add(this.tabPage3);
+            this.tabControl2.Controls.Add(this.tabPage4);
+            this.tabControl2.Location = new System.Drawing.Point(732, 31);
+            this.tabControl2.Name = "tabControl2";
+            this.tabControl2.SelectedIndex = 0;
+            this.tabControl2.Size = new System.Drawing.Size(236, 194);
+            this.tabControl2.TabIndex = 14;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(228, 168);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "tabPage1";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(228, 168);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(228, 168);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "tabPage3";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(228, 168);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "tabPage4";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
             // Form_MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1042, 627);
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ClientSize = new System.Drawing.Size(1014, 621);
+            this.Controls.Add(this.tabControl2);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.groupBox_ThreeAndHalfHDD);
+            this.Controls.Add(this.groupBox_TwoAndHalfHDD);
             this.Controls.Add(this.groupBox_RAM);
-            this.Controls.Add(this.groupBox8);
             this.Controls.Add(this.groupBox_CompCase);
             this.Controls.Add(this.groupBox_Videocard);
             this.Controls.Add(this.groupBox_PSU);
             this.Controls.Add(this.groupBox_Motherboard);
-            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox_Cooling);
             this.Controls.Add(this.groupBox_Processor);
             this.Controls.Add(this.tabControl1);
+            this.MaximizeBox = false;
             this.Name = "Form_MainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Конструктор ПК";
@@ -1216,8 +1436,6 @@ namespace Prog_Kursovaya_sem3
             this.groupBox_Processor.PerformLayout();
             this.groupBox_Cooling.ResumeLayout(false);
             this.groupBox_Cooling.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
             this.groupBox_Motherboard.ResumeLayout(false);
             this.groupBox_Motherboard.PerformLayout();
             this.groupBox_PSU.ResumeLayout(false);
@@ -1226,11 +1444,19 @@ namespace Prog_Kursovaya_sem3
             this.groupBox_Videocard.PerformLayout();
             this.groupBox_CompCase.ResumeLayout(false);
             this.groupBox_CompCase.PerformLayout();
-            this.groupBox8.ResumeLayout(false);
-            this.groupBox8.PerformLayout();
             this.groupBox_RAM.ResumeLayout(false);
             this.groupBox_RAM.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_InstalledRAMs)).EndInit();
+            this.groupBox_TwoAndHalfHDD.ResumeLayout(false);
+            this.groupBox_TwoAndHalfHDD.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_InstalledTwoAndHalfHDD)).EndInit();
+            this.groupBox_ThreeAndHalfHDD.ResumeLayout(false);
+            this.groupBox_ThreeAndHalfHDD.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_InstalledThreeAndHalfHDD)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_InstalledSSD)).EndInit();
+            this.tabControl2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1290,10 +1516,6 @@ namespace Prog_Kursovaya_sem3
         private System.Windows.Forms.Button button_AssemblingCoolingInfo;
         private System.Windows.Forms.Label label_AssemblingCoolingName;
         private System.Windows.Forms.CheckBox checkBox_AssemblingCoolingEnabled;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.GroupBox groupBox_Motherboard;
         private System.Windows.Forms.Button button_AssemblingMotherboardInfo;
         private System.Windows.Forms.Label label_AssemblingMotherboardName;
@@ -1310,10 +1532,6 @@ namespace Prog_Kursovaya_sem3
         private System.Windows.Forms.Button button_AssemblingCompCaseInfo;
         private System.Windows.Forms.Label label_AssemblingCompCaseName;
         private System.Windows.Forms.CheckBox checkBox_AssemblingCompCaseEnabled;
-        private System.Windows.Forms.GroupBox groupBox8;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.CheckBox checkBox7;
         private System.Windows.Forms.GroupBox groupBox_RAM;
         private System.Windows.Forms.Button button_AssemblingRAMInfo;
         private System.Windows.Forms.Label label_AssemblingRAMName;
@@ -1321,6 +1539,32 @@ namespace Prog_Kursovaya_sem3
         private System.Windows.Forms.Label label_RAMInstalled;
         private System.Windows.Forms.NumericUpDown numericUpDown_InstalledRAMs;
         private System.Windows.Forms.Label label_RAMName;
+        private System.Windows.Forms.GroupBox groupBox_TwoAndHalfHDD;
+        private System.Windows.Forms.Label label_TwoAndHalfHDDName;
+        private System.Windows.Forms.Label label_TwoAndHalfHDDInstalled;
+        private System.Windows.Forms.NumericUpDown numericUpDown_InstalledTwoAndHalfHDD;
+        private System.Windows.Forms.Button button_AssemblingTwoAndHalfHDDInfo;
+        private System.Windows.Forms.Label label_AssemblingTwoAndHalfHDDName;
+        private System.Windows.Forms.CheckBox checkBox_AssemblingTwoAndHalfHDDEnabled;
+        private System.Windows.Forms.GroupBox groupBox_ThreeAndHalfHDD;
+        private System.Windows.Forms.Label label_ThreeAndHalfHDDName;
+        private System.Windows.Forms.Label label_ThreeAndHalfHDDInstalled;
+        private System.Windows.Forms.NumericUpDown numericUpDown_InstalledThreeAndHalfHDD;
+        private System.Windows.Forms.Button button_AssemblingThreeAndHalfHDDInfo;
+        private System.Windows.Forms.Label label_AssemblingThreeAndHalfHDDName;
+        private System.Windows.Forms.CheckBox checkBox_AssemblingThreeAndHalfHDDEnabled;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label_SSDName;
+        private System.Windows.Forms.Label label_SSDInstalled;
+        private System.Windows.Forms.NumericUpDown numericUpDown_InstalledSSD;
+        private System.Windows.Forms.Button button_AssemblingSSDInfo;
+        private System.Windows.Forms.Label label_AssemblingSSDName;
+        private System.Windows.Forms.CheckBox checkBox_AssemblingSSDEnabled;
+        private System.Windows.Forms.TabControl tabControl2;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.TabPage tabPage4;
     }
 }
 
