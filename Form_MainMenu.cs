@@ -705,88 +705,89 @@ namespace Prog_Kursovaya_sem3
 
         private void Assembling()
         {
+            richTextBox_AssemblingResults.Text = "Проблем нет";
+            string resultOfAssembling = "";
 
             if (checkBox_AssemblingProcessorEnabled.Checked == true)
             {
                 if (checkBox_AssemblingMotherboardEnabled.Checked == true)
                 {
                     if (assemblingProcessor.SocketType != assemblingMotherboard.SocketType)
-                        MessageBox.Show("НЕсовпадает тип сокета!");
+                        resultOfAssembling += "(*)Несовпадение типа сокета у материнской платы и процессора!!!\n";
                     if(!assemblingProcessor.SupportedChipsetsArray.Contains(assemblingMotherboard.ChipsetType))
-                        Console.Write("P-M");
+                        resultOfAssembling += "(*)Процессор не поддерживает чипсет материнской платы!!!\n";
                     if (assemblingProcessor.MemoryType != assemblingMotherboard.RamType)
-                        Console.Write("P-M");
+                        resultOfAssembling += "(*)Типы памяти процессора и материнской платы не совместимы!!!\n";
                     if ((assemblingProcessor.MaxRAMFrequency < assemblingMotherboard.RamAvailableFrequenciesArray[0]) ||
                         (assemblingProcessor.MinRAMFrequency > assemblingMotherboard.RamAvailableFrequenciesArray[assemblingMotherboard.RamAvailableFrequenciesArray.Length - 1]))
-                        Console.Write("P-M");
+                        resultOfAssembling += "(*)Процессор и материнская плата имеют непересекающиеся диапазоны поддерживаемых частот!!!\n";
                 }
 
                 if (checkBox_AssemblingRAMEnabled.Checked == true)
                 {
                     if (assemblingProcessor.MemoryType != assemblingRAM.MemoryType)
-                        Console.Write("P-R");
+                        resultOfAssembling += "(*)Тип памяти процессора и оперативной памяти не совместимы!!!\n";
                     if (assemblingProcessor.MaxRamCapacityGb < assemblingRAM.MemoryCapacity*numericUpDown_InstalledRAMs.Value)
-                        Console.Write("P-R");
+                        resultOfAssembling += "(*)Превышен лимит по объему оперативной памяти для процесссора!!!\n";
                 }
 
                 if (checkBox_AssemblingCoolingEnabled.Checked == true)
                 {
                     if (assemblingProcessor.EnergyConsumption > assemblingCooling.DissipationPower)
-                        Console.Write("P-C");
+                        resultOfAssembling += "(*)Кулер не справляется с охлаждением процессора!!!\n"; ;
                 }
             }
 
             if (checkBox_AssemblingMotherboardEnabled.Checked == true)
             {
-                
                 if (checkBox_AssemblingRAMEnabled.Checked == true)
                 {
                     if (assemblingMotherboard.RamType != assemblingRAM.MemoryType)
-                        Console.Write("ОШИБКА");
+                        resultOfAssembling += "(*)Типы памяти материнской платы и оперативной памяти не совместимы!!!\n";
 
                     if ((assemblingMotherboard.RamAvailableFrequenciesArray[assemblingMotherboard.RamAvailableFrequenciesArray.Length - 1] < assemblingRAM.AvailableFrequenciesArray[0]) || 
                         (assemblingMotherboard.RamAvailableFrequenciesArray[0] > assemblingRAM.AvailableFrequenciesArray[assemblingRAM.AvailableFrequenciesArray.Length - 1]))
-                        Console.Write("ОШИБКА");
+                        resultOfAssembling += "(*)Материнская плата и оперативная память имеют непересекающиеся диапазоны поддерживаемых частот!!!\n";
 
                     if (assemblingMotherboard.RamMaxCapacity < assemblingRAM.MemoryCapacity * numericUpDown_InstalledRAMs.Value)
-                        Console.Write("ОШИБКА");
+                        resultOfAssembling += "(*)Превышен лимит по объему оперативной памяти для материнской платы!!!\n";
 
                     if (assemblingMotherboard.NumberOfRAMSlots < numericUpDown_InstalledRAMs.Value)
-                        Console.Write("ОШИБКА");
+                        resultOfAssembling += "(*)У материнской платы недостаточно слотов для оперативной памяти!!!\n";
                 }
 
                 if (checkBox_AssemblingVideocardEnabled.Checked == true)
                 {
                     if (assemblingMotherboard.NumberOfPCIESlots == 0)
-                        Console.Write("ОШИБКА");
+                        resultOfAssembling += "(*)Данная материнская плата не поддерживает установку видеокарт!!!\n";
                 }
 
                 if (checkBox_AssemblingPSUEnabled.Checked == true)
                 {
                     if ((assemblingMotherboard.ProcessorSupplyConnectorsType == "4 pin") &&
                         (assemblingPSU.ProcessorSupplyConnectorsType == "1x8 pin"))
-                        Console.Write("ОШИБКА");
+                        resultOfAssembling += "(*)Блок питания не имеет разъемов для запитки процесора, устанавливаемого на данную материнскую плату!!!\n";
 
                     if ((assemblingMotherboard.ProcessorSupplyConnectorsType == "4+4 pin") &&
                         ((assemblingPSU.ProcessorSupplyConnectorsType == "1x4 pin") ||
                         (assemblingPSU.ProcessorSupplyConnectorsType == "1x8 pin")))
-                        Console.Write("ОШИБКА");
+                        resultOfAssembling += "(*)Блок питания не имеет разъемов для запитки процесора, устанавливаемого на данную материнскую плату!!!\n";
 
                     if ((assemblingMotherboard.ProcessorSupplyConnectorsType == "8 pin") &&
                         (assemblingPSU.ProcessorSupplyConnectorsType == "1x4 pin"))
-                        Console.Write("ОШИБКА");
+                        resultOfAssembling += "(*)Блок питания не имеет разъемов для запитки процесора, устанавливаемого на данную материнскую плату!!!\n";
 
                     if ((assemblingMotherboard.ProcessorSupplyConnectorsType == "4+8 pin") &&
                         ((assemblingPSU.ProcessorSupplyConnectorsType == "1x4 pin") ||
                         (assemblingPSU.ProcessorSupplyConnectorsType == "1x(4+4) pin") ||
                         (assemblingPSU.ProcessorSupplyConnectorsType == "1x8 pin")))
-                        Console.Write("ОШИБКА");
+                        resultOfAssembling += "(*)Блок питания не имеет разъемов для запитки процесора, устанавливаемого на данную материнскую плату!!!\n";
 
                     if ((assemblingMotherboard.ProcessorSupplyConnectorsType == "8+8 pin") &&
                        ((assemblingPSU.ProcessorSupplyConnectorsType == "1x4 pin") ||
                        (assemblingPSU.ProcessorSupplyConnectorsType == "1x(4+4) pin") ||
                        (assemblingPSU.ProcessorSupplyConnectorsType == "1x8 pin")))
-                        Console.Write("ОШИБКА");
+                        resultOfAssembling += "(*)Блок питания не имеет разъемов для запитки процесора, устанавливаемого на данную материнскую плату!!!\n";
                 }
 
                 //Checking the drives
@@ -802,21 +803,23 @@ namespace Prog_Kursovaya_sem3
                         numberOfSATAOccupiedPorts += (int)numericUpDown_InstalledSSD.Value;
 
                     if (assemblingMotherboard.NumberOfSATASlots < numberOfSATAOccupiedPorts)
-                        Console.Write("Ошибка");
+                        resultOfAssembling += "(*)У материнской платы недостаточно разъемов для подключения всех накопителей!!!\n";
                 }
 
                 if (checkBox_AssemblingCoolingEnabled.Checked == true)
                 {
-                    if ((assemblingCooling.ConnectorType == "3 pin") && (assemblingMotherboard.NumberOfThreePinSlotsForCooling == 0))
-                        Console.Write("ОШИБКА");
+                    if ((assemblingCooling.ConnectorType == "3 pin") &&
+                        (assemblingMotherboard.NumberOfThreePinSlotsForCooling == 0) &&
+                        (assemblingMotherboard.NumberOfFourPinSlotsForCooling == 0))
+                        resultOfAssembling += "(*)Материнская плата не имеет разъемов для подключения данного кулера!!!\n";
                     if ((assemblingCooling.ConnectorType == "4 pin") && (assemblingMotherboard.NumberOfFourPinSlotsForCooling == 0))
-                        Console.Write("ОШИБКА");
+                        resultOfAssembling += "(*)Материнская плата не имеет разъемов для подключения данного кулера!!!\n";
                 }
 
                 if (checkBox_AssemblingCompCaseEnabled.Checked == true)
                 {
                     if (!assemblingCompCase.MotherboardsFormFactorArray.Contains(assemblingMotherboard.FormFactor))
-                        Console.Write("ОШИБКА");
+                        resultOfAssembling += "(*)Данный корпус не поддерживает установку материнской платы данного форм-фактора!!!\n";
                 }
             }
 
@@ -827,14 +830,14 @@ namespace Prog_Kursovaya_sem3
                     if ((assemblingVideocard.SupplyConnectorsType == "6 pin") &&
                          (assemblingPSU.VideocardSupplyConnectorsType == "none") ||
                          (assemblingPSU.VideocardSupplyConnectorsType == "1x8 pin"))
-                        Console.Write("ОШИБКА");
+                        resultOfAssembling += "(*)Блок питания не имеет разъемов для запитки данной видеокарты!!!\n";
 
                     if ((assemblingVideocard.SupplyConnectorsType == "1x8 pin") &&
                         ((assemblingPSU.VideocardSupplyConnectorsType == "none") ||
                         (assemblingPSU.VideocardSupplyConnectorsType == "1x6 pin") ||
                         (assemblingPSU.VideocardSupplyConnectorsType == "2x6 pin") ||
                         (assemblingPSU.VideocardSupplyConnectorsType == "3x6 pin")))
-                        Console.Write("ОШИБКА");
+                        resultOfAssembling += "(*)Блок питания не имеет разъемов для запитки данной видеокарты!!!\n";
 
                     if ((assemblingVideocard.SupplyConnectorsType == "2x8 pin") &&
                         ((assemblingPSU.VideocardSupplyConnectorsType == "none") ||
@@ -843,7 +846,7 @@ namespace Prog_Kursovaya_sem3
                         (assemblingPSU.VideocardSupplyConnectorsType == "3x6 pin") ||
                         (assemblingPSU.VideocardSupplyConnectorsType == "1x8 pin") || 
                         (assemblingPSU.VideocardSupplyConnectorsType == "1x(6+2) pin")))
-                        Console.Write("ОШИБКА");
+                        resultOfAssembling += "(*)Блок питания не имеет разъемов для запитки данной видеокарты!!!\n";
 
                     if ((assemblingVideocard.SupplyConnectorsType == "3x8 pin") &&
                         ((assemblingPSU.VideocardSupplyConnectorsType == "none") ||
@@ -853,7 +856,7 @@ namespace Prog_Kursovaya_sem3
                         (assemblingPSU.VideocardSupplyConnectorsType == "1x8 pin") ||
                         (assemblingPSU.VideocardSupplyConnectorsType == "1x(6+2) pin") ||
                         (assemblingPSU.VideocardSupplyConnectorsType == "2x(6+2) pin")))
-                        Console.Write("ОШИБКА");
+                        resultOfAssembling += "(*)Блок питания не имеет разъемов для запитки данной видеокарты!!!\n";
 
                     if ((assemblingVideocard.SupplyConnectorsType == "1x(6+8) pin") &&
                          ((assemblingPSU.VideocardSupplyConnectorsType == "none") ||
@@ -862,7 +865,7 @@ namespace Prog_Kursovaya_sem3
                          (assemblingPSU.VideocardSupplyConnectorsType == "3x6 pin") ||
                          (assemblingPSU.VideocardSupplyConnectorsType == "1x8 pin") ||
                          (assemblingPSU.VideocardSupplyConnectorsType == "1x(6+2) pin")))
-                        Console.Write("ОШИБКА");
+                        resultOfAssembling += "(*)Блок питания не имеет разъемов для запитки данной видеокарты!!!\n";
 
                     if ((assemblingVideocard.SupplyConnectorsType == "2x(6+8) pin") &&
                          ((assemblingPSU.VideocardSupplyConnectorsType == "none") ||
@@ -873,16 +876,16 @@ namespace Prog_Kursovaya_sem3
                          (assemblingPSU.VideocardSupplyConnectorsType == "1x(6+2) pin") ||
                           (assemblingPSU.VideocardSupplyConnectorsType == "2x(6+2) pin") ||
                            (assemblingPSU.VideocardSupplyConnectorsType == "3x(6+2) pin")))
-                        Console.Write("ОШИБКА");
+                        resultOfAssembling += "(*)Блок питания не имеет разъемов для запитки данной видеокарты!!!\n";
                 }
 
                 if (checkBox_AssemblingCompCaseEnabled.Checked == true)
                 {
                     if (assemblingVideocard.Length > assemblingCompCase.VideocardMaxLength)
-                        Console.Write("ОШИБКА");
+                        resultOfAssembling += "(*)Данная видеокарта слишком длинная для данного корпуса!!!\n";
 
                     if (assemblingVideocard.OccupiedExpansionSlots > assemblingCompCase.NumberOfHorizonExpansionSlots)
-                        Console.Write("ОШИБКА");
+                        resultOfAssembling += "(*)У данного корпуса недостаточно горизонтальных слотов расширения для установки данной видеокарты!!!\n";
                 }
             }
 
@@ -891,7 +894,7 @@ namespace Prog_Kursovaya_sem3
                 if (checkBox_AssemblingCompCaseEnabled.Checked == true)
                 {
                     if (!assemblingCompCase.PowerSupplyFormFactorArray.Contains(assemblingPSU.FormFactor))
-                        Console.Write("ОШИБКА");
+                        resultOfAssembling += "(*)Данный корпус не поддерживает установку блока питания данного форм-фактора!!!\n";
                 }
 
                 //Checking the drives
@@ -907,7 +910,7 @@ namespace Prog_Kursovaya_sem3
                         numberOfSATAOccupiedPorts += (int)numericUpDown_InstalledSSD.Value;
 
                     if (assemblingPSU.NumberOfSATASlots < numberOfSATAOccupiedPorts)
-                        Console.Write("Ошибка");
+                        resultOfAssembling += "(*)У данного блока питания недостаточно слотов для подключения всех накопителей!!!\n";
                 }
 
                 //Checking the total capacity of system
@@ -935,7 +938,7 @@ namespace Prog_Kursovaya_sem3
                         systemTotalCapacity += 5;
 
                     if (assemblingPSU.TotalCapacity < systemTotalCapacity*1.2)
-                        Console.Write("Ошибка");
+                        resultOfAssembling += "(*)Данный блок питания не обладает достаточной мощностью!!!\n";
                 }
             }
 
@@ -944,7 +947,7 @@ namespace Prog_Kursovaya_sem3
                 if (checkBox_AssemblingCompCaseEnabled.Checked == true)
                 {
                     if (assemblingCooling.Height > assemblingCompCase.CoolingMaxHeight)
-                        Console.Write("ОШИБКА");
+                        resultOfAssembling += "(*)Данный кулер слишком высокий для данного корпуса!!!\n";
                 }
             }
 
@@ -953,7 +956,7 @@ namespace Prog_Kursovaya_sem3
                 if (checkBox_AssemblingThreeAndHalfHDDEnabled.Checked == true)
                 {
                     if (assemblingCompCase.NumberOfThreeAndHalfSlots < numericUpDown_InstalledThreeAndHalfHDD.Value)
-                        Console.Write("ОШИБКА");
+                        resultOfAssembling += "(*)Данный корпус не имеет достаточного кол-ва слотов для установки всех 3.5\" накопителей!!!\n";
                 }
 
                 //Checking the 2.5" slots
@@ -966,10 +969,17 @@ namespace Prog_Kursovaya_sem3
                         numberOfOccupiedTwoAndHalfSlots += (int)numericUpDown_InstalledSSD.Value;
 
                     if (assemblingCompCase.NumberOfTwoAndHalfSlots < numberOfOccupiedTwoAndHalfSlots)
-                        Console.Write("ОШИБКА");
+                        resultOfAssembling += "(*)Данный корпус не имеет достаточного кол-ва слотов для установки всех 2.5\" накопителей!!!\n";
                 }
-                
             }
+
+            if (resultOfAssembling != "")
+                richTextBox_AssemblingResults.Text = resultOfAssembling;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Assembling();
         }
     }
 }
