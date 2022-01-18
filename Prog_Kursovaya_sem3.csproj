@@ -62,6 +62,7 @@
     </Compile>
     <Compile Include="HardDrive.cs" />
     <Compile Include="Motherboard.cs" />
+    <Compile Include="PersonalComputer.cs" />
     <Compile Include="PowerSupplyUnit.cs" />
     <Compile Include="Processor.cs" />
     <Compile Include="Program.cs" />

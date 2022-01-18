@@ -38,6 +38,8 @@ namespace Prog_Kursovaya_sem3
         Cooling assemblingCooling;
         CompCase assemblingCompCase;
 
+        PersonalComputer personalComputer;
+
 
         public Form_MainMenu()
         {
@@ -387,7 +389,7 @@ namespace Prog_Kursovaya_sem3
             {
                 var processorInfo = new Form_Info(processors[e.RowIndex], true);
                 if (processorInfo.ShowDialog() == DialogResult.Yes)
-                    MainMenu_AddProcessorToAssembling(processors[e.RowIndex]);
+                    MainMenu_AddToAssembling(processors[e.RowIndex]);
             }
         }
         private void button_ProcessorAddToAssembling_Click(object sender, EventArgs e)
@@ -395,10 +397,11 @@ namespace Prog_Kursovaya_sem3
             if (MessageBox.Show("Вы точно хотите добавить процессор:\n" +
                 dataGridView_Processor.SelectedRows[0].Cells[0].Value +
                 "\nк сборке?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                MainMenu_AddProcessorToAssembling(processors[dataGridView_Processor.SelectedCells[0].RowIndex]);
+                MainMenu_AddToAssembling(processors[dataGridView_Processor.SelectedCells[0].RowIndex]);
         }
-        private void MainMenu_AddProcessorToAssembling(Processor inputObject)
+        private void MainMenu_AddToAssembling(Processor inputObject)
         {
+
             assemblingProcessor = new Processor(inputObject);
             label_AssemblingProcessorName.Text = assemblingProcessor.Name;
             button_AssemblingProcessorInfo.Enabled = true;
@@ -413,7 +416,7 @@ namespace Prog_Kursovaya_sem3
             {
                 var motherboardInfo = new Form_Info(motherboards[e.RowIndex], true);
                 if (motherboardInfo.ShowDialog() == DialogResult.Yes)
-                    MainMenu_AddMotherboardToAssembling(motherboards[e.RowIndex]);
+                    MainMenu_AddToAssembling(motherboards[e.RowIndex]);
             }
         }
         private void button_MotherboardAddToAssembling_Click(object sender, EventArgs e)
@@ -421,9 +424,9 @@ namespace Prog_Kursovaya_sem3
             if (MessageBox.Show("Вы точно хотите добавить материнскую плату:\n" +
                 dataGridView_Motherboard.SelectedRows[0].Cells[0].Value +
                 "\nк сборке?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                MainMenu_AddMotherboardToAssembling(motherboards[dataGridView_Motherboard.SelectedCells[0].RowIndex]);
+                MainMenu_AddToAssembling(motherboards[dataGridView_Motherboard.SelectedCells[0].RowIndex]);
         }
-        private void MainMenu_AddMotherboardToAssembling(Motherboard inputObject)
+        private void MainMenu_AddToAssembling(Motherboard inputObject)
         {
             assemblingMotherboard = new Motherboard(inputObject);
             label_AssemblingMotherboardName.Text = assemblingMotherboard.Name;
@@ -439,7 +442,7 @@ namespace Prog_Kursovaya_sem3
             {
                 var RAMInfo = new Form_Info(RAMs[e.RowIndex], true);
                 if (RAMInfo.ShowDialog() == DialogResult.Yes)
-                    MainMenu_AddRAMToAssembling(RAMs[e.RowIndex]);
+                    MainMenu_AddToAssembling(RAMs[e.RowIndex]);
             }
         }
         private void button_RAMAddToAssembling_Click(object sender, EventArgs e)
@@ -447,9 +450,9 @@ namespace Prog_Kursovaya_sem3
             if (MessageBox.Show("Вы точно хотите добавить оперативную память:\n" +
                 dataGridView_RAM.SelectedRows[0].Cells[0].Value +
                 "\nк сборке?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                MainMenu_AddRAMToAssembling(RAMs[dataGridView_RAM.SelectedCells[0].RowIndex]);
+                MainMenu_AddToAssembling(RAMs[dataGridView_RAM.SelectedCells[0].RowIndex]);
         }
-        private void MainMenu_AddRAMToAssembling(RAM inputObject)
+        private void MainMenu_AddToAssembling(RAM inputObject)
         {
             assemblingRAM = new RAM(inputObject);
             label_AssemblingRAMName.Text = assemblingRAM.Name;
@@ -468,7 +471,7 @@ namespace Prog_Kursovaya_sem3
             {
                 var videocardInfo = new Form_Info(videocards[e.RowIndex], true);
                 if (videocardInfo.ShowDialog() == DialogResult.Yes)
-                    MainMenu_AddVideocardToAssembling(videocards[e.RowIndex]);
+                    MainMenu_AddToAssembling(videocards[e.RowIndex]);
 
             }
         }
@@ -477,9 +480,9 @@ namespace Prog_Kursovaya_sem3
             if (MessageBox.Show("Вы точно хотите добавить видеокарту:\n" +
                 dataGridView_Videocard.SelectedRows[0].Cells[0].Value +
                 "\nк сборке?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                MainMenu_AddVideocardToAssembling(videocards[dataGridView_Videocard.SelectedCells[0].RowIndex]);
+                MainMenu_AddToAssembling(videocards[dataGridView_Videocard.SelectedCells[0].RowIndex]);
         }
-        private void MainMenu_AddVideocardToAssembling(Videocard inputObject)
+        private void MainMenu_AddToAssembling(Videocard inputObject)
         {
             assemblingVideocard = new Videocard(inputObject);
             label_AssemblingVideocardName.Text = assemblingVideocard.Name;
@@ -495,7 +498,7 @@ namespace Prog_Kursovaya_sem3
             {
                 var powerSupplyUnitInfo = new Form_Info(powerSupplyUnits[e.RowIndex], true);
                 if (powerSupplyUnitInfo.ShowDialog() == DialogResult.Yes)
-                    MainMenu_AddPowerSupplyUnitToAssembling(powerSupplyUnits[e.RowIndex]);
+                    MainMenu_AddToAssembling(powerSupplyUnits[e.RowIndex]);
 
             }
         }
@@ -504,9 +507,9 @@ namespace Prog_Kursovaya_sem3
             if (MessageBox.Show("Вы точно хотите добавить блок питания:\n" +
                 dataGridView_PowerSupplyUnit.SelectedRows[0].Cells[0].Value +
                 "\nк сборке?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                MainMenu_AddPowerSupplyUnitToAssembling(powerSupplyUnits[dataGridView_PowerSupplyUnit.SelectedCells[0].RowIndex]);
+                MainMenu_AddToAssembling(powerSupplyUnits[dataGridView_PowerSupplyUnit.SelectedCells[0].RowIndex]);
         }
-        private void MainMenu_AddPowerSupplyUnitToAssembling(PowerSupplyUnit inputObject)
+        private void MainMenu_AddToAssembling(PowerSupplyUnit inputObject)
         {
             assemblingPSU = new PowerSupplyUnit(inputObject);
             label_AssemblingPSUName.Text = assemblingPSU.Name;
@@ -522,7 +525,7 @@ namespace Prog_Kursovaya_sem3
             {
                 var hardDriveInfo = new Form_Info(hardDrives[e.RowIndex], true);
                 if (hardDriveInfo.ShowDialog() == DialogResult.Yes)
-                    MainMenu_AddHardDriveToAssembling(hardDrives[e.RowIndex]);
+                    MainMenu_AddToAssembling(hardDrives[e.RowIndex]);
 
             }
         }
@@ -531,9 +534,9 @@ namespace Prog_Kursovaya_sem3
             if (MessageBox.Show("Вы точно хотите добавить жесткий диск:\n" +
                 dataGridView_HardDrive.SelectedRows[0].Cells[0].Value +
                 "\nк сборке?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                MainMenu_AddHardDriveToAssembling(hardDrives[dataGridView_HardDrive.SelectedCells[0].RowIndex]);
+                MainMenu_AddToAssembling(hardDrives[dataGridView_HardDrive.SelectedCells[0].RowIndex]);
         }
-        private void MainMenu_AddHardDriveToAssembling(HardDrive inputObject)
+        private void MainMenu_AddToAssembling(HardDrive inputObject)
         {
             if (inputObject.FormFactor == "3.5\"")
             {
@@ -566,7 +569,7 @@ namespace Prog_Kursovaya_sem3
             {
                 var solidStateDriveInfo = new Form_Info(solidStateDrives[e.RowIndex], true);
                 if (solidStateDriveInfo.ShowDialog() == DialogResult.Yes)
-                    MainMenu_AddSolidStateDriveToAssembling(solidStateDrives[e.RowIndex]);
+                    MainMenu_AddToAssembling(solidStateDrives[e.RowIndex]);
             }
         }
         private void button_SolidStateDriveAddToAssembling_Click(object sender, EventArgs e)
@@ -574,9 +577,9 @@ namespace Prog_Kursovaya_sem3
             if (MessageBox.Show("Вы точно хотите добавить твердотельный накопитель:\n" +
                 dataGridView_SolidStateDrive.SelectedRows[0].Cells[0].Value +
                 "\nк сборке?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                MainMenu_AddSolidStateDriveToAssembling(solidStateDrives[dataGridView_SolidStateDrive.SelectedCells[0].RowIndex]);
+                MainMenu_AddToAssembling(solidStateDrives[dataGridView_SolidStateDrive.SelectedCells[0].RowIndex]);
         }
-        private void MainMenu_AddSolidStateDriveToAssembling(SolidStateDrive inputObject)
+        private void MainMenu_AddToAssembling(SolidStateDrive inputObject)
         {
             assemblingSSD = new SolidStateDrive(inputObject);
             label_AssemblingSSDName.Text = assemblingSSD.Name;
@@ -595,7 +598,7 @@ namespace Prog_Kursovaya_sem3
             {
                 var coolingInfo = new Form_Info(coolings[e.RowIndex], true);
                 if (coolingInfo.ShowDialog() == DialogResult.Yes)
-                    MainMenu_AddCoolingToAssembling(coolings[e.RowIndex]);
+                    MainMenu_AddToAssembling(coolings[e.RowIndex]);
             }
         }
         private void button_CoolingAddToAssembling_Click(object sender, EventArgs e)
@@ -603,9 +606,9 @@ namespace Prog_Kursovaya_sem3
             if (MessageBox.Show("Вы точно хотите добавить кулер:\n" +
                 dataGridView_Cooling.SelectedRows[0].Cells[0].Value +
                 "\nк сборке?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                MainMenu_AddCoolingToAssembling(coolings[dataGridView_Cooling.SelectedCells[0].RowIndex]);
+                MainMenu_AddToAssembling(coolings[dataGridView_Cooling.SelectedCells[0].RowIndex]);
         }
-        private void MainMenu_AddCoolingToAssembling(Cooling inputObject)
+        private void MainMenu_AddToAssembling(Cooling inputObject)
         {
             assemblingCooling = new Cooling(inputObject);
             label_AssemblingCoolingName.Text = assemblingCooling.Name;
@@ -621,7 +624,7 @@ namespace Prog_Kursovaya_sem3
             {
                 var compCaseInfo = new Form_Info(compCases[e.RowIndex], true);
                 if (compCaseInfo.ShowDialog() == DialogResult.Yes)
-                    MainMenu_AddCompCaseToAssembling(compCases[e.RowIndex]);
+                    MainMenu_AddToAssembling(compCases[e.RowIndex]);
             }
         }
         private void button_CompCaseAddToAssembling_Click(object sender, EventArgs e)
@@ -629,9 +632,9 @@ namespace Prog_Kursovaya_sem3
             if (MessageBox.Show("Вы точно хотите добавить корпус:\n" +
                 dataGridView_CompCase.SelectedRows[0].Cells[0].Value +
                 "\nк сборке?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                MainMenu_AddCompCaseToAssembling(compCases[dataGridView_CompCase.SelectedCells[0].RowIndex]);
+                MainMenu_AddToAssembling(compCases[dataGridView_CompCase.SelectedCells[0].RowIndex]);
         }
-        private void MainMenu_AddCompCaseToAssembling(CompCase inputObject)
+        private void MainMenu_AddToAssembling(CompCase inputObject)
         {
             assemblingCompCase = new CompCase(inputObject);
             label_AssemblingCompCaseName.Text = assemblingCompCase.Name;
@@ -666,8 +669,6 @@ namespace Prog_Kursovaya_sem3
             var powerSupplyUnitInfo = new Form_Info(assemblingPSU, false);
             powerSupplyUnitInfo.ShowDialog();
         }
-
-
         private void button_AssemblingSSDInfo_Click(object sender, EventArgs e)
         {
             var solidStateDriveInfo = new Form_Info(assemblingSSD, false);
@@ -683,8 +684,6 @@ namespace Prog_Kursovaya_sem3
             var hardDriveInfo = new Form_Info(assemblingThreeAndHalfHDD, false);
             hardDriveInfo.ShowDialog();
         }
-
-
         private void button_AssemblingCoolingInfo_Click(object sender, EventArgs e)
         {
             var coolingInfo = new Form_Info(assemblingCooling, false);
@@ -695,291 +694,69 @@ namespace Prog_Kursovaya_sem3
             var compCaseInfo = new Form_Info(assemblingCompCase, false);
             compCaseInfo.ShowDialog();
         }
-        
 
-        private void checkBox_AssemblingProcessorEnabled_Click(object sender, EventArgs e)
+        private void button_StartTheAssembling_Click(object sender, EventArgs e)
         {
-             //if(assemblingProcessor != null)
-
-        }
-
-        private void Assembling()
-        {
-            richTextBox_AssemblingResults.Text = "Проблем нет";
-            string resultOfAssembling = "";
-
+            personalComputer = new PersonalComputer();
             if (checkBox_AssemblingProcessorEnabled.Checked == true)
             {
-                if (checkBox_AssemblingMotherboardEnabled.Checked == true)
-                {
-                    if (assemblingProcessor.SocketType != assemblingMotherboard.SocketType)
-                        resultOfAssembling += "(*)Несовпадение типа сокета у материнской платы и процессора!!!\n";
-                    if(!assemblingProcessor.SupportedChipsetsArray.Contains(assemblingMotherboard.ChipsetType))
-                        resultOfAssembling += "(*)Процессор не поддерживает чипсет материнской платы!!!\n";
-                    if (assemblingProcessor.MemoryType != assemblingMotherboard.RamType)
-                        resultOfAssembling += "(*)Типы памяти процессора и материнской платы не совместимы!!!\n";
-                    if ((assemblingProcessor.MaxRAMFrequency < assemblingMotherboard.RamAvailableFrequenciesArray[0]) ||
-                        (assemblingProcessor.MinRAMFrequency > assemblingMotherboard.RamAvailableFrequenciesArray[assemblingMotherboard.RamAvailableFrequenciesArray.Length - 1]))
-                        resultOfAssembling += "(*)Процессор и материнская плата имеют непересекающиеся диапазоны поддерживаемых частот!!!\n";
-                }
-
-                if (checkBox_AssemblingRAMEnabled.Checked == true)
-                {
-                    if (assemblingProcessor.MemoryType != assemblingRAM.MemoryType)
-                        resultOfAssembling += "(*)Тип памяти процессора и оперативной памяти не совместимы!!!\n";
-                    if (assemblingProcessor.MaxRamCapacityGb < assemblingRAM.MemoryCapacity*numericUpDown_InstalledRAMs.Value)
-                        resultOfAssembling += "(*)Превышен лимит по объему оперативной памяти для процесссора!!!\n";
-                }
-
-                if (checkBox_AssemblingCoolingEnabled.Checked == true)
-                {
-                    if (assemblingProcessor.EnergyConsumption > assemblingCooling.DissipationPower)
-                        resultOfAssembling += "(*)Кулер не справляется с охлаждением процессора!!!\n"; ;
-                }
+                personalComputer.assemblingProcessor = new Processor(assemblingProcessor);
+                personalComputer.isProcessorChecked = true;
             }
 
             if (checkBox_AssemblingMotherboardEnabled.Checked == true)
             {
-                if (checkBox_AssemblingRAMEnabled.Checked == true)
-                {
-                    if (assemblingMotherboard.RamType != assemblingRAM.MemoryType)
-                        resultOfAssembling += "(*)Типы памяти материнской платы и оперативной памяти не совместимы!!!\n";
+                personalComputer.assemblingMotherboard = new Motherboard(assemblingMotherboard);
+                personalComputer.isMotherboardChecked = true;
+            }
 
-                    if ((assemblingMotherboard.RamAvailableFrequenciesArray[assemblingMotherboard.RamAvailableFrequenciesArray.Length - 1] < assemblingRAM.AvailableFrequenciesArray[0]) || 
-                        (assemblingMotherboard.RamAvailableFrequenciesArray[0] > assemblingRAM.AvailableFrequenciesArray[assemblingRAM.AvailableFrequenciesArray.Length - 1]))
-                        resultOfAssembling += "(*)Материнская плата и оперативная память имеют непересекающиеся диапазоны поддерживаемых частот!!!\n";
-
-                    if (assemblingMotherboard.RamMaxCapacity < assemblingRAM.MemoryCapacity * numericUpDown_InstalledRAMs.Value)
-                        resultOfAssembling += "(*)Превышен лимит по объему оперативной памяти для материнской платы!!!\n";
-
-                    if (assemblingMotherboard.NumberOfRAMSlots < numericUpDown_InstalledRAMs.Value)
-                        resultOfAssembling += "(*)У материнской платы недостаточно слотов для оперативной памяти!!!\n";
-                }
-
-                if (checkBox_AssemblingVideocardEnabled.Checked == true)
-                {
-                    if (assemblingMotherboard.NumberOfPCIESlots == 0)
-                        resultOfAssembling += "(*)Данная материнская плата не поддерживает установку видеокарт!!!\n";
-                }
-
-                if (checkBox_AssemblingPSUEnabled.Checked == true)
-                {
-                    if ((assemblingMotherboard.ProcessorSupplyConnectorsType == "4 pin") &&
-                        (assemblingPSU.ProcessorSupplyConnectorsType == "1x8 pin"))
-                        resultOfAssembling += "(*)Блок питания не имеет разъемов для запитки процесора, устанавливаемого на данную материнскую плату!!!\n";
-
-                    if ((assemblingMotherboard.ProcessorSupplyConnectorsType == "4+4 pin") &&
-                        ((assemblingPSU.ProcessorSupplyConnectorsType == "1x4 pin") ||
-                        (assemblingPSU.ProcessorSupplyConnectorsType == "1x8 pin")))
-                        resultOfAssembling += "(*)Блок питания не имеет разъемов для запитки процесора, устанавливаемого на данную материнскую плату!!!\n";
-
-                    if ((assemblingMotherboard.ProcessorSupplyConnectorsType == "8 pin") &&
-                        (assemblingPSU.ProcessorSupplyConnectorsType == "1x4 pin"))
-                        resultOfAssembling += "(*)Блок питания не имеет разъемов для запитки процесора, устанавливаемого на данную материнскую плату!!!\n";
-
-                    if ((assemblingMotherboard.ProcessorSupplyConnectorsType == "4+8 pin") &&
-                        ((assemblingPSU.ProcessorSupplyConnectorsType == "1x4 pin") ||
-                        (assemblingPSU.ProcessorSupplyConnectorsType == "1x(4+4) pin") ||
-                        (assemblingPSU.ProcessorSupplyConnectorsType == "1x8 pin")))
-                        resultOfAssembling += "(*)Блок питания не имеет разъемов для запитки процесора, устанавливаемого на данную материнскую плату!!!\n";
-
-                    if ((assemblingMotherboard.ProcessorSupplyConnectorsType == "8+8 pin") &&
-                       ((assemblingPSU.ProcessorSupplyConnectorsType == "1x4 pin") ||
-                       (assemblingPSU.ProcessorSupplyConnectorsType == "1x(4+4) pin") ||
-                       (assemblingPSU.ProcessorSupplyConnectorsType == "1x8 pin")))
-                        resultOfAssembling += "(*)Блок питания не имеет разъемов для запитки процесора, устанавливаемого на данную материнскую плату!!!\n";
-                }
-
-                //Checking the drives
-                {
-                    int numberOfSATAOccupiedPorts = 0;
-                    if (checkBox_AssemblingThreeAndHalfHDDEnabled.Checked == true)
-                        numberOfSATAOccupiedPorts += (int)numericUpDown_InstalledThreeAndHalfHDD.Value;
-
-                    if (checkBox_AssemblingTwoAndHalfHDDEnabled.Checked == true)
-                        numberOfSATAOccupiedPorts += (int)numericUpDown_InstalledTwoAndHalfHDD.Value;
-
-                    if (checkBox_AssemblingSSDEnabled.Checked == true)
-                        numberOfSATAOccupiedPorts += (int)numericUpDown_InstalledSSD.Value;
-
-                    if (assemblingMotherboard.NumberOfSATASlots < numberOfSATAOccupiedPorts)
-                        resultOfAssembling += "(*)У материнской платы недостаточно разъемов для подключения всех накопителей!!!\n";
-                }
-
-                if (checkBox_AssemblingCoolingEnabled.Checked == true)
-                {
-                    if ((assemblingCooling.ConnectorType == "3 pin") &&
-                        (assemblingMotherboard.NumberOfThreePinSlotsForCooling == 0) &&
-                        (assemblingMotherboard.NumberOfFourPinSlotsForCooling == 0))
-                        resultOfAssembling += "(*)Материнская плата не имеет разъемов для подключения данного кулера!!!\n";
-                    if ((assemblingCooling.ConnectorType == "4 pin") && (assemblingMotherboard.NumberOfFourPinSlotsForCooling == 0))
-                        resultOfAssembling += "(*)Материнская плата не имеет разъемов для подключения данного кулера!!!\n";
-                }
-
-                if (checkBox_AssemblingCompCaseEnabled.Checked == true)
-                {
-                    if (!assemblingCompCase.MotherboardsFormFactorArray.Contains(assemblingMotherboard.FormFactor))
-                        resultOfAssembling += "(*)Данный корпус не поддерживает установку материнской платы данного форм-фактора!!!\n";
-                }
+            if (checkBox_AssemblingRAMEnabled.Checked == true)
+            {
+                personalComputer.assemblingRAM = new RAM(assemblingRAM);
+                personalComputer.isRAMChecked = true;
+                personalComputer.quantityOfRAMs = (int)numericUpDown_InstalledRAMs.Value;
             }
 
             if (checkBox_AssemblingVideocardEnabled.Checked == true)
             {
-                if (checkBox_AssemblingPSUEnabled.Checked == true)
-                {
-                    if ((assemblingVideocard.SupplyConnectorsType == "6 pin") &&
-                         (assemblingPSU.VideocardSupplyConnectorsType == "none") ||
-                         (assemblingPSU.VideocardSupplyConnectorsType == "1x8 pin"))
-                        resultOfAssembling += "(*)Блок питания не имеет разъемов для запитки данной видеокарты!!!\n";
-
-                    if ((assemblingVideocard.SupplyConnectorsType == "1x8 pin") &&
-                        ((assemblingPSU.VideocardSupplyConnectorsType == "none") ||
-                        (assemblingPSU.VideocardSupplyConnectorsType == "1x6 pin") ||
-                        (assemblingPSU.VideocardSupplyConnectorsType == "2x6 pin") ||
-                        (assemblingPSU.VideocardSupplyConnectorsType == "3x6 pin")))
-                        resultOfAssembling += "(*)Блок питания не имеет разъемов для запитки данной видеокарты!!!\n";
-
-                    if ((assemblingVideocard.SupplyConnectorsType == "2x8 pin") &&
-                        ((assemblingPSU.VideocardSupplyConnectorsType == "none") ||
-                        (assemblingPSU.VideocardSupplyConnectorsType == "1x6 pin") ||
-                        (assemblingPSU.VideocardSupplyConnectorsType == "2x6 pin") ||
-                        (assemblingPSU.VideocardSupplyConnectorsType == "3x6 pin") ||
-                        (assemblingPSU.VideocardSupplyConnectorsType == "1x8 pin") || 
-                        (assemblingPSU.VideocardSupplyConnectorsType == "1x(6+2) pin")))
-                        resultOfAssembling += "(*)Блок питания не имеет разъемов для запитки данной видеокарты!!!\n";
-
-                    if ((assemblingVideocard.SupplyConnectorsType == "3x8 pin") &&
-                        ((assemblingPSU.VideocardSupplyConnectorsType == "none") ||
-                        (assemblingPSU.VideocardSupplyConnectorsType == "1x6 pin") ||
-                        (assemblingPSU.VideocardSupplyConnectorsType == "2x6 pin") ||
-                        (assemblingPSU.VideocardSupplyConnectorsType == "3x6 pin") ||
-                        (assemblingPSU.VideocardSupplyConnectorsType == "1x8 pin") ||
-                        (assemblingPSU.VideocardSupplyConnectorsType == "1x(6+2) pin") ||
-                        (assemblingPSU.VideocardSupplyConnectorsType == "2x(6+2) pin")))
-                        resultOfAssembling += "(*)Блок питания не имеет разъемов для запитки данной видеокарты!!!\n";
-
-                    if ((assemblingVideocard.SupplyConnectorsType == "1x(6+8) pin") &&
-                         ((assemblingPSU.VideocardSupplyConnectorsType == "none") ||
-                         (assemblingPSU.VideocardSupplyConnectorsType == "1x6 pin") ||
-                         (assemblingPSU.VideocardSupplyConnectorsType == "2x6 pin") ||
-                         (assemblingPSU.VideocardSupplyConnectorsType == "3x6 pin") ||
-                         (assemblingPSU.VideocardSupplyConnectorsType == "1x8 pin") ||
-                         (assemblingPSU.VideocardSupplyConnectorsType == "1x(6+2) pin")))
-                        resultOfAssembling += "(*)Блок питания не имеет разъемов для запитки данной видеокарты!!!\n";
-
-                    if ((assemblingVideocard.SupplyConnectorsType == "2x(6+8) pin") &&
-                         ((assemblingPSU.VideocardSupplyConnectorsType == "none") ||
-                         (assemblingPSU.VideocardSupplyConnectorsType == "1x6 pin") ||
-                         (assemblingPSU.VideocardSupplyConnectorsType == "2x6 pin") ||
-                         (assemblingPSU.VideocardSupplyConnectorsType == "3x6 pin") ||
-                         (assemblingPSU.VideocardSupplyConnectorsType == "1x8 pin") ||
-                         (assemblingPSU.VideocardSupplyConnectorsType == "1x(6+2) pin") ||
-                          (assemblingPSU.VideocardSupplyConnectorsType == "2x(6+2) pin") ||
-                           (assemblingPSU.VideocardSupplyConnectorsType == "3x(6+2) pin")))
-                        resultOfAssembling += "(*)Блок питания не имеет разъемов для запитки данной видеокарты!!!\n";
-                }
-
-                if (checkBox_AssemblingCompCaseEnabled.Checked == true)
-                {
-                    if (assemblingVideocard.Length > assemblingCompCase.VideocardMaxLength)
-                        resultOfAssembling += "(*)Данная видеокарта слишком длинная для данного корпуса!!!\n";
-
-                    if (assemblingVideocard.OccupiedExpansionSlots > assemblingCompCase.NumberOfHorizonExpansionSlots)
-                        resultOfAssembling += "(*)У данного корпуса недостаточно горизонтальных слотов расширения для установки данной видеокарты!!!\n";
-                }
+                personalComputer.assemblingVideocard = new Videocard(assemblingVideocard);
+                personalComputer.isVideocardChecked = true;
             }
 
-            if (checkBox_AssemblingPSUEnabled.Checked == true)
+            if (checkBox_AssemblingThreeAndHalfHDDEnabled.Checked == true)
             {
-                if (checkBox_AssemblingCompCaseEnabled.Checked == true)
-                {
-                    if (!assemblingCompCase.PowerSupplyFormFactorArray.Contains(assemblingPSU.FormFactor))
-                        resultOfAssembling += "(*)Данный корпус не поддерживает установку блока питания данного форм-фактора!!!\n";
-                }
+                personalComputer.assemblingThreeAndHalfHDD = new HardDrive(assemblingThreeAndHalfHDD);
+                personalComputer.isThreeAndHalfHDDChecked = true;
+                personalComputer.quantityOfThreeAndHalfHDDs = (int)numericUpDown_InstalledThreeAndHalfHDD.Value;
+            }
 
-                //Checking the drives
-                {
-                    int numberOfSATAOccupiedPorts = 0;
-                    if (checkBox_AssemblingThreeAndHalfHDDEnabled.Checked == true)
-                        numberOfSATAOccupiedPorts += (int)numericUpDown_InstalledThreeAndHalfHDD.Value;
+            if (checkBox_AssemblingTwoAndHalfHDDEnabled.Checked == true)
+            {
+                personalComputer.assemblingTwoAndHalfHDD = new HardDrive(assemblingTwoAndHalfHDD);
+                personalComputer.isTwoAndHalfHDDChecked = true;
+                personalComputer.quantityOfTwoAndHalfHDDs = (int)numericUpDown_InstalledTwoAndHalfHDD.Value;
+            }
 
-                    if (checkBox_AssemblingTwoAndHalfHDDEnabled.Checked == true)
-                        numberOfSATAOccupiedPorts += (int)numericUpDown_InstalledTwoAndHalfHDD.Value;
-
-                    if (checkBox_AssemblingSSDEnabled.Checked == true)
-                        numberOfSATAOccupiedPorts += (int)numericUpDown_InstalledSSD.Value;
-
-                    if (assemblingPSU.NumberOfSATASlots < numberOfSATAOccupiedPorts)
-                        resultOfAssembling += "(*)У данного блока питания недостаточно слотов для подключения всех накопителей!!!\n";
-                }
-
-                //Checking the total capacity of system
-                {
-                    double systemTotalCapacity = 0;
-                    if (checkBox_AssemblingProcessorEnabled.Checked == true)
-                        systemTotalCapacity += assemblingProcessor.EnergyConsumption;
-
-                    if (checkBox_AssemblingRAMEnabled.Checked == true)
-                        systemTotalCapacity += (double)numericUpDown_InstalledRAMs.Value * 7;
-
-                    if (checkBox_AssemblingVideocardEnabled.Checked == true)
-                        systemTotalCapacity += assemblingVideocard.EnergyConsumption;
-
-                    if (checkBox_AssemblingThreeAndHalfHDDEnabled.Checked == true)
-                        systemTotalCapacity += assemblingThreeAndHalfHDD.EnergyConsumption * (double)numericUpDown_InstalledThreeAndHalfHDD.Value;
-
-                    if (checkBox_AssemblingTwoAndHalfHDDEnabled.Checked == true)
-                        systemTotalCapacity += assemblingTwoAndHalfHDD.EnergyConsumption * (double)numericUpDown_InstalledTwoAndHalfHDD.Value;
-
-                    if (checkBox_AssemblingSSDEnabled.Checked == true)
-                        systemTotalCapacity += assemblingSSD.EnergyConsumptionWt * (double)numericUpDown_InstalledSSD.Value;
-
-                    if (checkBox_AssemblingCoolingEnabled.Checked == true)
-                        systemTotalCapacity += 5;
-
-                    if (assemblingPSU.TotalCapacity < systemTotalCapacity*1.2)
-                        resultOfAssembling += "(*)Данный блок питания не обладает достаточной мощностью!!!\n";
-                }
+            if (checkBox_AssemblingSSDEnabled.Checked == true)
+            {
+                personalComputer.assemblingSSD = new SolidStateDrive(assemblingSSD);
+                personalComputer.isSSDChecked = true;
+                personalComputer.quantityOfSSDs = (int)numericUpDown_InstalledTwoAndHalfHDD.Value;
             }
 
             if (checkBox_AssemblingCoolingEnabled.Checked == true)
             {
-                if (checkBox_AssemblingCompCaseEnabled.Checked == true)
-                {
-                    if (assemblingCooling.Height > assemblingCompCase.CoolingMaxHeight)
-                        resultOfAssembling += "(*)Данный кулер слишком высокий для данного корпуса!!!\n";
-                }
+                personalComputer.assemblingCooling = new Cooling(assemblingCooling);
+                personalComputer.isCoolingChecked = true;
             }
 
             if (checkBox_AssemblingCompCaseEnabled.Checked == true)
             {
-                if (checkBox_AssemblingThreeAndHalfHDDEnabled.Checked == true)
-                {
-                    if (assemblingCompCase.NumberOfThreeAndHalfSlots < numericUpDown_InstalledThreeAndHalfHDD.Value)
-                        resultOfAssembling += "(*)Данный корпус не имеет достаточного кол-ва слотов для установки всех 3.5\" накопителей!!!\n";
-                }
-
-                //Checking the 2.5" slots
-                {
-                    int numberOfOccupiedTwoAndHalfSlots = 0;
-                    if (checkBox_AssemblingTwoAndHalfHDDEnabled.Checked == true)
-                        numberOfOccupiedTwoAndHalfSlots += (int)numericUpDown_InstalledTwoAndHalfHDD.Value;
-
-                    if (checkBox_AssemblingSSDEnabled.Checked == true)
-                        numberOfOccupiedTwoAndHalfSlots += (int)numericUpDown_InstalledSSD.Value;
-
-                    if (assemblingCompCase.NumberOfTwoAndHalfSlots < numberOfOccupiedTwoAndHalfSlots)
-                        resultOfAssembling += "(*)Данный корпус не имеет достаточного кол-ва слотов для установки всех 2.5\" накопителей!!!\n";
-                }
+                personalComputer.assemblingCompCase = new CompCase(assemblingCompCase);
+                personalComputer.isCompCaseChecked = true;
             }
 
-            if (resultOfAssembling != "")
-                richTextBox_AssemblingResults.Text = resultOfAssembling;
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Assembling();
+            richTextBox_AssemblingResults.Text = personalComputer.ResultOfAssembling();
         }
     }
 }

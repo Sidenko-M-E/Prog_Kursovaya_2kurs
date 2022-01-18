@@ -147,7 +147,7 @@ namespace Prog_Kursovaya_sem3
             this.checkBox_AssemblingSSDEnabled = new System.Windows.Forms.CheckBox();
             this.groupBox_AssemblingResults = new System.Windows.Forms.GroupBox();
             this.richTextBox_AssemblingResults = new System.Windows.Forms.RichTextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.button_StartTheAssembling = new System.Windows.Forms.Button();
             this.tabPage_CompCase.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_CompCase)).BeginInit();
             this.tabPage_PSU.SuspendLayout();
@@ -524,7 +524,7 @@ namespace Prog_Kursovaya_sem3
             this.tabPage_Processor.Name = "tabPage_Processor";
             this.tabPage_Processor.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage_Processor.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tabPage_Processor.Size = new System.Drawing.Size(553, 379);
+            this.tabPage_Processor.Size = new System.Drawing.Size(553, 563);
             this.tabPage_Processor.TabIndex = 0;
             this.tabPage_Processor.Text = "Процессор";
             this.tabPage_Processor.UseVisualStyleBackColor = true;
@@ -599,7 +599,7 @@ namespace Prog_Kursovaya_sem3
             this.tabControl1.Multiline = true;
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(561, 423);
+            this.tabControl1.Size = new System.Drawing.Size(561, 607);
             this.tabControl1.SizeMode = System.Windows.Forms.TabSizeMode.FillToRight;
             this.tabControl1.TabIndex = 1;
             // 
@@ -842,7 +842,6 @@ namespace Prog_Kursovaya_sem3
             this.checkBox_AssemblingProcessorEnabled.Size = new System.Drawing.Size(15, 14);
             this.checkBox_AssemblingProcessorEnabled.TabIndex = 0;
             this.checkBox_AssemblingProcessorEnabled.UseVisualStyleBackColor = true;
-            this.checkBox_AssemblingProcessorEnabled.Click += new System.EventHandler(this.checkBox_AssemblingProcessorEnabled_Click);
             // 
             // groupBox_Cooling
             // 
@@ -969,7 +968,7 @@ namespace Prog_Kursovaya_sem3
             this.groupBox_Videocard.Controls.Add(this.button_AssemblingVideocardInfo);
             this.groupBox_Videocard.Controls.Add(this.label_AssemblingVideocardName);
             this.groupBox_Videocard.Controls.Add(this.checkBox_AssemblingVideocardEnabled);
-            this.groupBox_Videocard.Location = new System.Drawing.Point(813, 537);
+            this.groupBox_Videocard.Location = new System.Drawing.Point(814, 546);
             this.groupBox_Videocard.Name = "groupBox_Videocard";
             this.groupBox_Videocard.Size = new System.Drawing.Size(243, 73);
             this.groupBox_Videocard.TabIndex = 7;
@@ -1054,7 +1053,7 @@ namespace Prog_Kursovaya_sem3
             this.groupBox_RAM.Controls.Add(this.checkBox_AssemblingRAMEnabled);
             this.groupBox_RAM.Location = new System.Drawing.Point(814, 416);
             this.groupBox_RAM.Name = "groupBox_RAM";
-            this.groupBox_RAM.Size = new System.Drawing.Size(209, 115);
+            this.groupBox_RAM.Size = new System.Drawing.Size(209, 123);
             this.groupBox_RAM.TabIndex = 10;
             this.groupBox_RAM.TabStop = false;
             this.groupBox_RAM.Text = "Оперативная память";
@@ -1355,23 +1354,23 @@ namespace Prog_Kursovaya_sem3
             this.richTextBox_AssemblingResults.TabIndex = 0;
             this.richTextBox_AssemblingResults.Text = "Проблем нет";
             // 
-            // button1
+            // button_StartTheAssembling
             // 
-            this.button1.Location = new System.Drawing.Point(992, 260);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(52, 150);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "сборка";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button_StartTheAssembling.Location = new System.Drawing.Point(992, 260);
+            this.button_StartTheAssembling.Name = "button_StartTheAssembling";
+            this.button_StartTheAssembling.Size = new System.Drawing.Size(52, 150);
+            this.button_StartTheAssembling.TabIndex = 16;
+            this.button_StartTheAssembling.Text = "сборка";
+            this.button_StartTheAssembling.UseVisualStyleBackColor = true;
+            this.button_StartTheAssembling.Click += new System.EventHandler(this.button_StartTheAssembling_Click);
             // 
             // Form_MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1186, 619);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(1186, 630);
+            this.Controls.Add(this.button_StartTheAssembling);
             this.Controls.Add(this.groupBox_AssemblingResults);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox_ThreeAndHalfHDD);
@@ -1537,7 +1536,7 @@ namespace Prog_Kursovaya_sem3
         private System.Windows.Forms.Label label_AssemblingSSDName;
         private System.Windows.Forms.CheckBox checkBox_AssemblingSSDEnabled;
         private System.Windows.Forms.GroupBox groupBox_AssemblingResults;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button_StartTheAssembling;
         private System.Windows.Forms.RichTextBox richTextBox_AssemblingResults;
     }
 }
