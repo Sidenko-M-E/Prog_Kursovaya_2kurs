@@ -1,6 +1,6 @@
 ﻿namespace Prog_Kursovaya_sem3
 {
-    public class Processor
+    public class Processor : RAMCompatibleObject
     {
         private string name;
         private string socketType;
@@ -9,10 +9,7 @@
         private int numberOfThreads;
         private double baseFrequency;
         private int techprocess;
-        private string memoryType;
         private int maxRAMCapacityGb;
-        private int minRAMFrequency;
-        private int maxRAMFrequency;
         private int energyConsumption;
 
         public string Name
@@ -129,17 +126,6 @@
                     techprocess = value;
             }
         }
-        public string MemoryType
-        {
-            get
-            {
-                return (new string(memoryType.ToCharArray()));
-            }
-            set
-            {
-                memoryType = new string(value.ToCharArray());
-            }
-        }
         public int MaxRamCapacityGb
         {
             get
@@ -150,30 +136,6 @@
             {
                 if ((value >= 1) && (value <= 128))
                     maxRAMCapacityGb = value;
-            }
-        }
-        public int MinRAMFrequency
-        {
-            get
-            {
-                return minRAMFrequency;
-            }
-            set
-            {
-                if ((value >= 500) && (value <= 5000))
-                    minRAMFrequency = value;
-            }
-        }
-        public int MaxRAMFrequency
-        {
-            get
-            {
-                return maxRAMFrequency;
-            }
-            set
-            {
-                if ((value >= 500) && (value <= 5000))
-                    maxRAMFrequency = value;
             }
         }
         public int EnergyConsumption
@@ -201,9 +163,8 @@
             Techprocess = int.Parse(inputSubStrings[6]);
             MemoryType = inputSubStrings[7];
             MaxRamCapacityGb = int.Parse(inputSubStrings[8]);
-            MinRAMFrequency = int.Parse(inputSubStrings[9]);
-            MaxRAMFrequency = int.Parse(inputSubStrings[10]);
-            EnergyConsumption = int.Parse(inputSubStrings[11]);
+            AvailableFrequenciesString = inputSubStrings[9];
+            EnergyConsumption = int.Parse(inputSubStrings[10]);
         }
         public Processor(Processor inputObject)
         {
@@ -216,8 +177,7 @@
             Techprocess = inputObject.Techprocess;
             MemoryType = inputObject.MemoryType;
             MaxRamCapacityGb = inputObject.MaxRamCapacityGb;
-            MinRAMFrequency = inputObject.MinRAMFrequency;
-            MaxRAMFrequency = inputObject.MaxRAMFrequency;
+            AvailableFrequenciesString = inputObject.AvailableFrequenciesString;
             EnergyConsumption = inputObject.EnergyConsumption;
         }
     }

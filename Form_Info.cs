@@ -137,8 +137,8 @@ namespace Prog_Kursovaya_sem3
                         "\nПараметры оперативной памяти:\n" +
                         "Тип памяти:  " + processor.MemoryType + "\n" +
                         "Объём памяти:  " + processor.MaxRamCapacityGb + " Гб\n" +
-                        "Минимальная частота RAM:  " + processor.MinRAMFrequency + " МГц\n" +
-                        "Максимальная частота RAM:  " + processor.MaxRAMFrequency + " МГц\n" +
+                        "Минимальная частота RAM:  " + processor.AvailableFrequenciesArray[0] + " МГц\n" +
+                        "Максимальная частота RAM:  " + processor.AvailableFrequenciesArray[processor.AvailableFrequenciesArray.Length - 1] + " МГц\n" +
                         "\nЭнергопотребление: " + processor.EnergyConsumption + " Вт";
                         break;
                     }
@@ -159,9 +159,9 @@ namespace Prog_Kursovaya_sem3
                        "Кол-во слотов оперативной памяти: " + motherboard.NumberOfRAMSlots + "\n" +
                        "\nПараметры оперативной памяти:\n" +
                        "Форм-фактор RAM:  " + motherboard.RamFormFactor + "\n" +
-                       "Тип RAM:  " + motherboard.RamType + "\n" +
+                       "Тип RAM:  " + motherboard.MemoryType + "\n" +
                        "Максимальный объем RAM:  " + motherboard.RamMaxCapacity + " Гб\n" +
-                       "Список допустимых частот:  " + motherboard.RamAvailableFrequenciesString + " МГц";
+                       "Список допустимых частот:  " + motherboard.AvailableFrequenciesString + " МГц";
                         break;
                     }
                     

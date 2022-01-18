@@ -84,8 +84,8 @@ namespace Prog_Kursovaya_sem3
                             "[" + processors[i - 1].NumberOfCores + " ядра, " +
                             processors[i - 1].BaseFrequency + " ГГц, " +
                              processors[i - 1].MemoryType + ", " +
-                              processors[i - 1].MinRAMFrequency + "-" +
-                              processors[i - 1].MaxRAMFrequency + " МГц, " +
+                              processors[i - 1].AvailableFrequenciesArray[0] + "-" +
+                              processors[i - 1].AvailableFrequenciesArray[processors[i - 1].AvailableFrequenciesArray.Length - 1] + " МГц, " +
                                processors[i - 1].EnergyConsumption + " Вт" + "]");
                     }
                     file.Close();
@@ -112,8 +112,8 @@ namespace Prog_Kursovaya_sem3
                             "[" + motherboards[i - 1].SocketType + ", " +
                             motherboards[i - 1].ChipsetType + ", " +
                              motherboards[i - 1].NumberOfRAMSlots + "x" +
-                              motherboards[i - 1].RamType + " - " +
-                               motherboards[i - 1].RamAvailableFrequenciesArray[motherboards[i - 1].RamAvailableFrequenciesArray.Length - 1] + " МГц, " +
+                              motherboards[i - 1].MemoryType + " - " +
+                               motherboards[i - 1].AvailableFrequenciesArray[motherboards[i - 1].AvailableFrequenciesArray.Length - 1] + " МГц, " +
                                motherboards[i - 1].NumberOfPCIESlots + "xPCI-Ex16" + "]");
                     }
                     file.Close();
@@ -714,7 +714,7 @@ namespace Prog_Kursovaya_sem3
             {
                 personalComputer.assemblingRAM = new RAM(assemblingRAM);
                 personalComputer.isRAMChecked = true;
-                personalComputer.quantityOfRAMs = (int)numericUpDown_InstalledRAMs.Value;
+                personalComputer.QuantityOfRAMs = (int)numericUpDown_InstalledRAMs.Value;
             }
 
             if (checkBox_AssemblingVideocardEnabled.Checked == true)
@@ -727,21 +727,21 @@ namespace Prog_Kursovaya_sem3
             {
                 personalComputer.assemblingThreeAndHalfHDD = new HardDrive(assemblingThreeAndHalfHDD);
                 personalComputer.isThreeAndHalfHDDChecked = true;
-                personalComputer.quantityOfThreeAndHalfHDDs = (int)numericUpDown_InstalledThreeAndHalfHDD.Value;
+                personalComputer.QuantityOfThreeAndHalfHDDs = (int)numericUpDown_InstalledThreeAndHalfHDD.Value;
             }
 
             if (checkBox_AssemblingTwoAndHalfHDDEnabled.Checked == true)
             {
                 personalComputer.assemblingTwoAndHalfHDD = new HardDrive(assemblingTwoAndHalfHDD);
                 personalComputer.isTwoAndHalfHDDChecked = true;
-                personalComputer.quantityOfTwoAndHalfHDDs = (int)numericUpDown_InstalledTwoAndHalfHDD.Value;
+                personalComputer.QuantityOfTwoAndHalfHDDs = (int)numericUpDown_InstalledTwoAndHalfHDD.Value;
             }
 
             if (checkBox_AssemblingSSDEnabled.Checked == true)
             {
                 personalComputer.assemblingSSD = new SolidStateDrive(assemblingSSD);
                 personalComputer.isSSDChecked = true;
-                personalComputer.quantityOfSSDs = (int)numericUpDown_InstalledTwoAndHalfHDD.Value;
+                personalComputer.QuantityOfSSDs = (int)numericUpDown_InstalledTwoAndHalfHDD.Value;
             }
 
             if (checkBox_AssemblingCoolingEnabled.Checked == true)

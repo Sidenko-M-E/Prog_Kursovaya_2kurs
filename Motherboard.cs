@@ -1,6 +1,6 @@
 ﻿namespace Prog_Kursovaya_sem3
 {
-    public class Motherboard
+    public class Motherboard : RAMCompatibleObject
     {
         private string name;
        
@@ -16,9 +16,7 @@
         private int numberOfRAMSlots;
 
         private string ramFormFactor;
-        private string ramType;
         private int ramMaxCapacity;
-        private int[] ramAvailableFrequencies;
 
 
         public string Name
@@ -148,17 +146,6 @@
                 ramFormFactor = new string(value.ToCharArray());
             }
         }
-        public string RamType
-        {
-            get
-            {
-                return (new string(ramType.ToCharArray()));
-            }
-            set
-            {
-                ramType = new string(value.ToCharArray());
-            }
-        }
         public int RamMaxCapacity
         {
             get
@@ -169,53 +156,6 @@
             {
                 if ((value >= 0) && (value <= 64))
                     ramMaxCapacity = value;
-            }
-        }
-        public int[] RamAvailableFrequenciesArray
-        {
-            get
-            {
-                int[] returnArray = new int[ramAvailableFrequencies.Length];
-                for (int i = 0; i < ramAvailableFrequencies.Length; i++)
-                    returnArray[i] = ramAvailableFrequencies[i];
-                return (returnArray);
-            }
-            set
-            {
-                ramAvailableFrequencies = new int[value.Length];
-                for (int i = 0; i < value.Length; i++)
-                    ramAvailableFrequencies[i] = value[i];
-            }
-        }
-        public string RamAvailableFrequenciesString
-        {
-            get
-            {
-                string returnValue = "";
-                for (int i = 0; i < ramAvailableFrequencies.Length; i++)
-                {
-                    if (i == ramAvailableFrequencies.Length - 1)
-                        returnValue += ramAvailableFrequencies[i];
-                    else
-                        returnValue += ramAvailableFrequencies[i] + ",";
-                }
-                return (returnValue);
-            }
-            set
-            {
-                if (value.IndexOf(',') == (-1))
-                {
-                    ramAvailableFrequencies = new int[1];
-                    ramAvailableFrequencies[0] = int.Parse(value);
-                }
-
-                else
-                {
-                    string[] bufStringArray = value.Split(',');
-                    ramAvailableFrequencies = new int[bufStringArray.Length];
-                    for (int i = 0; i < bufStringArray.Length; i++)
-                        ramAvailableFrequencies[i] = int.Parse(bufStringArray[i]);
-                }
             }
         }
 
@@ -234,9 +174,9 @@
 
             NumberOfRAMSlots = int.Parse(inputSubStrings[9]);
             RamFormFactor = inputSubStrings[10];
-            RamType = inputSubStrings[11];
+            MemoryType = inputSubStrings[11];
             RamMaxCapacity = int.Parse(inputSubStrings[12]);
-            RamAvailableFrequenciesString = inputSubStrings[13];
+            AvailableFrequenciesString = inputSubStrings[13];
         }
         public Motherboard(Motherboard inputObject)
         {
@@ -252,9 +192,9 @@
 
             NumberOfRAMSlots = inputObject.NumberOfRAMSlots;
             RamFormFactor = inputObject.RamFormFactor;
-            RamType = inputObject.RamType;
+            MemoryType = inputObject.MemoryType;
             RamMaxCapacity = inputObject.RamMaxCapacity;
-            RamAvailableFrequenciesString = inputObject.RamAvailableFrequenciesString;
+            AvailableFrequenciesString = inputObject.AvailableFrequenciesString;
         }
     }
 }

@@ -99,10 +99,10 @@ namespace Prog_Kursovaya_sem3
                         resultOfAssembling += "(*)Несовпадение типа сокета у материнской платы и процессора!!!\n";
                     if (!assemblingProcessor.SupportedChipsetsArray.Contains(assemblingMotherboard.ChipsetType))
                         resultOfAssembling += "(*)Процессор не поддерживает чипсет материнской платы!!!\n";
-                    if (assemblingProcessor.MemoryType != assemblingMotherboard.RamType)
+                    if (assemblingProcessor.MemoryType != assemblingMotherboard.MemoryType)
                         resultOfAssembling += "(*)Типы памяти процессора и материнской платы не совместимы!!!\n";
-                    if ((assemblingProcessor.MaxRAMFrequency < assemblingMotherboard.RamAvailableFrequenciesArray[0]) ||
-                        (assemblingProcessor.MinRAMFrequency > assemblingMotherboard.RamAvailableFrequenciesArray[assemblingMotherboard.RamAvailableFrequenciesArray.Length - 1]))
+                    if ((assemblingProcessor.AvailableFrequenciesArray[assemblingProcessor.AvailableFrequenciesArray.Length - 1] < assemblingMotherboard.AvailableFrequenciesArray[0]) ||
+                        (assemblingProcessor.AvailableFrequenciesArray[0] > assemblingMotherboard.AvailableFrequenciesArray[assemblingMotherboard.AvailableFrequenciesArray.Length - 1]))
                         resultOfAssembling += "(*)Процессор и материнская плата имеют непересекающиеся диапазоны поддерживаемых частот!!!\n";
                 }
 
@@ -125,11 +125,11 @@ namespace Prog_Kursovaya_sem3
             {
                 if (isRAMChecked == true)
                 {
-                    if (assemblingMotherboard.RamType != assemblingRAM.MemoryType)
+                    if (assemblingMotherboard.MemoryType != assemblingRAM.MemoryType)
                         resultOfAssembling += "(*)Типы памяти материнской платы и оперативной памяти не совместимы!!!\n";
 
-                    if ((assemblingMotherboard.RamAvailableFrequenciesArray[assemblingMotherboard.RamAvailableFrequenciesArray.Length - 1] < assemblingRAM.AvailableFrequenciesArray[0]) ||
-                        (assemblingMotherboard.RamAvailableFrequenciesArray[0] > assemblingRAM.AvailableFrequenciesArray[assemblingRAM.AvailableFrequenciesArray.Length - 1]))
+                    if ((assemblingMotherboard.AvailableFrequenciesArray[assemblingMotherboard.AvailableFrequenciesArray.Length - 1] < assemblingRAM.AvailableFrequenciesArray[0]) ||
+                        (assemblingMotherboard.AvailableFrequenciesArray[0] > assemblingRAM.AvailableFrequenciesArray[assemblingRAM.AvailableFrequenciesArray.Length - 1]))
                         resultOfAssembling += "(*)Материнская плата и оперативная память имеют непересекающиеся диапазоны поддерживаемых частот!!!\n";
 
                     if (assemblingMotherboard.RamMaxCapacity < assemblingRAM.MemoryCapacity * quantityOfRAMs)
