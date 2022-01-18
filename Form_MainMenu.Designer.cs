@@ -29,24 +29,24 @@ namespace Prog_Kursovaya_sem3
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle43 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle45 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle47 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle48 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle49 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle50 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle51 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle52 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle53 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle54 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabPage_CompCase = new System.Windows.Forms.TabPage();
             this.button_CompCaseAddToAssembling = new System.Windows.Forms.Button();
             this.dataGridView_CompCase = new System.Windows.Forms.DataGridView();
@@ -191,7 +191,7 @@ namespace Prog_Kursovaya_sem3
             this.tabPage_CompCase.Location = new System.Drawing.Point(4, 40);
             this.tabPage_CompCase.Name = "tabPage_CompCase";
             this.tabPage_CompCase.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_CompCase.Size = new System.Drawing.Size(553, 379);
+            this.tabPage_CompCase.Size = new System.Drawing.Size(553, 563);
             this.tabPage_CompCase.TabIndex = 6;
             this.tabPage_CompCase.Text = "Корпус";
             this.tabPage_CompCase.UseVisualStyleBackColor = true;
@@ -229,8 +229,8 @@ namespace Prog_Kursovaya_sem3
             // 
             // Column_CompCaseName
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column_CompCaseName.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle37.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_CompCaseName.DefaultCellStyle = dataGridViewCellStyle37;
             this.Column_CompCaseName.HeaderText = "Наименование";
             this.Column_CompCaseName.MinimumWidth = 6;
             this.Column_CompCaseName.Name = "Column_CompCaseName";
@@ -241,8 +241,8 @@ namespace Prog_Kursovaya_sem3
             // 
             // Column_CompCaseInfo
             // 
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column_CompCaseInfo.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_CompCaseInfo.DefaultCellStyle = dataGridViewCellStyle38;
             this.Column_CompCaseInfo.HeaderText = "Краткая информация";
             this.Column_CompCaseInfo.MinimumWidth = 6;
             this.Column_CompCaseInfo.Name = "Column_CompCaseInfo";
@@ -257,7 +257,7 @@ namespace Prog_Kursovaya_sem3
             this.tabPage_PSU.Controls.Add(this.dataGridView_PowerSupplyUnit);
             this.tabPage_PSU.Location = new System.Drawing.Point(4, 40);
             this.tabPage_PSU.Name = "tabPage_PSU";
-            this.tabPage_PSU.Size = new System.Drawing.Size(553, 379);
+            this.tabPage_PSU.Size = new System.Drawing.Size(553, 563);
             this.tabPage_PSU.TabIndex = 5;
             this.tabPage_PSU.Text = "Блок питания";
             this.tabPage_PSU.UseVisualStyleBackColor = true;
@@ -295,8 +295,8 @@ namespace Prog_Kursovaya_sem3
             // 
             // Column_SupplyUnitName
             // 
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column_SupplyUnitName.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_SupplyUnitName.DefaultCellStyle = dataGridViewCellStyle39;
             this.Column_SupplyUnitName.HeaderText = "Наименование";
             this.Column_SupplyUnitName.MinimumWidth = 6;
             this.Column_SupplyUnitName.Name = "Column_SupplyUnitName";
@@ -307,8 +307,8 @@ namespace Prog_Kursovaya_sem3
             // 
             // Column_SupplyUnitInfo
             // 
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column_SupplyUnitInfo.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle40.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_SupplyUnitInfo.DefaultCellStyle = dataGridViewCellStyle40;
             this.Column_SupplyUnitInfo.HeaderText = "Краткая информация";
             this.Column_SupplyUnitInfo.MinimumWidth = 6;
             this.Column_SupplyUnitInfo.Name = "Column_SupplyUnitInfo";
@@ -323,7 +323,7 @@ namespace Prog_Kursovaya_sem3
             this.tabPage_RAM.Controls.Add(this.dataGridView_RAM);
             this.tabPage_RAM.Location = new System.Drawing.Point(4, 40);
             this.tabPage_RAM.Name = "tabPage_RAM";
-            this.tabPage_RAM.Size = new System.Drawing.Size(553, 379);
+            this.tabPage_RAM.Size = new System.Drawing.Size(553, 563);
             this.tabPage_RAM.TabIndex = 4;
             this.tabPage_RAM.Text = "Оперативная память";
             this.tabPage_RAM.UseVisualStyleBackColor = true;
@@ -361,8 +361,8 @@ namespace Prog_Kursovaya_sem3
             // 
             // Column_RAMname
             // 
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column_RAMname.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle41.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_RAMname.DefaultCellStyle = dataGridViewCellStyle41;
             this.Column_RAMname.HeaderText = "Наименование";
             this.Column_RAMname.MinimumWidth = 6;
             this.Column_RAMname.Name = "Column_RAMname";
@@ -373,8 +373,8 @@ namespace Prog_Kursovaya_sem3
             // 
             // Column_RAMinfo
             // 
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column_RAMinfo.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle42.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_RAMinfo.DefaultCellStyle = dataGridViewCellStyle42;
             this.Column_RAMinfo.HeaderText = "Краткая информация";
             this.Column_RAMinfo.MinimumWidth = 6;
             this.Column_RAMinfo.Name = "Column_RAMinfo";
@@ -389,7 +389,7 @@ namespace Prog_Kursovaya_sem3
             this.tabPage_Videocard.Controls.Add(this.dataGridView_Videocard);
             this.tabPage_Videocard.Location = new System.Drawing.Point(4, 40);
             this.tabPage_Videocard.Name = "tabPage_Videocard";
-            this.tabPage_Videocard.Size = new System.Drawing.Size(553, 379);
+            this.tabPage_Videocard.Size = new System.Drawing.Size(553, 563);
             this.tabPage_Videocard.TabIndex = 3;
             this.tabPage_Videocard.Text = "Видеокарта";
             this.tabPage_Videocard.UseVisualStyleBackColor = true;
@@ -427,8 +427,8 @@ namespace Prog_Kursovaya_sem3
             // 
             // Column_VideocardName
             // 
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column_VideocardName.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle43.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_VideocardName.DefaultCellStyle = dataGridViewCellStyle43;
             this.Column_VideocardName.HeaderText = "Наименование";
             this.Column_VideocardName.MinimumWidth = 6;
             this.Column_VideocardName.Name = "Column_VideocardName";
@@ -439,8 +439,8 @@ namespace Prog_Kursovaya_sem3
             // 
             // Column_VideocardInfo
             // 
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column_VideocardInfo.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle44.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_VideocardInfo.DefaultCellStyle = dataGridViewCellStyle44;
             this.Column_VideocardInfo.HeaderText = "Краткая информация";
             this.Column_VideocardInfo.MinimumWidth = 6;
             this.Column_VideocardInfo.Name = "Column_VideocardInfo";
@@ -456,7 +456,7 @@ namespace Prog_Kursovaya_sem3
             this.tabPage_Motherboard.Location = new System.Drawing.Point(4, 40);
             this.tabPage_Motherboard.Name = "tabPage_Motherboard";
             this.tabPage_Motherboard.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_Motherboard.Size = new System.Drawing.Size(553, 379);
+            this.tabPage_Motherboard.Size = new System.Drawing.Size(553, 563);
             this.tabPage_Motherboard.TabIndex = 1;
             this.tabPage_Motherboard.Text = "Материнская плата";
             this.tabPage_Motherboard.UseVisualStyleBackColor = true;
@@ -494,8 +494,8 @@ namespace Prog_Kursovaya_sem3
             // 
             // Column_MotherboardName
             // 
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column_MotherboardName.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle45.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_MotherboardName.DefaultCellStyle = dataGridViewCellStyle45;
             this.Column_MotherboardName.HeaderText = "Наименование";
             this.Column_MotherboardName.MinimumWidth = 6;
             this.Column_MotherboardName.Name = "Column_MotherboardName";
@@ -506,8 +506,8 @@ namespace Prog_Kursovaya_sem3
             // 
             // Column_MotherboardInfo
             // 
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column_MotherboardInfo.DefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle46.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_MotherboardInfo.DefaultCellStyle = dataGridViewCellStyle46;
             this.Column_MotherboardInfo.HeaderText = "Краткая информация";
             this.Column_MotherboardInfo.MinimumWidth = 6;
             this.Column_MotherboardInfo.Name = "Column_MotherboardInfo";
@@ -562,8 +562,8 @@ namespace Prog_Kursovaya_sem3
             // 
             // Column_ProcessorName
             // 
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column_ProcessorName.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle47.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_ProcessorName.DefaultCellStyle = dataGridViewCellStyle47;
             this.Column_ProcessorName.HeaderText = "Наименование";
             this.Column_ProcessorName.MinimumWidth = 6;
             this.Column_ProcessorName.Name = "Column_ProcessorName";
@@ -574,8 +574,8 @@ namespace Prog_Kursovaya_sem3
             // 
             // Column_ProcessorInfo
             // 
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column_ProcessorInfo.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle48.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_ProcessorInfo.DefaultCellStyle = dataGridViewCellStyle48;
             this.Column_ProcessorInfo.HeaderText = "Краткая информация";
             this.Column_ProcessorInfo.MinimumWidth = 6;
             this.Column_ProcessorInfo.Name = "Column_ProcessorInfo";
@@ -610,7 +610,7 @@ namespace Prog_Kursovaya_sem3
             this.tabPage_HardDrive.Location = new System.Drawing.Point(4, 40);
             this.tabPage_HardDrive.Name = "tabPage_HardDrive";
             this.tabPage_HardDrive.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_HardDrive.Size = new System.Drawing.Size(553, 379);
+            this.tabPage_HardDrive.Size = new System.Drawing.Size(553, 563);
             this.tabPage_HardDrive.TabIndex = 7;
             this.tabPage_HardDrive.Text = "Жесткий диск";
             this.tabPage_HardDrive.UseVisualStyleBackColor = true;
@@ -648,8 +648,8 @@ namespace Prog_Kursovaya_sem3
             // 
             // Column_HardDriveName
             // 
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column_HardDriveName.DefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle49.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_HardDriveName.DefaultCellStyle = dataGridViewCellStyle49;
             this.Column_HardDriveName.HeaderText = "Наименование";
             this.Column_HardDriveName.MinimumWidth = 6;
             this.Column_HardDriveName.Name = "Column_HardDriveName";
@@ -660,8 +660,8 @@ namespace Prog_Kursovaya_sem3
             // 
             // Column_HardDriveInfo
             // 
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column_HardDriveInfo.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle50.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_HardDriveInfo.DefaultCellStyle = dataGridViewCellStyle50;
             this.Column_HardDriveInfo.HeaderText = "Краткая информация";
             this.Column_HardDriveInfo.MinimumWidth = 6;
             this.Column_HardDriveInfo.Name = "Column_HardDriveInfo";
@@ -676,7 +676,7 @@ namespace Prog_Kursovaya_sem3
             this.tabPage_SSD.Controls.Add(this.dataGridView_SolidStateDrive);
             this.tabPage_SSD.Location = new System.Drawing.Point(4, 40);
             this.tabPage_SSD.Name = "tabPage_SSD";
-            this.tabPage_SSD.Size = new System.Drawing.Size(553, 379);
+            this.tabPage_SSD.Size = new System.Drawing.Size(553, 563);
             this.tabPage_SSD.TabIndex = 8;
             this.tabPage_SSD.Text = "SSD";
             this.tabPage_SSD.UseVisualStyleBackColor = true;
@@ -714,8 +714,8 @@ namespace Prog_Kursovaya_sem3
             // 
             // Column_SolidStateDriveName
             // 
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column_SolidStateDriveName.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle51.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_SolidStateDriveName.DefaultCellStyle = dataGridViewCellStyle51;
             this.Column_SolidStateDriveName.HeaderText = "Наименование";
             this.Column_SolidStateDriveName.MinimumWidth = 6;
             this.Column_SolidStateDriveName.Name = "Column_SolidStateDriveName";
@@ -726,8 +726,8 @@ namespace Prog_Kursovaya_sem3
             // 
             // Column_SolidStateDriveInfo
             // 
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column_SolidStateDriveInfo.DefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle52.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_SolidStateDriveInfo.DefaultCellStyle = dataGridViewCellStyle52;
             this.Column_SolidStateDriveInfo.HeaderText = "Краткая информация";
             this.Column_SolidStateDriveInfo.MinimumWidth = 6;
             this.Column_SolidStateDriveInfo.Name = "Column_SolidStateDriveInfo";
@@ -743,7 +743,7 @@ namespace Prog_Kursovaya_sem3
             this.tabPage_Cooling.Location = new System.Drawing.Point(4, 40);
             this.tabPage_Cooling.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage_Cooling.Name = "tabPage_Cooling";
-            this.tabPage_Cooling.Size = new System.Drawing.Size(553, 379);
+            this.tabPage_Cooling.Size = new System.Drawing.Size(553, 563);
             this.tabPage_Cooling.TabIndex = 9;
             this.tabPage_Cooling.Text = "Кулер";
             this.tabPage_Cooling.UseVisualStyleBackColor = true;
@@ -781,8 +781,8 @@ namespace Prog_Kursovaya_sem3
             // 
             // Column_CoolingName
             // 
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column_CoolingName.DefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle53.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_CoolingName.DefaultCellStyle = dataGridViewCellStyle53;
             this.Column_CoolingName.HeaderText = "Наименование";
             this.Column_CoolingName.MinimumWidth = 6;
             this.Column_CoolingName.Name = "Column_CoolingName";
@@ -793,8 +793,8 @@ namespace Prog_Kursovaya_sem3
             // 
             // Column_CoolingInfo
             // 
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column_CoolingInfo.DefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle54.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_CoolingInfo.DefaultCellStyle = dataGridViewCellStyle54;
             this.Column_CoolingInfo.HeaderText = "Краткая информация";
             this.Column_CoolingInfo.MinimumWidth = 6;
             this.Column_CoolingInfo.Name = "Column_CoolingInfo";
@@ -808,18 +808,20 @@ namespace Prog_Kursovaya_sem3
             this.groupBox_Processor.Controls.Add(this.button_AssemblingProcessorInfo);
             this.groupBox_Processor.Controls.Add(this.label_AssemblingProcessorName);
             this.groupBox_Processor.Controls.Add(this.checkBox_AssemblingProcessorEnabled);
-            this.groupBox_Processor.Location = new System.Drawing.Point(814, 260);
+            this.groupBox_Processor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.groupBox_Processor.Location = new System.Drawing.Point(840, 275);
             this.groupBox_Processor.Name = "groupBox_Processor";
-            this.groupBox_Processor.Size = new System.Drawing.Size(172, 73);
+            this.groupBox_Processor.Size = new System.Drawing.Size(181, 83);
             this.groupBox_Processor.TabIndex = 2;
             this.groupBox_Processor.TabStop = false;
             this.groupBox_Processor.Text = "Процессор";
             // 
             // button_AssemblingProcessorInfo
             // 
-            this.button_AssemblingProcessorInfo.Location = new System.Drawing.Point(16, 40);
+            this.button_AssemblingProcessorInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button_AssemblingProcessorInfo.Location = new System.Drawing.Point(16, 55);
             this.button_AssemblingProcessorInfo.Name = "button_AssemblingProcessorInfo";
-            this.button_AssemblingProcessorInfo.Size = new System.Drawing.Size(142, 22);
+            this.button_AssemblingProcessorInfo.Size = new System.Drawing.Size(149, 22);
             this.button_AssemblingProcessorInfo.TabIndex = 2;
             this.button_AssemblingProcessorInfo.Text = "Информация";
             this.button_AssemblingProcessorInfo.UseVisualStyleBackColor = true;
@@ -828,16 +830,16 @@ namespace Prog_Kursovaya_sem3
             // label_AssemblingProcessorName
             // 
             this.label_AssemblingProcessorName.AutoSize = true;
-            this.label_AssemblingProcessorName.Location = new System.Drawing.Point(13, 20);
+            this.label_AssemblingProcessorName.Location = new System.Drawing.Point(13, 27);
             this.label_AssemblingProcessorName.Name = "label_AssemblingProcessorName";
-            this.label_AssemblingProcessorName.Size = new System.Drawing.Size(58, 13);
+            this.label_AssemblingProcessorName.Size = new System.Drawing.Size(65, 15);
             this.label_AssemblingProcessorName.TabIndex = 1;
             this.label_AssemblingProcessorName.Text = "не задано";
             // 
             // checkBox_AssemblingProcessorEnabled
             // 
             this.checkBox_AssemblingProcessorEnabled.AutoSize = true;
-            this.checkBox_AssemblingProcessorEnabled.Location = new System.Drawing.Point(75, 0);
+            this.checkBox_AssemblingProcessorEnabled.Location = new System.Drawing.Point(79, 3);
             this.checkBox_AssemblingProcessorEnabled.Name = "checkBox_AssemblingProcessorEnabled";
             this.checkBox_AssemblingProcessorEnabled.Size = new System.Drawing.Size(15, 14);
             this.checkBox_AssemblingProcessorEnabled.TabIndex = 0;
@@ -848,18 +850,20 @@ namespace Prog_Kursovaya_sem3
             this.groupBox_Cooling.Controls.Add(this.button_AssemblingCoolingInfo);
             this.groupBox_Cooling.Controls.Add(this.label_AssemblingCoolingName);
             this.groupBox_Cooling.Controls.Add(this.checkBox_AssemblingCoolingEnabled);
-            this.groupBox_Cooling.Location = new System.Drawing.Point(588, 175);
+            this.groupBox_Cooling.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.groupBox_Cooling.Location = new System.Drawing.Point(588, 194);
             this.groupBox_Cooling.Name = "groupBox_Cooling";
-            this.groupBox_Cooling.Size = new System.Drawing.Size(172, 73);
+            this.groupBox_Cooling.Size = new System.Drawing.Size(182, 83);
             this.groupBox_Cooling.TabIndex = 3;
             this.groupBox_Cooling.TabStop = false;
             this.groupBox_Cooling.Text = "Кулер";
             // 
             // button_AssemblingCoolingInfo
             // 
-            this.button_AssemblingCoolingInfo.Location = new System.Drawing.Point(16, 40);
+            this.button_AssemblingCoolingInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button_AssemblingCoolingInfo.Location = new System.Drawing.Point(16, 55);
             this.button_AssemblingCoolingInfo.Name = "button_AssemblingCoolingInfo";
-            this.button_AssemblingCoolingInfo.Size = new System.Drawing.Size(142, 22);
+            this.button_AssemblingCoolingInfo.Size = new System.Drawing.Size(156, 22);
             this.button_AssemblingCoolingInfo.TabIndex = 2;
             this.button_AssemblingCoolingInfo.Text = "Информация";
             this.button_AssemblingCoolingInfo.UseVisualStyleBackColor = true;
@@ -868,9 +872,9 @@ namespace Prog_Kursovaya_sem3
             // label_AssemblingCoolingName
             // 
             this.label_AssemblingCoolingName.AutoSize = true;
-            this.label_AssemblingCoolingName.Location = new System.Drawing.Point(13, 20);
+            this.label_AssemblingCoolingName.Location = new System.Drawing.Point(13, 27);
             this.label_AssemblingCoolingName.Name = "label_AssemblingCoolingName";
-            this.label_AssemblingCoolingName.Size = new System.Drawing.Size(58, 13);
+            this.label_AssemblingCoolingName.Size = new System.Drawing.Size(65, 15);
             this.label_AssemblingCoolingName.TabIndex = 1;
             this.label_AssemblingCoolingName.Text = "не задано";
             // 
@@ -888,18 +892,19 @@ namespace Prog_Kursovaya_sem3
             this.groupBox_Motherboard.Controls.Add(this.button_AssemblingMotherboardInfo);
             this.groupBox_Motherboard.Controls.Add(this.label_AssemblingMotherboardName);
             this.groupBox_Motherboard.Controls.Add(this.checkBox_AssemblingMotherboardEnabled);
-            this.groupBox_Motherboard.Location = new System.Drawing.Point(814, 337);
+            this.groupBox_Motherboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.groupBox_Motherboard.Location = new System.Drawing.Point(840, 367);
             this.groupBox_Motherboard.Name = "groupBox_Motherboard";
-            this.groupBox_Motherboard.Size = new System.Drawing.Size(172, 73);
+            this.groupBox_Motherboard.Size = new System.Drawing.Size(181, 80);
             this.groupBox_Motherboard.TabIndex = 5;
             this.groupBox_Motherboard.TabStop = false;
             this.groupBox_Motherboard.Text = "Материнская плата";
             // 
             // button_AssemblingMotherboardInfo
             // 
-            this.button_AssemblingMotherboardInfo.Location = new System.Drawing.Point(16, 40);
+            this.button_AssemblingMotherboardInfo.Location = new System.Drawing.Point(16, 52);
             this.button_AssemblingMotherboardInfo.Name = "button_AssemblingMotherboardInfo";
-            this.button_AssemblingMotherboardInfo.Size = new System.Drawing.Size(142, 22);
+            this.button_AssemblingMotherboardInfo.Size = new System.Drawing.Size(149, 22);
             this.button_AssemblingMotherboardInfo.TabIndex = 2;
             this.button_AssemblingMotherboardInfo.Text = "Информация";
             this.button_AssemblingMotherboardInfo.UseVisualStyleBackColor = true;
@@ -908,16 +913,16 @@ namespace Prog_Kursovaya_sem3
             // label_AssemblingMotherboardName
             // 
             this.label_AssemblingMotherboardName.AutoSize = true;
-            this.label_AssemblingMotherboardName.Location = new System.Drawing.Point(13, 20);
+            this.label_AssemblingMotherboardName.Location = new System.Drawing.Point(13, 24);
             this.label_AssemblingMotherboardName.Name = "label_AssemblingMotherboardName";
-            this.label_AssemblingMotherboardName.Size = new System.Drawing.Size(58, 13);
+            this.label_AssemblingMotherboardName.Size = new System.Drawing.Size(65, 15);
             this.label_AssemblingMotherboardName.TabIndex = 1;
             this.label_AssemblingMotherboardName.Text = "не задано";
             // 
             // checkBox_AssemblingMotherboardEnabled
             // 
             this.checkBox_AssemblingMotherboardEnabled.AutoSize = true;
-            this.checkBox_AssemblingMotherboardEnabled.Location = new System.Drawing.Point(116, 0);
+            this.checkBox_AssemblingMotherboardEnabled.Location = new System.Drawing.Point(130, 3);
             this.checkBox_AssemblingMotherboardEnabled.Name = "checkBox_AssemblingMotherboardEnabled";
             this.checkBox_AssemblingMotherboardEnabled.Size = new System.Drawing.Size(15, 14);
             this.checkBox_AssemblingMotherboardEnabled.TabIndex = 0;
@@ -928,18 +933,20 @@ namespace Prog_Kursovaya_sem3
             this.groupBox_PSU.Controls.Add(this.button_AssemblingPSUInfo);
             this.groupBox_PSU.Controls.Add(this.label_AssemblingPSUName);
             this.groupBox_PSU.Controls.Add(this.checkBox_AssemblingPSUEnabled);
+            this.groupBox_PSU.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.groupBox_PSU.Location = new System.Drawing.Point(588, 12);
             this.groupBox_PSU.Name = "groupBox_PSU";
-            this.groupBox_PSU.Size = new System.Drawing.Size(172, 73);
+            this.groupBox_PSU.Size = new System.Drawing.Size(182, 86);
             this.groupBox_PSU.TabIndex = 6;
             this.groupBox_PSU.TabStop = false;
             this.groupBox_PSU.Text = "Блок питания";
             // 
             // button_AssemblingPSUInfo
             // 
-            this.button_AssemblingPSUInfo.Location = new System.Drawing.Point(16, 40);
+            this.button_AssemblingPSUInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button_AssemblingPSUInfo.Location = new System.Drawing.Point(16, 58);
             this.button_AssemblingPSUInfo.Name = "button_AssemblingPSUInfo";
-            this.button_AssemblingPSUInfo.Size = new System.Drawing.Size(142, 22);
+            this.button_AssemblingPSUInfo.Size = new System.Drawing.Size(156, 22);
             this.button_AssemblingPSUInfo.TabIndex = 2;
             this.button_AssemblingPSUInfo.Text = "Информация";
             this.button_AssemblingPSUInfo.UseVisualStyleBackColor = true;
@@ -948,16 +955,16 @@ namespace Prog_Kursovaya_sem3
             // label_AssemblingPSUName
             // 
             this.label_AssemblingPSUName.AutoSize = true;
-            this.label_AssemblingPSUName.Location = new System.Drawing.Point(13, 20);
+            this.label_AssemblingPSUName.Location = new System.Drawing.Point(13, 29);
             this.label_AssemblingPSUName.Name = "label_AssemblingPSUName";
-            this.label_AssemblingPSUName.Size = new System.Drawing.Size(58, 13);
+            this.label_AssemblingPSUName.Size = new System.Drawing.Size(65, 15);
             this.label_AssemblingPSUName.TabIndex = 1;
             this.label_AssemblingPSUName.Text = "не задано";
             // 
             // checkBox_AssemblingPSUEnabled
             // 
             this.checkBox_AssemblingPSUEnabled.AutoSize = true;
-            this.checkBox_AssemblingPSUEnabled.Location = new System.Drawing.Point(86, 0);
+            this.checkBox_AssemblingPSUEnabled.Location = new System.Drawing.Point(95, 3);
             this.checkBox_AssemblingPSUEnabled.Name = "checkBox_AssemblingPSUEnabled";
             this.checkBox_AssemblingPSUEnabled.Size = new System.Drawing.Size(15, 14);
             this.checkBox_AssemblingPSUEnabled.TabIndex = 0;
@@ -968,18 +975,20 @@ namespace Prog_Kursovaya_sem3
             this.groupBox_Videocard.Controls.Add(this.button_AssemblingVideocardInfo);
             this.groupBox_Videocard.Controls.Add(this.label_AssemblingVideocardName);
             this.groupBox_Videocard.Controls.Add(this.checkBox_AssemblingVideocardEnabled);
-            this.groupBox_Videocard.Location = new System.Drawing.Point(814, 546);
+            this.groupBox_Videocard.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.groupBox_Videocard.Location = new System.Drawing.Point(840, 590);
             this.groupBox_Videocard.Name = "groupBox_Videocard";
-            this.groupBox_Videocard.Size = new System.Drawing.Size(243, 73);
+            this.groupBox_Videocard.Size = new System.Drawing.Size(255, 77);
             this.groupBox_Videocard.TabIndex = 7;
             this.groupBox_Videocard.TabStop = false;
             this.groupBox_Videocard.Text = "Видеокарта";
             // 
             // button_AssemblingVideocardInfo
             // 
-            this.button_AssemblingVideocardInfo.Location = new System.Drawing.Point(16, 40);
+            this.button_AssemblingVideocardInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button_AssemblingVideocardInfo.Location = new System.Drawing.Point(16, 49);
             this.button_AssemblingVideocardInfo.Name = "button_AssemblingVideocardInfo";
-            this.button_AssemblingVideocardInfo.Size = new System.Drawing.Size(215, 22);
+            this.button_AssemblingVideocardInfo.Size = new System.Drawing.Size(227, 22);
             this.button_AssemblingVideocardInfo.TabIndex = 2;
             this.button_AssemblingVideocardInfo.Text = "Информация";
             this.button_AssemblingVideocardInfo.UseVisualStyleBackColor = true;
@@ -988,16 +997,16 @@ namespace Prog_Kursovaya_sem3
             // label_AssemblingVideocardName
             // 
             this.label_AssemblingVideocardName.AutoSize = true;
-            this.label_AssemblingVideocardName.Location = new System.Drawing.Point(13, 20);
+            this.label_AssemblingVideocardName.Location = new System.Drawing.Point(13, 24);
             this.label_AssemblingVideocardName.Name = "label_AssemblingVideocardName";
-            this.label_AssemblingVideocardName.Size = new System.Drawing.Size(101, 13);
+            this.label_AssemblingVideocardName.Size = new System.Drawing.Size(65, 15);
             this.label_AssemblingVideocardName.TabIndex = 1;
-            this.label_AssemblingVideocardName.Text = "AMD A8-9600 OEM";
+            this.label_AssemblingVideocardName.Text = "не задано";
             // 
             // checkBox_AssemblingVideocardEnabled
             // 
             this.checkBox_AssemblingVideocardEnabled.AutoSize = true;
-            this.checkBox_AssemblingVideocardEnabled.Location = new System.Drawing.Point(79, 0);
+            this.checkBox_AssemblingVideocardEnabled.Location = new System.Drawing.Point(89, 2);
             this.checkBox_AssemblingVideocardEnabled.Name = "checkBox_AssemblingVideocardEnabled";
             this.checkBox_AssemblingVideocardEnabled.Size = new System.Drawing.Size(15, 14);
             this.checkBox_AssemblingVideocardEnabled.TabIndex = 0;
@@ -1008,18 +1017,20 @@ namespace Prog_Kursovaya_sem3
             this.groupBox_CompCase.Controls.Add(this.button_AssemblingCompCaseInfo);
             this.groupBox_CompCase.Controls.Add(this.label_AssemblingCompCaseName);
             this.groupBox_CompCase.Controls.Add(this.checkBox_AssemblingCompCaseEnabled);
-            this.groupBox_CompCase.Location = new System.Drawing.Point(588, 96);
+            this.groupBox_CompCase.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.groupBox_CompCase.Location = new System.Drawing.Point(588, 105);
             this.groupBox_CompCase.Name = "groupBox_CompCase";
-            this.groupBox_CompCase.Size = new System.Drawing.Size(172, 73);
+            this.groupBox_CompCase.Size = new System.Drawing.Size(182, 83);
             this.groupBox_CompCase.TabIndex = 8;
             this.groupBox_CompCase.TabStop = false;
             this.groupBox_CompCase.Text = "Корпус";
             // 
             // button_AssemblingCompCaseInfo
             // 
-            this.button_AssemblingCompCaseInfo.Location = new System.Drawing.Point(16, 40);
+            this.button_AssemblingCompCaseInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button_AssemblingCompCaseInfo.Location = new System.Drawing.Point(16, 55);
             this.button_AssemblingCompCaseInfo.Name = "button_AssemblingCompCaseInfo";
-            this.button_AssemblingCompCaseInfo.Size = new System.Drawing.Size(142, 22);
+            this.button_AssemblingCompCaseInfo.Size = new System.Drawing.Size(156, 22);
             this.button_AssemblingCompCaseInfo.TabIndex = 2;
             this.button_AssemblingCompCaseInfo.Text = "Информация";
             this.button_AssemblingCompCaseInfo.UseVisualStyleBackColor = true;
@@ -1028,9 +1039,9 @@ namespace Prog_Kursovaya_sem3
             // label_AssemblingCompCaseName
             // 
             this.label_AssemblingCompCaseName.AutoSize = true;
-            this.label_AssemblingCompCaseName.Location = new System.Drawing.Point(13, 20);
+            this.label_AssemblingCompCaseName.Location = new System.Drawing.Point(13, 27);
             this.label_AssemblingCompCaseName.Name = "label_AssemblingCompCaseName";
-            this.label_AssemblingCompCaseName.Size = new System.Drawing.Size(58, 13);
+            this.label_AssemblingCompCaseName.Size = new System.Drawing.Size(65, 15);
             this.label_AssemblingCompCaseName.TabIndex = 1;
             this.label_AssemblingCompCaseName.Text = "не задано";
             // 
@@ -1051,9 +1062,10 @@ namespace Prog_Kursovaya_sem3
             this.groupBox_RAM.Controls.Add(this.button_AssemblingRAMInfo);
             this.groupBox_RAM.Controls.Add(this.label_AssemblingRAMName);
             this.groupBox_RAM.Controls.Add(this.checkBox_AssemblingRAMEnabled);
-            this.groupBox_RAM.Location = new System.Drawing.Point(814, 416);
+            this.groupBox_RAM.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.groupBox_RAM.Location = new System.Drawing.Point(840, 460);
             this.groupBox_RAM.Name = "groupBox_RAM";
-            this.groupBox_RAM.Size = new System.Drawing.Size(209, 123);
+            this.groupBox_RAM.Size = new System.Drawing.Size(237, 123);
             this.groupBox_RAM.TabIndex = 10;
             this.groupBox_RAM.TabStop = false;
             this.groupBox_RAM.Text = "Оперативная память";
@@ -1063,7 +1075,7 @@ namespace Prog_Kursovaya_sem3
             this.label_RAMName.AutoSize = true;
             this.label_RAMName.Location = new System.Drawing.Point(17, 27);
             this.label_RAMName.Name = "label_RAMName";
-            this.label_RAMName.Size = new System.Drawing.Size(86, 13);
+            this.label_RAMName.Size = new System.Drawing.Size(98, 15);
             this.label_RAMName.TabIndex = 11;
             this.label_RAMName.Text = "Наименование:";
             // 
@@ -1072,27 +1084,28 @@ namespace Prog_Kursovaya_sem3
             this.label_RAMInstalled.AutoSize = true;
             this.label_RAMInstalled.Location = new System.Drawing.Point(17, 55);
             this.label_RAMInstalled.Name = "label_RAMInstalled";
-            this.label_RAMInstalled.Size = new System.Drawing.Size(77, 13);
+            this.label_RAMInstalled.Size = new System.Drawing.Size(87, 15);
             this.label_RAMInstalled.TabIndex = 4;
             this.label_RAMInstalled.Text = "Установлено:";
             // 
             // numericUpDown_InstalledRAMs
             // 
-            this.numericUpDown_InstalledRAMs.Location = new System.Drawing.Point(95, 53);
+            this.numericUpDown_InstalledRAMs.Location = new System.Drawing.Point(110, 53);
             this.numericUpDown_InstalledRAMs.Maximum = new decimal(new int[] {
             8,
             0,
             0,
             0});
             this.numericUpDown_InstalledRAMs.Name = "numericUpDown_InstalledRAMs";
-            this.numericUpDown_InstalledRAMs.Size = new System.Drawing.Size(49, 20);
+            this.numericUpDown_InstalledRAMs.Size = new System.Drawing.Size(49, 21);
             this.numericUpDown_InstalledRAMs.TabIndex = 3;
             // 
             // button_AssemblingRAMInfo
             // 
-            this.button_AssemblingRAMInfo.Location = new System.Drawing.Point(16, 82);
+            this.button_AssemblingRAMInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button_AssemblingRAMInfo.Location = new System.Drawing.Point(16, 90);
             this.button_AssemblingRAMInfo.Name = "button_AssemblingRAMInfo";
-            this.button_AssemblingRAMInfo.Size = new System.Drawing.Size(183, 22);
+            this.button_AssemblingRAMInfo.Size = new System.Drawing.Size(203, 22);
             this.button_AssemblingRAMInfo.TabIndex = 2;
             this.button_AssemblingRAMInfo.Text = "Информация";
             this.button_AssemblingRAMInfo.UseVisualStyleBackColor = true;
@@ -1101,16 +1114,16 @@ namespace Prog_Kursovaya_sem3
             // label_AssemblingRAMName
             // 
             this.label_AssemblingRAMName.AutoSize = true;
-            this.label_AssemblingRAMName.Location = new System.Drawing.Point(102, 27);
+            this.label_AssemblingRAMName.Location = new System.Drawing.Point(121, 27);
             this.label_AssemblingRAMName.Name = "label_AssemblingRAMName";
-            this.label_AssemblingRAMName.Size = new System.Drawing.Size(58, 13);
+            this.label_AssemblingRAMName.Size = new System.Drawing.Size(65, 15);
             this.label_AssemblingRAMName.TabIndex = 1;
             this.label_AssemblingRAMName.Text = "не задано";
             // 
             // checkBox_AssemblingRAMEnabled
             // 
             this.checkBox_AssemblingRAMEnabled.AutoSize = true;
-            this.checkBox_AssemblingRAMEnabled.Location = new System.Drawing.Point(126, 0);
+            this.checkBox_AssemblingRAMEnabled.Location = new System.Drawing.Point(144, 3);
             this.checkBox_AssemblingRAMEnabled.Name = "checkBox_AssemblingRAMEnabled";
             this.checkBox_AssemblingRAMEnabled.Size = new System.Drawing.Size(15, 14);
             this.checkBox_AssemblingRAMEnabled.TabIndex = 0;
@@ -1124,9 +1137,10 @@ namespace Prog_Kursovaya_sem3
             this.groupBox_TwoAndHalfHDD.Controls.Add(this.button_AssemblingTwoAndHalfHDDInfo);
             this.groupBox_TwoAndHalfHDD.Controls.Add(this.label_AssemblingTwoAndHalfHDDName);
             this.groupBox_TwoAndHalfHDD.Controls.Add(this.checkBox_AssemblingTwoAndHalfHDDEnabled);
-            this.groupBox_TwoAndHalfHDD.Location = new System.Drawing.Point(588, 381);
+            this.groupBox_TwoAndHalfHDD.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.groupBox_TwoAndHalfHDD.Location = new System.Drawing.Point(588, 419);
             this.groupBox_TwoAndHalfHDD.Name = "groupBox_TwoAndHalfHDD";
-            this.groupBox_TwoAndHalfHDD.Size = new System.Drawing.Size(209, 115);
+            this.groupBox_TwoAndHalfHDD.Size = new System.Drawing.Size(237, 115);
             this.groupBox_TwoAndHalfHDD.TabIndex = 11;
             this.groupBox_TwoAndHalfHDD.TabStop = false;
             this.groupBox_TwoAndHalfHDD.Text = "Жесткий диск 2.5\"";
@@ -1136,7 +1150,7 @@ namespace Prog_Kursovaya_sem3
             this.label_TwoAndHalfHDDName.AutoSize = true;
             this.label_TwoAndHalfHDDName.Location = new System.Drawing.Point(17, 27);
             this.label_TwoAndHalfHDDName.Name = "label_TwoAndHalfHDDName";
-            this.label_TwoAndHalfHDDName.Size = new System.Drawing.Size(86, 13);
+            this.label_TwoAndHalfHDDName.Size = new System.Drawing.Size(98, 15);
             this.label_TwoAndHalfHDDName.TabIndex = 11;
             this.label_TwoAndHalfHDDName.Text = "Наименование:";
             // 
@@ -1145,27 +1159,28 @@ namespace Prog_Kursovaya_sem3
             this.label_TwoAndHalfHDDInstalled.AutoSize = true;
             this.label_TwoAndHalfHDDInstalled.Location = new System.Drawing.Point(17, 55);
             this.label_TwoAndHalfHDDInstalled.Name = "label_TwoAndHalfHDDInstalled";
-            this.label_TwoAndHalfHDDInstalled.Size = new System.Drawing.Size(77, 13);
+            this.label_TwoAndHalfHDDInstalled.Size = new System.Drawing.Size(87, 15);
             this.label_TwoAndHalfHDDInstalled.TabIndex = 4;
             this.label_TwoAndHalfHDDInstalled.Text = "Установлено:";
             // 
             // numericUpDown_InstalledTwoAndHalfHDD
             // 
-            this.numericUpDown_InstalledTwoAndHalfHDD.Location = new System.Drawing.Point(95, 53);
+            this.numericUpDown_InstalledTwoAndHalfHDD.Location = new System.Drawing.Point(110, 53);
             this.numericUpDown_InstalledTwoAndHalfHDD.Maximum = new decimal(new int[] {
             10,
             0,
             0,
             0});
             this.numericUpDown_InstalledTwoAndHalfHDD.Name = "numericUpDown_InstalledTwoAndHalfHDD";
-            this.numericUpDown_InstalledTwoAndHalfHDD.Size = new System.Drawing.Size(49, 20);
+            this.numericUpDown_InstalledTwoAndHalfHDD.Size = new System.Drawing.Size(49, 21);
             this.numericUpDown_InstalledTwoAndHalfHDD.TabIndex = 3;
             // 
             // button_AssemblingTwoAndHalfHDDInfo
             // 
+            this.button_AssemblingTwoAndHalfHDDInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button_AssemblingTwoAndHalfHDDInfo.Location = new System.Drawing.Point(16, 82);
             this.button_AssemblingTwoAndHalfHDDInfo.Name = "button_AssemblingTwoAndHalfHDDInfo";
-            this.button_AssemblingTwoAndHalfHDDInfo.Size = new System.Drawing.Size(183, 22);
+            this.button_AssemblingTwoAndHalfHDDInfo.Size = new System.Drawing.Size(202, 22);
             this.button_AssemblingTwoAndHalfHDDInfo.TabIndex = 2;
             this.button_AssemblingTwoAndHalfHDDInfo.Text = "Информация";
             this.button_AssemblingTwoAndHalfHDDInfo.UseVisualStyleBackColor = true;
@@ -1174,16 +1189,16 @@ namespace Prog_Kursovaya_sem3
             // label_AssemblingTwoAndHalfHDDName
             // 
             this.label_AssemblingTwoAndHalfHDDName.AutoSize = true;
-            this.label_AssemblingTwoAndHalfHDDName.Location = new System.Drawing.Point(102, 27);
+            this.label_AssemblingTwoAndHalfHDDName.Location = new System.Drawing.Point(117, 27);
             this.label_AssemblingTwoAndHalfHDDName.Name = "label_AssemblingTwoAndHalfHDDName";
-            this.label_AssemblingTwoAndHalfHDDName.Size = new System.Drawing.Size(58, 13);
+            this.label_AssemblingTwoAndHalfHDDName.Size = new System.Drawing.Size(65, 15);
             this.label_AssemblingTwoAndHalfHDDName.TabIndex = 1;
             this.label_AssemblingTwoAndHalfHDDName.Text = "не задано";
             // 
             // checkBox_AssemblingTwoAndHalfHDDEnabled
             // 
             this.checkBox_AssemblingTwoAndHalfHDDEnabled.AutoSize = true;
-            this.checkBox_AssemblingTwoAndHalfHDDEnabled.Location = new System.Drawing.Point(114, 0);
+            this.checkBox_AssemblingTwoAndHalfHDDEnabled.Location = new System.Drawing.Point(120, 3);
             this.checkBox_AssemblingTwoAndHalfHDDEnabled.Name = "checkBox_AssemblingTwoAndHalfHDDEnabled";
             this.checkBox_AssemblingTwoAndHalfHDDEnabled.Size = new System.Drawing.Size(15, 14);
             this.checkBox_AssemblingTwoAndHalfHDDEnabled.TabIndex = 0;
@@ -1197,9 +1212,10 @@ namespace Prog_Kursovaya_sem3
             this.groupBox_ThreeAndHalfHDD.Controls.Add(this.button_AssemblingThreeAndHalfHDDInfo);
             this.groupBox_ThreeAndHalfHDD.Controls.Add(this.label_AssemblingThreeAndHalfHDDName);
             this.groupBox_ThreeAndHalfHDD.Controls.Add(this.checkBox_AssemblingThreeAndHalfHDDEnabled);
-            this.groupBox_ThreeAndHalfHDD.Location = new System.Drawing.Point(588, 260);
+            this.groupBox_ThreeAndHalfHDD.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.groupBox_ThreeAndHalfHDD.Location = new System.Drawing.Point(588, 298);
             this.groupBox_ThreeAndHalfHDD.Name = "groupBox_ThreeAndHalfHDD";
-            this.groupBox_ThreeAndHalfHDD.Size = new System.Drawing.Size(209, 115);
+            this.groupBox_ThreeAndHalfHDD.Size = new System.Drawing.Size(237, 115);
             this.groupBox_ThreeAndHalfHDD.TabIndex = 12;
             this.groupBox_ThreeAndHalfHDD.TabStop = false;
             this.groupBox_ThreeAndHalfHDD.Text = "Жесткий диск 3.5\"";
@@ -1209,7 +1225,7 @@ namespace Prog_Kursovaya_sem3
             this.label_ThreeAndHalfHDDName.AutoSize = true;
             this.label_ThreeAndHalfHDDName.Location = new System.Drawing.Point(17, 27);
             this.label_ThreeAndHalfHDDName.Name = "label_ThreeAndHalfHDDName";
-            this.label_ThreeAndHalfHDDName.Size = new System.Drawing.Size(86, 13);
+            this.label_ThreeAndHalfHDDName.Size = new System.Drawing.Size(98, 15);
             this.label_ThreeAndHalfHDDName.TabIndex = 11;
             this.label_ThreeAndHalfHDDName.Text = "Наименование:";
             // 
@@ -1218,27 +1234,28 @@ namespace Prog_Kursovaya_sem3
             this.label_ThreeAndHalfHDDInstalled.AutoSize = true;
             this.label_ThreeAndHalfHDDInstalled.Location = new System.Drawing.Point(17, 55);
             this.label_ThreeAndHalfHDDInstalled.Name = "label_ThreeAndHalfHDDInstalled";
-            this.label_ThreeAndHalfHDDInstalled.Size = new System.Drawing.Size(77, 13);
+            this.label_ThreeAndHalfHDDInstalled.Size = new System.Drawing.Size(87, 15);
             this.label_ThreeAndHalfHDDInstalled.TabIndex = 4;
             this.label_ThreeAndHalfHDDInstalled.Text = "Установлено:";
             // 
             // numericUpDown_InstalledThreeAndHalfHDD
             // 
-            this.numericUpDown_InstalledThreeAndHalfHDD.Location = new System.Drawing.Point(95, 53);
+            this.numericUpDown_InstalledThreeAndHalfHDD.Location = new System.Drawing.Point(110, 53);
             this.numericUpDown_InstalledThreeAndHalfHDD.Maximum = new decimal(new int[] {
             10,
             0,
             0,
             0});
             this.numericUpDown_InstalledThreeAndHalfHDD.Name = "numericUpDown_InstalledThreeAndHalfHDD";
-            this.numericUpDown_InstalledThreeAndHalfHDD.Size = new System.Drawing.Size(49, 20);
+            this.numericUpDown_InstalledThreeAndHalfHDD.Size = new System.Drawing.Size(49, 21);
             this.numericUpDown_InstalledThreeAndHalfHDD.TabIndex = 3;
             // 
             // button_AssemblingThreeAndHalfHDDInfo
             // 
-            this.button_AssemblingThreeAndHalfHDDInfo.Location = new System.Drawing.Point(16, 82);
+            this.button_AssemblingThreeAndHalfHDDInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button_AssemblingThreeAndHalfHDDInfo.Location = new System.Drawing.Point(16, 80);
             this.button_AssemblingThreeAndHalfHDDInfo.Name = "button_AssemblingThreeAndHalfHDDInfo";
-            this.button_AssemblingThreeAndHalfHDDInfo.Size = new System.Drawing.Size(183, 22);
+            this.button_AssemblingThreeAndHalfHDDInfo.Size = new System.Drawing.Size(202, 22);
             this.button_AssemblingThreeAndHalfHDDInfo.TabIndex = 2;
             this.button_AssemblingThreeAndHalfHDDInfo.Text = "Информация";
             this.button_AssemblingThreeAndHalfHDDInfo.UseVisualStyleBackColor = true;
@@ -1247,16 +1264,16 @@ namespace Prog_Kursovaya_sem3
             // label_AssemblingThreeAndHalfHDDName
             // 
             this.label_AssemblingThreeAndHalfHDDName.AutoSize = true;
-            this.label_AssemblingThreeAndHalfHDDName.Location = new System.Drawing.Point(102, 27);
+            this.label_AssemblingThreeAndHalfHDDName.Location = new System.Drawing.Point(117, 27);
             this.label_AssemblingThreeAndHalfHDDName.Name = "label_AssemblingThreeAndHalfHDDName";
-            this.label_AssemblingThreeAndHalfHDDName.Size = new System.Drawing.Size(58, 13);
+            this.label_AssemblingThreeAndHalfHDDName.Size = new System.Drawing.Size(65, 15);
             this.label_AssemblingThreeAndHalfHDDName.TabIndex = 1;
             this.label_AssemblingThreeAndHalfHDDName.Text = "не задано";
             // 
             // checkBox_AssemblingThreeAndHalfHDDEnabled
             // 
             this.checkBox_AssemblingThreeAndHalfHDDEnabled.AutoSize = true;
-            this.checkBox_AssemblingThreeAndHalfHDDEnabled.Location = new System.Drawing.Point(114, 0);
+            this.checkBox_AssemblingThreeAndHalfHDDEnabled.Location = new System.Drawing.Point(120, 3);
             this.checkBox_AssemblingThreeAndHalfHDDEnabled.Name = "checkBox_AssemblingThreeAndHalfHDDEnabled";
             this.checkBox_AssemblingThreeAndHalfHDDEnabled.Size = new System.Drawing.Size(15, 14);
             this.checkBox_AssemblingThreeAndHalfHDDEnabled.TabIndex = 0;
@@ -1270,9 +1287,10 @@ namespace Prog_Kursovaya_sem3
             this.groupBox1.Controls.Add(this.button_AssemblingSSDInfo);
             this.groupBox1.Controls.Add(this.label_AssemblingSSDName);
             this.groupBox1.Controls.Add(this.checkBox_AssemblingSSDEnabled);
-            this.groupBox1.Location = new System.Drawing.Point(588, 504);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.groupBox1.Location = new System.Drawing.Point(588, 547);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(209, 115);
+            this.groupBox1.Size = new System.Drawing.Size(237, 115);
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Твердотельный накопитель (SSD)";
@@ -1282,7 +1300,7 @@ namespace Prog_Kursovaya_sem3
             this.label_SSDName.AutoSize = true;
             this.label_SSDName.Location = new System.Drawing.Point(17, 27);
             this.label_SSDName.Name = "label_SSDName";
-            this.label_SSDName.Size = new System.Drawing.Size(86, 13);
+            this.label_SSDName.Size = new System.Drawing.Size(98, 15);
             this.label_SSDName.TabIndex = 11;
             this.label_SSDName.Text = "Наименование:";
             // 
@@ -1291,27 +1309,28 @@ namespace Prog_Kursovaya_sem3
             this.label_SSDInstalled.AutoSize = true;
             this.label_SSDInstalled.Location = new System.Drawing.Point(17, 55);
             this.label_SSDInstalled.Name = "label_SSDInstalled";
-            this.label_SSDInstalled.Size = new System.Drawing.Size(77, 13);
+            this.label_SSDInstalled.Size = new System.Drawing.Size(87, 15);
             this.label_SSDInstalled.TabIndex = 4;
             this.label_SSDInstalled.Text = "Установлено:";
             // 
             // numericUpDown_InstalledSSD
             // 
-            this.numericUpDown_InstalledSSD.Location = new System.Drawing.Point(95, 53);
+            this.numericUpDown_InstalledSSD.Location = new System.Drawing.Point(110, 53);
             this.numericUpDown_InstalledSSD.Maximum = new decimal(new int[] {
             10,
             0,
             0,
             0});
             this.numericUpDown_InstalledSSD.Name = "numericUpDown_InstalledSSD";
-            this.numericUpDown_InstalledSSD.Size = new System.Drawing.Size(49, 20);
+            this.numericUpDown_InstalledSSD.Size = new System.Drawing.Size(49, 21);
             this.numericUpDown_InstalledSSD.TabIndex = 3;
             // 
             // button_AssemblingSSDInfo
             // 
+            this.button_AssemblingSSDInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button_AssemblingSSDInfo.Location = new System.Drawing.Point(16, 82);
             this.button_AssemblingSSDInfo.Name = "button_AssemblingSSDInfo";
-            this.button_AssemblingSSDInfo.Size = new System.Drawing.Size(183, 22);
+            this.button_AssemblingSSDInfo.Size = new System.Drawing.Size(202, 22);
             this.button_AssemblingSSDInfo.TabIndex = 2;
             this.button_AssemblingSSDInfo.Text = "Информация";
             this.button_AssemblingSSDInfo.UseVisualStyleBackColor = true;
@@ -1320,16 +1339,16 @@ namespace Prog_Kursovaya_sem3
             // label_AssemblingSSDName
             // 
             this.label_AssemblingSSDName.AutoSize = true;
-            this.label_AssemblingSSDName.Location = new System.Drawing.Point(102, 27);
+            this.label_AssemblingSSDName.Location = new System.Drawing.Point(121, 27);
             this.label_AssemblingSSDName.Name = "label_AssemblingSSDName";
-            this.label_AssemblingSSDName.Size = new System.Drawing.Size(58, 13);
+            this.label_AssemblingSSDName.Size = new System.Drawing.Size(65, 15);
             this.label_AssemblingSSDName.TabIndex = 1;
             this.label_AssemblingSSDName.Text = "не задано";
             // 
             // checkBox_AssemblingSSDEnabled
             // 
             this.checkBox_AssemblingSSDEnabled.AutoSize = true;
-            this.checkBox_AssemblingSSDEnabled.Location = new System.Drawing.Point(188, 0);
+            this.checkBox_AssemblingSSDEnabled.Location = new System.Drawing.Point(216, 3);
             this.checkBox_AssemblingSSDEnabled.Name = "checkBox_AssemblingSSDEnabled";
             this.checkBox_AssemblingSSDEnabled.Size = new System.Drawing.Size(15, 14);
             this.checkBox_AssemblingSSDEnabled.TabIndex = 0;
@@ -1338,27 +1357,29 @@ namespace Prog_Kursovaya_sem3
             // groupBox_AssemblingResults
             // 
             this.groupBox_AssemblingResults.Controls.Add(this.richTextBox_AssemblingResults);
-            this.groupBox_AssemblingResults.Location = new System.Drawing.Point(776, 17);
+            this.groupBox_AssemblingResults.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.groupBox_AssemblingResults.Location = new System.Drawing.Point(798, 12);
             this.groupBox_AssemblingResults.Name = "groupBox_AssemblingResults";
-            this.groupBox_AssemblingResults.Size = new System.Drawing.Size(398, 231);
+            this.groupBox_AssemblingResults.Size = new System.Drawing.Size(449, 250);
             this.groupBox_AssemblingResults.TabIndex = 15;
             this.groupBox_AssemblingResults.TabStop = false;
             this.groupBox_AssemblingResults.Text = "Состояние сборки";
             // 
             // richTextBox_AssemblingResults
             // 
+            this.richTextBox_AssemblingResults.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.richTextBox_AssemblingResults.Location = new System.Drawing.Point(9, 16);
             this.richTextBox_AssemblingResults.Name = "richTextBox_AssemblingResults";
             this.richTextBox_AssemblingResults.ReadOnly = true;
-            this.richTextBox_AssemblingResults.Size = new System.Drawing.Size(383, 204);
+            this.richTextBox_AssemblingResults.Size = new System.Drawing.Size(434, 227);
             this.richTextBox_AssemblingResults.TabIndex = 0;
             this.richTextBox_AssemblingResults.Text = "Проблем нет";
             // 
             // button_StartTheAssembling
             // 
-            this.button_StartTheAssembling.Location = new System.Drawing.Point(992, 260);
+            this.button_StartTheAssembling.Location = new System.Drawing.Point(1031, 278);
             this.button_StartTheAssembling.Name = "button_StartTheAssembling";
-            this.button_StartTheAssembling.Size = new System.Drawing.Size(52, 150);
+            this.button_StartTheAssembling.Size = new System.Drawing.Size(52, 169);
             this.button_StartTheAssembling.TabIndex = 16;
             this.button_StartTheAssembling.Text = "сборка";
             this.button_StartTheAssembling.UseVisualStyleBackColor = true;
@@ -1369,9 +1390,10 @@ namespace Prog_Kursovaya_sem3
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1186, 630);
+            this.ClientSize = new System.Drawing.Size(1259, 679);
             this.Controls.Add(this.button_StartTheAssembling);
             this.Controls.Add(this.groupBox_AssemblingResults);
+            this.Controls.Add(this.groupBox_Processor);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox_ThreeAndHalfHDD);
             this.Controls.Add(this.groupBox_TwoAndHalfHDD);
@@ -1381,7 +1403,6 @@ namespace Prog_Kursovaya_sem3
             this.Controls.Add(this.groupBox_PSU);
             this.Controls.Add(this.groupBox_Motherboard);
             this.Controls.Add(this.groupBox_Cooling);
-            this.Controls.Add(this.groupBox_Processor);
             this.Controls.Add(this.tabControl1);
             this.MaximizeBox = false;
             this.Name = "Form_MainMenu";
