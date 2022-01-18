@@ -29,24 +29,24 @@ namespace Prog_Kursovaya_sem3
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle43 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle45 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle47 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle48 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle49 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle50 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle51 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle52 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle53 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle54 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabPage_CompCase = new System.Windows.Forms.TabPage();
             this.button_CompCaseAddToAssembling = new System.Windows.Forms.Button();
             this.dataGridView_CompCase = new System.Windows.Forms.DataGridView();
@@ -68,7 +68,37 @@ namespace Prog_Kursovaya_sem3
             this.Column_VideocardName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column_VideocardInfo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage_Motherboard = new System.Windows.Forms.TabPage();
+            this.groupBox14 = new System.Windows.Forms.GroupBox();
+            this.checkedListBox_MotherboardSearchAvailableFrequencies = new System.Windows.Forms.CheckedListBox();
+            this.groupBox13 = new System.Windows.Forms.GroupBox();
+            this.checkedListBox_MotherboardSearchMemoryType = new System.Windows.Forms.CheckedListBox();
+            this.button_MotherboardResetSearch = new System.Windows.Forms.Button();
+            this.button_MotherboardStartASearch = new System.Windows.Forms.Button();
+            this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.checkedListBox_MotherboardSearchRAMMaxCapacity = new System.Windows.Forms.CheckedListBox();
+            this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.checkedListBox_MotherboardSearchProcessorSupplyConnectorsType = new System.Windows.Forms.CheckedListBox();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.checkedListBox_MotherboardSearchSocketType = new System.Windows.Forms.CheckedListBox();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.checkedListBox_MotherboardSearchFormFactor = new System.Windows.Forms.CheckedListBox();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.checkedListBox_MotherboardSearchChipset = new System.Windows.Forms.CheckedListBox();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.checkedListBox_MotherboardSearchRAMFormFactor = new System.Windows.Forms.CheckedListBox();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.checkedListBox_MotherboardSearchNumberOfRAMSlots = new System.Windows.Forms.CheckedListBox();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.checkedListBox_MotherboardSearchNumberOfPCIESlots = new System.Windows.Forms.CheckedListBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.checkedListBox_MotherboardSearchNumberOfSATASlots = new System.Windows.Forms.CheckedListBox();
             this.button_MotherboardAddToAssembling = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.checkedListBox_MotherboardSearchNumberOfFourPinSlotsForCooling = new System.Windows.Forms.CheckedListBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.checkedListBox_MotherboardSearchNumberOfThreePinSlotsForCooling = new System.Windows.Forms.CheckedListBox();
+            this.groupBox_MotherboardSearch = new System.Windows.Forms.GroupBox();
+            this.textBox_MotherboardSearchName = new System.Windows.Forms.TextBox();
             this.dataGridView_Motherboard = new System.Windows.Forms.DataGridView();
             this.Column_MotherboardName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column_MotherboardInfo = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -157,6 +187,20 @@ namespace Prog_Kursovaya_sem3
             this.tabPage_Videocard.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Videocard)).BeginInit();
             this.tabPage_Motherboard.SuspendLayout();
+            this.groupBox14.SuspendLayout();
+            this.groupBox13.SuspendLayout();
+            this.groupBox12.SuspendLayout();
+            this.groupBox11.SuspendLayout();
+            this.groupBox10.SuspendLayout();
+            this.groupBox9.SuspendLayout();
+            this.groupBox8.SuspendLayout();
+            this.groupBox7.SuspendLayout();
+            this.groupBox6.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox_MotherboardSearch.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Motherboard)).BeginInit();
             this.tabPage_Processor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Processor)).BeginInit();
@@ -191,7 +235,7 @@ namespace Prog_Kursovaya_sem3
             this.tabPage_CompCase.Location = new System.Drawing.Point(4, 40);
             this.tabPage_CompCase.Name = "tabPage_CompCase";
             this.tabPage_CompCase.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_CompCase.Size = new System.Drawing.Size(553, 563);
+            this.tabPage_CompCase.Size = new System.Drawing.Size(562, 611);
             this.tabPage_CompCase.TabIndex = 6;
             this.tabPage_CompCase.Text = "Корпус";
             this.tabPage_CompCase.UseVisualStyleBackColor = true;
@@ -229,8 +273,8 @@ namespace Prog_Kursovaya_sem3
             // 
             // Column_CompCaseName
             // 
-            dataGridViewCellStyle37.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column_CompCaseName.DefaultCellStyle = dataGridViewCellStyle37;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_CompCaseName.DefaultCellStyle = dataGridViewCellStyle1;
             this.Column_CompCaseName.HeaderText = "Наименование";
             this.Column_CompCaseName.MinimumWidth = 6;
             this.Column_CompCaseName.Name = "Column_CompCaseName";
@@ -241,8 +285,8 @@ namespace Prog_Kursovaya_sem3
             // 
             // Column_CompCaseInfo
             // 
-            dataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column_CompCaseInfo.DefaultCellStyle = dataGridViewCellStyle38;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_CompCaseInfo.DefaultCellStyle = dataGridViewCellStyle2;
             this.Column_CompCaseInfo.HeaderText = "Краткая информация";
             this.Column_CompCaseInfo.MinimumWidth = 6;
             this.Column_CompCaseInfo.Name = "Column_CompCaseInfo";
@@ -257,7 +301,7 @@ namespace Prog_Kursovaya_sem3
             this.tabPage_PSU.Controls.Add(this.dataGridView_PowerSupplyUnit);
             this.tabPage_PSU.Location = new System.Drawing.Point(4, 40);
             this.tabPage_PSU.Name = "tabPage_PSU";
-            this.tabPage_PSU.Size = new System.Drawing.Size(553, 563);
+            this.tabPage_PSU.Size = new System.Drawing.Size(562, 611);
             this.tabPage_PSU.TabIndex = 5;
             this.tabPage_PSU.Text = "Блок питания";
             this.tabPage_PSU.UseVisualStyleBackColor = true;
@@ -295,8 +339,8 @@ namespace Prog_Kursovaya_sem3
             // 
             // Column_SupplyUnitName
             // 
-            dataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column_SupplyUnitName.DefaultCellStyle = dataGridViewCellStyle39;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_SupplyUnitName.DefaultCellStyle = dataGridViewCellStyle3;
             this.Column_SupplyUnitName.HeaderText = "Наименование";
             this.Column_SupplyUnitName.MinimumWidth = 6;
             this.Column_SupplyUnitName.Name = "Column_SupplyUnitName";
@@ -307,8 +351,8 @@ namespace Prog_Kursovaya_sem3
             // 
             // Column_SupplyUnitInfo
             // 
-            dataGridViewCellStyle40.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column_SupplyUnitInfo.DefaultCellStyle = dataGridViewCellStyle40;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_SupplyUnitInfo.DefaultCellStyle = dataGridViewCellStyle4;
             this.Column_SupplyUnitInfo.HeaderText = "Краткая информация";
             this.Column_SupplyUnitInfo.MinimumWidth = 6;
             this.Column_SupplyUnitInfo.Name = "Column_SupplyUnitInfo";
@@ -323,7 +367,7 @@ namespace Prog_Kursovaya_sem3
             this.tabPage_RAM.Controls.Add(this.dataGridView_RAM);
             this.tabPage_RAM.Location = new System.Drawing.Point(4, 40);
             this.tabPage_RAM.Name = "tabPage_RAM";
-            this.tabPage_RAM.Size = new System.Drawing.Size(553, 563);
+            this.tabPage_RAM.Size = new System.Drawing.Size(562, 611);
             this.tabPage_RAM.TabIndex = 4;
             this.tabPage_RAM.Text = "Оперативная память";
             this.tabPage_RAM.UseVisualStyleBackColor = true;
@@ -361,8 +405,8 @@ namespace Prog_Kursovaya_sem3
             // 
             // Column_RAMname
             // 
-            dataGridViewCellStyle41.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column_RAMname.DefaultCellStyle = dataGridViewCellStyle41;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_RAMname.DefaultCellStyle = dataGridViewCellStyle5;
             this.Column_RAMname.HeaderText = "Наименование";
             this.Column_RAMname.MinimumWidth = 6;
             this.Column_RAMname.Name = "Column_RAMname";
@@ -373,8 +417,8 @@ namespace Prog_Kursovaya_sem3
             // 
             // Column_RAMinfo
             // 
-            dataGridViewCellStyle42.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column_RAMinfo.DefaultCellStyle = dataGridViewCellStyle42;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_RAMinfo.DefaultCellStyle = dataGridViewCellStyle6;
             this.Column_RAMinfo.HeaderText = "Краткая информация";
             this.Column_RAMinfo.MinimumWidth = 6;
             this.Column_RAMinfo.Name = "Column_RAMinfo";
@@ -389,7 +433,7 @@ namespace Prog_Kursovaya_sem3
             this.tabPage_Videocard.Controls.Add(this.dataGridView_Videocard);
             this.tabPage_Videocard.Location = new System.Drawing.Point(4, 40);
             this.tabPage_Videocard.Name = "tabPage_Videocard";
-            this.tabPage_Videocard.Size = new System.Drawing.Size(553, 563);
+            this.tabPage_Videocard.Size = new System.Drawing.Size(562, 611);
             this.tabPage_Videocard.TabIndex = 3;
             this.tabPage_Videocard.Text = "Видеокарта";
             this.tabPage_Videocard.UseVisualStyleBackColor = true;
@@ -427,8 +471,8 @@ namespace Prog_Kursovaya_sem3
             // 
             // Column_VideocardName
             // 
-            dataGridViewCellStyle43.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column_VideocardName.DefaultCellStyle = dataGridViewCellStyle43;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_VideocardName.DefaultCellStyle = dataGridViewCellStyle7;
             this.Column_VideocardName.HeaderText = "Наименование";
             this.Column_VideocardName.MinimumWidth = 6;
             this.Column_VideocardName.Name = "Column_VideocardName";
@@ -439,8 +483,8 @@ namespace Prog_Kursovaya_sem3
             // 
             // Column_VideocardInfo
             // 
-            dataGridViewCellStyle44.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column_VideocardInfo.DefaultCellStyle = dataGridViewCellStyle44;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_VideocardInfo.DefaultCellStyle = dataGridViewCellStyle8;
             this.Column_VideocardInfo.HeaderText = "Краткая информация";
             this.Column_VideocardInfo.MinimumWidth = 6;
             this.Column_VideocardInfo.Name = "Column_VideocardInfo";
@@ -451,25 +495,339 @@ namespace Prog_Kursovaya_sem3
             // 
             // tabPage_Motherboard
             // 
+            this.tabPage_Motherboard.Controls.Add(this.groupBox14);
+            this.tabPage_Motherboard.Controls.Add(this.groupBox13);
+            this.tabPage_Motherboard.Controls.Add(this.button_MotherboardResetSearch);
+            this.tabPage_Motherboard.Controls.Add(this.button_MotherboardStartASearch);
+            this.tabPage_Motherboard.Controls.Add(this.groupBox12);
+            this.tabPage_Motherboard.Controls.Add(this.groupBox11);
+            this.tabPage_Motherboard.Controls.Add(this.groupBox10);
+            this.tabPage_Motherboard.Controls.Add(this.groupBox9);
+            this.tabPage_Motherboard.Controls.Add(this.groupBox8);
+            this.tabPage_Motherboard.Controls.Add(this.groupBox7);
+            this.tabPage_Motherboard.Controls.Add(this.groupBox6);
+            this.tabPage_Motherboard.Controls.Add(this.groupBox5);
+            this.tabPage_Motherboard.Controls.Add(this.groupBox4);
             this.tabPage_Motherboard.Controls.Add(this.button_MotherboardAddToAssembling);
+            this.tabPage_Motherboard.Controls.Add(this.groupBox3);
+            this.tabPage_Motherboard.Controls.Add(this.groupBox2);
+            this.tabPage_Motherboard.Controls.Add(this.groupBox_MotherboardSearch);
             this.tabPage_Motherboard.Controls.Add(this.dataGridView_Motherboard);
             this.tabPage_Motherboard.Location = new System.Drawing.Point(4, 40);
             this.tabPage_Motherboard.Name = "tabPage_Motherboard";
             this.tabPage_Motherboard.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_Motherboard.Size = new System.Drawing.Size(553, 563);
+            this.tabPage_Motherboard.Size = new System.Drawing.Size(562, 611);
             this.tabPage_Motherboard.TabIndex = 1;
             this.tabPage_Motherboard.Text = "Материнская плата";
             this.tabPage_Motherboard.UseVisualStyleBackColor = true;
             // 
+            // groupBox14
+            // 
+            this.groupBox14.Controls.Add(this.checkedListBox_MotherboardSearchAvailableFrequencies);
+            this.groupBox14.Location = new System.Drawing.Point(445, 336);
+            this.groupBox14.Name = "groupBox14";
+            this.groupBox14.Size = new System.Drawing.Size(95, 134);
+            this.groupBox14.TabIndex = 39;
+            this.groupBox14.TabStop = false;
+            this.groupBox14.Text = "Частоты памяти:";
+            // 
+            // checkedListBox_MotherboardSearchAvailableFrequencies
+            // 
+            this.checkedListBox_MotherboardSearchAvailableFrequencies.CheckOnClick = true;
+            this.checkedListBox_MotherboardSearchAvailableFrequencies.FormattingEnabled = true;
+            this.checkedListBox_MotherboardSearchAvailableFrequencies.Location = new System.Drawing.Point(6, 28);
+            this.checkedListBox_MotherboardSearchAvailableFrequencies.Name = "checkedListBox_MotherboardSearchAvailableFrequencies";
+            this.checkedListBox_MotherboardSearchAvailableFrequencies.Size = new System.Drawing.Size(82, 94);
+            this.checkedListBox_MotherboardSearchAvailableFrequencies.TabIndex = 23;
+            this.checkedListBox_MotherboardSearchAvailableFrequencies.SelectedIndexChanged += new System.EventHandler(this.checkedListBox_MotherboardSearchAvailableFrequencies_SelectedIndexChanged);
+            // 
+            // groupBox13
+            // 
+            this.groupBox13.Controls.Add(this.checkedListBox_MotherboardSearchMemoryType);
+            this.groupBox13.Location = new System.Drawing.Point(240, 483);
+            this.groupBox13.Name = "groupBox13";
+            this.groupBox13.Size = new System.Drawing.Size(95, 120);
+            this.groupBox13.TabIndex = 38;
+            this.groupBox13.TabStop = false;
+            this.groupBox13.Text = "Тип RAM:";
+            // 
+            // checkedListBox_MotherboardSearchMemoryType
+            // 
+            this.checkedListBox_MotherboardSearchMemoryType.CheckOnClick = true;
+            this.checkedListBox_MotherboardSearchMemoryType.FormattingEnabled = true;
+            this.checkedListBox_MotherboardSearchMemoryType.Location = new System.Drawing.Point(6, 28);
+            this.checkedListBox_MotherboardSearchMemoryType.Name = "checkedListBox_MotherboardSearchMemoryType";
+            this.checkedListBox_MotherboardSearchMemoryType.Size = new System.Drawing.Size(82, 79);
+            this.checkedListBox_MotherboardSearchMemoryType.TabIndex = 23;
+            this.checkedListBox_MotherboardSearchMemoryType.SelectedIndexChanged += new System.EventHandler(this.checkedListBox_MotherboardSearchMemoryType_SelectedIndexChanged);
+            // 
+            // button_MotherboardResetSearch
+            // 
+            this.button_MotherboardResetSearch.Location = new System.Drawing.Point(326, 146);
+            this.button_MotherboardResetSearch.Name = "button_MotherboardResetSearch";
+            this.button_MotherboardResetSearch.Size = new System.Drawing.Size(157, 38);
+            this.button_MotherboardResetSearch.TabIndex = 37;
+            this.button_MotherboardResetSearch.Text = "Сбросить критерии поиска";
+            this.button_MotherboardResetSearch.UseVisualStyleBackColor = true;
+            this.button_MotherboardResetSearch.Click += new System.EventHandler(this.button_MotherboardResetSearch_Click);
+            // 
+            // button_MotherboardStartASearch
+            // 
+            this.button_MotherboardStartASearch.Location = new System.Drawing.Point(159, 146);
+            this.button_MotherboardStartASearch.Name = "button_MotherboardStartASearch";
+            this.button_MotherboardStartASearch.Size = new System.Drawing.Size(153, 38);
+            this.button_MotherboardStartASearch.TabIndex = 36;
+            this.button_MotherboardStartASearch.Text = "Осуществить поиск";
+            this.button_MotherboardStartASearch.UseVisualStyleBackColor = true;
+            this.button_MotherboardStartASearch.Click += new System.EventHandler(this.button_MotherboardStartASearch_Click);
+            // 
+            // groupBox12
+            // 
+            this.groupBox12.Controls.Add(this.checkedListBox_MotherboardSearchRAMMaxCapacity);
+            this.groupBox12.Location = new System.Drawing.Point(445, 469);
+            this.groupBox12.Name = "groupBox12";
+            this.groupBox12.Size = new System.Drawing.Size(84, 134);
+            this.groupBox12.TabIndex = 35;
+            this.groupBox12.TabStop = false;
+            this.groupBox12.Text = "Максимальный объём RAM:";
+            // 
+            // checkedListBox_MotherboardSearchRAMMaxCapacity
+            // 
+            this.checkedListBox_MotherboardSearchRAMMaxCapacity.CheckOnClick = true;
+            this.checkedListBox_MotherboardSearchRAMMaxCapacity.FormattingEnabled = true;
+            this.checkedListBox_MotherboardSearchRAMMaxCapacity.Location = new System.Drawing.Point(6, 45);
+            this.checkedListBox_MotherboardSearchRAMMaxCapacity.Name = "checkedListBox_MotherboardSearchRAMMaxCapacity";
+            this.checkedListBox_MotherboardSearchRAMMaxCapacity.Size = new System.Drawing.Size(70, 79);
+            this.checkedListBox_MotherboardSearchRAMMaxCapacity.TabIndex = 21;
+            this.checkedListBox_MotherboardSearchRAMMaxCapacity.SelectedIndexChanged += new System.EventHandler(this.checkedListBox_MotherboardSearchRAMMaxCapacity_SelectedIndexChanged);
+            // 
+            // groupBox11
+            // 
+            this.groupBox11.Controls.Add(this.checkedListBox_MotherboardSearchProcessorSupplyConnectorsType);
+            this.groupBox11.Location = new System.Drawing.Point(341, 481);
+            this.groupBox11.Name = "groupBox11";
+            this.groupBox11.Size = new System.Drawing.Size(84, 122);
+            this.groupBox11.TabIndex = 34;
+            this.groupBox11.TabStop = false;
+            this.groupBox11.Text = "Тип питания процессора:";
+            // 
+            // checkedListBox_MotherboardSearchProcessorSupplyConnectorsType
+            // 
+            this.checkedListBox_MotherboardSearchProcessorSupplyConnectorsType.CheckOnClick = true;
+            this.checkedListBox_MotherboardSearchProcessorSupplyConnectorsType.FormattingEnabled = true;
+            this.checkedListBox_MotherboardSearchProcessorSupplyConnectorsType.Location = new System.Drawing.Point(6, 34);
+            this.checkedListBox_MotherboardSearchProcessorSupplyConnectorsType.Name = "checkedListBox_MotherboardSearchProcessorSupplyConnectorsType";
+            this.checkedListBox_MotherboardSearchProcessorSupplyConnectorsType.Size = new System.Drawing.Size(70, 79);
+            this.checkedListBox_MotherboardSearchProcessorSupplyConnectorsType.TabIndex = 21;
+            this.checkedListBox_MotherboardSearchProcessorSupplyConnectorsType.SelectedIndexChanged += new System.EventHandler(this.checkedListBox_MotherboardSearchProcessorSupplyConnectorsType_SelectedIndexChanged);
+            // 
+            // groupBox10
+            // 
+            this.groupBox10.Controls.Add(this.checkedListBox_MotherboardSearchSocketType);
+            this.groupBox10.Location = new System.Drawing.Point(26, 199);
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.Size = new System.Drawing.Size(94, 117);
+            this.groupBox10.TabIndex = 33;
+            this.groupBox10.TabStop = false;
+            this.groupBox10.Text = "Тип сокета:";
+            // 
+            // checkedListBox_MotherboardSearchSocketType
+            // 
+            this.checkedListBox_MotherboardSearchSocketType.CheckOnClick = true;
+            this.checkedListBox_MotherboardSearchSocketType.FormattingEnabled = true;
+            this.checkedListBox_MotherboardSearchSocketType.Location = new System.Drawing.Point(6, 17);
+            this.checkedListBox_MotherboardSearchSocketType.Name = "checkedListBox_MotherboardSearchSocketType";
+            this.checkedListBox_MotherboardSearchSocketType.Size = new System.Drawing.Size(82, 94);
+            this.checkedListBox_MotherboardSearchSocketType.TabIndex = 15;
+            this.checkedListBox_MotherboardSearchSocketType.SelectedIndexChanged += new System.EventHandler(this.checkedListBox_MotherboardSearchSocketType_SelectedIndexChanged);
+            // 
+            // groupBox9
+            // 
+            this.groupBox9.Controls.Add(this.checkedListBox_MotherboardSearchFormFactor);
+            this.groupBox9.Location = new System.Drawing.Point(133, 201);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.Size = new System.Drawing.Size(92, 115);
+            this.groupBox9.TabIndex = 32;
+            this.groupBox9.TabStop = false;
+            this.groupBox9.Text = "Форм-фактор:";
+            // 
+            // checkedListBox_MotherboardSearchFormFactor
+            // 
+            this.checkedListBox_MotherboardSearchFormFactor.CheckOnClick = true;
+            this.checkedListBox_MotherboardSearchFormFactor.FormattingEnabled = true;
+            this.checkedListBox_MotherboardSearchFormFactor.Location = new System.Drawing.Point(6, 16);
+            this.checkedListBox_MotherboardSearchFormFactor.Name = "checkedListBox_MotherboardSearchFormFactor";
+            this.checkedListBox_MotherboardSearchFormFactor.Size = new System.Drawing.Size(82, 94);
+            this.checkedListBox_MotherboardSearchFormFactor.TabIndex = 17;
+            this.checkedListBox_MotherboardSearchFormFactor.SelectedIndexChanged += new System.EventHandler(this.checkedListBox_MotherboardSearchFormFactor_SelectedIndexChanged);
+            // 
+            // groupBox8
+            // 
+            this.groupBox8.Controls.Add(this.checkedListBox_MotherboardSearchChipset);
+            this.groupBox8.Location = new System.Drawing.Point(234, 200);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(88, 120);
+            this.groupBox8.TabIndex = 31;
+            this.groupBox8.TabStop = false;
+            this.groupBox8.Text = "Чипсет:";
+            // 
+            // checkedListBox_MotherboardSearchChipset
+            // 
+            this.checkedListBox_MotherboardSearchChipset.CheckOnClick = true;
+            this.checkedListBox_MotherboardSearchChipset.FormattingEnabled = true;
+            this.checkedListBox_MotherboardSearchChipset.Location = new System.Drawing.Point(10, 19);
+            this.checkedListBox_MotherboardSearchChipset.Name = "checkedListBox_MotherboardSearchChipset";
+            this.checkedListBox_MotherboardSearchChipset.Size = new System.Drawing.Size(68, 94);
+            this.checkedListBox_MotherboardSearchChipset.TabIndex = 19;
+            this.checkedListBox_MotherboardSearchChipset.SelectedIndexChanged += new System.EventHandler(this.checkedListBox_MotherboardSearchChipset_SelectedIndexChanged);
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.checkedListBox_MotherboardSearchRAMFormFactor);
+            this.groupBox7.Location = new System.Drawing.Point(135, 484);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(95, 120);
+            this.groupBox7.TabIndex = 30;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "Форм-фактор RAM:";
+            // 
+            // checkedListBox_MotherboardSearchRAMFormFactor
+            // 
+            this.checkedListBox_MotherboardSearchRAMFormFactor.CheckOnClick = true;
+            this.checkedListBox_MotherboardSearchRAMFormFactor.FormattingEnabled = true;
+            this.checkedListBox_MotherboardSearchRAMFormFactor.Location = new System.Drawing.Point(6, 28);
+            this.checkedListBox_MotherboardSearchRAMFormFactor.Name = "checkedListBox_MotherboardSearchRAMFormFactor";
+            this.checkedListBox_MotherboardSearchRAMFormFactor.Size = new System.Drawing.Size(82, 79);
+            this.checkedListBox_MotherboardSearchRAMFormFactor.TabIndex = 23;
+            this.checkedListBox_MotherboardSearchRAMFormFactor.SelectedIndexChanged += new System.EventHandler(this.checkedListBox_MotherboardSearchRAMFormFactor_SelectedIndexChanged);
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.checkedListBox_MotherboardSearchNumberOfRAMSlots);
+            this.groupBox6.Location = new System.Drawing.Point(26, 476);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(95, 134);
+            this.groupBox6.TabIndex = 29;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Кол-во слотов для RAM:";
+            // 
+            // checkedListBox_MotherboardSearchNumberOfRAMSlots
+            // 
+            this.checkedListBox_MotherboardSearchNumberOfRAMSlots.CheckOnClick = true;
+            this.checkedListBox_MotherboardSearchNumberOfRAMSlots.FormattingEnabled = true;
+            this.checkedListBox_MotherboardSearchNumberOfRAMSlots.Location = new System.Drawing.Point(6, 28);
+            this.checkedListBox_MotherboardSearchNumberOfRAMSlots.Name = "checkedListBox_MotherboardSearchNumberOfRAMSlots";
+            this.checkedListBox_MotherboardSearchNumberOfRAMSlots.Size = new System.Drawing.Size(82, 94);
+            this.checkedListBox_MotherboardSearchNumberOfRAMSlots.TabIndex = 23;
+            this.checkedListBox_MotherboardSearchNumberOfRAMSlots.SelectedIndexChanged += new System.EventHandler(this.checkedListBox_MotherboardSearchNumberOfRAMSlots_SelectedIndexChanged);
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.checkedListBox_MotherboardSearchNumberOfPCIESlots);
+            this.groupBox5.Location = new System.Drawing.Point(234, 323);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(95, 147);
+            this.groupBox5.TabIndex = 28;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Кол-во PCI-Ex16 слотов:";
+            // 
+            // checkedListBox_MotherboardSearchNumberOfPCIESlots
+            // 
+            this.checkedListBox_MotherboardSearchNumberOfPCIESlots.CheckOnClick = true;
+            this.checkedListBox_MotherboardSearchNumberOfPCIESlots.FormattingEnabled = true;
+            this.checkedListBox_MotherboardSearchNumberOfPCIESlots.Location = new System.Drawing.Point(6, 44);
+            this.checkedListBox_MotherboardSearchNumberOfPCIESlots.Name = "checkedListBox_MotherboardSearchNumberOfPCIESlots";
+            this.checkedListBox_MotherboardSearchNumberOfPCIESlots.Size = new System.Drawing.Size(82, 94);
+            this.checkedListBox_MotherboardSearchNumberOfPCIESlots.TabIndex = 23;
+            this.checkedListBox_MotherboardSearchNumberOfPCIESlots.SelectedIndexChanged += new System.EventHandler(this.checkedListBox_MotherboardSearchNumberOfPCIESlots_SelectedIndexChanged);
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.checkedListBox_MotherboardSearchNumberOfSATASlots);
+            this.groupBox4.Location = new System.Drawing.Point(335, 336);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(95, 134);
+            this.groupBox4.TabIndex = 27;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Кол-во SATA слотов:";
+            // 
+            // checkedListBox_MotherboardSearchNumberOfSATASlots
+            // 
+            this.checkedListBox_MotherboardSearchNumberOfSATASlots.CheckOnClick = true;
+            this.checkedListBox_MotherboardSearchNumberOfSATASlots.FormattingEnabled = true;
+            this.checkedListBox_MotherboardSearchNumberOfSATASlots.Location = new System.Drawing.Point(6, 28);
+            this.checkedListBox_MotherboardSearchNumberOfSATASlots.Name = "checkedListBox_MotherboardSearchNumberOfSATASlots";
+            this.checkedListBox_MotherboardSearchNumberOfSATASlots.Size = new System.Drawing.Size(82, 94);
+            this.checkedListBox_MotherboardSearchNumberOfSATASlots.TabIndex = 23;
+            this.checkedListBox_MotherboardSearchNumberOfSATASlots.SelectedIndexChanged += new System.EventHandler(this.checkedListBox_MotherboardSearchNumberOfSATASlots_SelectedIndexChanged);
+            // 
             // button_MotherboardAddToAssembling
             // 
-            this.button_MotherboardAddToAssembling.Location = new System.Drawing.Point(3, 142);
+            this.button_MotherboardAddToAssembling.Location = new System.Drawing.Point(26, 146);
             this.button_MotherboardAddToAssembling.Name = "button_MotherboardAddToAssembling";
-            this.button_MotherboardAddToAssembling.Size = new System.Drawing.Size(127, 31);
+            this.button_MotherboardAddToAssembling.Size = new System.Drawing.Size(120, 38);
             this.button_MotherboardAddToAssembling.TabIndex = 11;
             this.button_MotherboardAddToAssembling.Text = "Добавить к сборке";
             this.button_MotherboardAddToAssembling.UseVisualStyleBackColor = true;
             this.button_MotherboardAddToAssembling.Click += new System.EventHandler(this.button_MotherboardAddToAssembling_Click);
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.checkedListBox_MotherboardSearchNumberOfFourPinSlotsForCooling);
+            this.groupBox3.Location = new System.Drawing.Point(133, 323);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(95, 151);
+            this.groupBox3.TabIndex = 26;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Кол-во 4-pin слотов для кулера:";
+            // 
+            // checkedListBox_MotherboardSearchNumberOfFourPinSlotsForCooling
+            // 
+            this.checkedListBox_MotherboardSearchNumberOfFourPinSlotsForCooling.CheckOnClick = true;
+            this.checkedListBox_MotherboardSearchNumberOfFourPinSlotsForCooling.FormattingEnabled = true;
+            this.checkedListBox_MotherboardSearchNumberOfFourPinSlotsForCooling.Location = new System.Drawing.Point(5, 46);
+            this.checkedListBox_MotherboardSearchNumberOfFourPinSlotsForCooling.Name = "checkedListBox_MotherboardSearchNumberOfFourPinSlotsForCooling";
+            this.checkedListBox_MotherboardSearchNumberOfFourPinSlotsForCooling.Size = new System.Drawing.Size(82, 94);
+            this.checkedListBox_MotherboardSearchNumberOfFourPinSlotsForCooling.TabIndex = 23;
+            this.checkedListBox_MotherboardSearchNumberOfFourPinSlotsForCooling.SelectedIndexChanged += new System.EventHandler(this.checkedListBox_MotherboardSearchNumberOfFourPinSlotsForCooling_SelectedIndexChanged);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.checkedListBox_MotherboardSearchNumberOfThreePinSlotsForCooling);
+            this.groupBox2.Location = new System.Drawing.Point(26, 323);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(95, 151);
+            this.groupBox2.TabIndex = 25;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Кол-во 3-pin слотов для кулера:";
+            // 
+            // checkedListBox_MotherboardSearchNumberOfThreePinSlotsForCooling
+            // 
+            this.checkedListBox_MotherboardSearchNumberOfThreePinSlotsForCooling.CheckOnClick = true;
+            this.checkedListBox_MotherboardSearchNumberOfThreePinSlotsForCooling.FormattingEnabled = true;
+            this.checkedListBox_MotherboardSearchNumberOfThreePinSlotsForCooling.Location = new System.Drawing.Point(5, 46);
+            this.checkedListBox_MotherboardSearchNumberOfThreePinSlotsForCooling.Name = "checkedListBox_MotherboardSearchNumberOfThreePinSlotsForCooling";
+            this.checkedListBox_MotherboardSearchNumberOfThreePinSlotsForCooling.Size = new System.Drawing.Size(82, 94);
+            this.checkedListBox_MotherboardSearchNumberOfThreePinSlotsForCooling.TabIndex = 23;
+            this.checkedListBox_MotherboardSearchNumberOfThreePinSlotsForCooling.SelectedIndexChanged += new System.EventHandler(this.checkedListBox_MotherboardSearchNumberOfThreePinSlotsForCooling_SelectedIndexChanged);
+            // 
+            // groupBox_MotherboardSearch
+            // 
+            this.groupBox_MotherboardSearch.Controls.Add(this.textBox_MotherboardSearchName);
+            this.groupBox_MotherboardSearch.Location = new System.Drawing.Point(346, 201);
+            this.groupBox_MotherboardSearch.Name = "groupBox_MotherboardSearch";
+            this.groupBox_MotherboardSearch.Size = new System.Drawing.Size(137, 47);
+            this.groupBox_MotherboardSearch.TabIndex = 14;
+            this.groupBox_MotherboardSearch.TabStop = false;
+            this.groupBox_MotherboardSearch.Text = "Поиск по названию:";
+            // 
+            // textBox_MotherboardSearchName
+            // 
+            this.textBox_MotherboardSearchName.Location = new System.Drawing.Point(6, 19);
+            this.textBox_MotherboardSearchName.MaxLength = 25;
+            this.textBox_MotherboardSearchName.Name = "textBox_MotherboardSearchName";
+            this.textBox_MotherboardSearchName.Size = new System.Drawing.Size(125, 20);
+            this.textBox_MotherboardSearchName.TabIndex = 0;
             // 
             // dataGridView_Motherboard
             // 
@@ -494,8 +852,8 @@ namespace Prog_Kursovaya_sem3
             // 
             // Column_MotherboardName
             // 
-            dataGridViewCellStyle45.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column_MotherboardName.DefaultCellStyle = dataGridViewCellStyle45;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_MotherboardName.DefaultCellStyle = dataGridViewCellStyle9;
             this.Column_MotherboardName.HeaderText = "Наименование";
             this.Column_MotherboardName.MinimumWidth = 6;
             this.Column_MotherboardName.Name = "Column_MotherboardName";
@@ -506,8 +864,8 @@ namespace Prog_Kursovaya_sem3
             // 
             // Column_MotherboardInfo
             // 
-            dataGridViewCellStyle46.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column_MotherboardInfo.DefaultCellStyle = dataGridViewCellStyle46;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_MotherboardInfo.DefaultCellStyle = dataGridViewCellStyle10;
             this.Column_MotherboardInfo.HeaderText = "Краткая информация";
             this.Column_MotherboardInfo.MinimumWidth = 6;
             this.Column_MotherboardInfo.Name = "Column_MotherboardInfo";
@@ -524,7 +882,7 @@ namespace Prog_Kursovaya_sem3
             this.tabPage_Processor.Name = "tabPage_Processor";
             this.tabPage_Processor.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage_Processor.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tabPage_Processor.Size = new System.Drawing.Size(553, 563);
+            this.tabPage_Processor.Size = new System.Drawing.Size(562, 611);
             this.tabPage_Processor.TabIndex = 0;
             this.tabPage_Processor.Text = "Процессор";
             this.tabPage_Processor.UseVisualStyleBackColor = true;
@@ -562,8 +920,8 @@ namespace Prog_Kursovaya_sem3
             // 
             // Column_ProcessorName
             // 
-            dataGridViewCellStyle47.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column_ProcessorName.DefaultCellStyle = dataGridViewCellStyle47;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_ProcessorName.DefaultCellStyle = dataGridViewCellStyle11;
             this.Column_ProcessorName.HeaderText = "Наименование";
             this.Column_ProcessorName.MinimumWidth = 6;
             this.Column_ProcessorName.Name = "Column_ProcessorName";
@@ -574,8 +932,8 @@ namespace Prog_Kursovaya_sem3
             // 
             // Column_ProcessorInfo
             // 
-            dataGridViewCellStyle48.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column_ProcessorInfo.DefaultCellStyle = dataGridViewCellStyle48;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_ProcessorInfo.DefaultCellStyle = dataGridViewCellStyle12;
             this.Column_ProcessorInfo.HeaderText = "Краткая информация";
             this.Column_ProcessorInfo.MinimumWidth = 6;
             this.Column_ProcessorInfo.Name = "Column_ProcessorInfo";
@@ -599,7 +957,7 @@ namespace Prog_Kursovaya_sem3
             this.tabControl1.Multiline = true;
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(561, 607);
+            this.tabControl1.Size = new System.Drawing.Size(570, 655);
             this.tabControl1.SizeMode = System.Windows.Forms.TabSizeMode.FillToRight;
             this.tabControl1.TabIndex = 1;
             // 
@@ -610,7 +968,7 @@ namespace Prog_Kursovaya_sem3
             this.tabPage_HardDrive.Location = new System.Drawing.Point(4, 40);
             this.tabPage_HardDrive.Name = "tabPage_HardDrive";
             this.tabPage_HardDrive.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_HardDrive.Size = new System.Drawing.Size(553, 563);
+            this.tabPage_HardDrive.Size = new System.Drawing.Size(562, 611);
             this.tabPage_HardDrive.TabIndex = 7;
             this.tabPage_HardDrive.Text = "Жесткий диск";
             this.tabPage_HardDrive.UseVisualStyleBackColor = true;
@@ -648,8 +1006,8 @@ namespace Prog_Kursovaya_sem3
             // 
             // Column_HardDriveName
             // 
-            dataGridViewCellStyle49.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column_HardDriveName.DefaultCellStyle = dataGridViewCellStyle49;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_HardDriveName.DefaultCellStyle = dataGridViewCellStyle13;
             this.Column_HardDriveName.HeaderText = "Наименование";
             this.Column_HardDriveName.MinimumWidth = 6;
             this.Column_HardDriveName.Name = "Column_HardDriveName";
@@ -660,8 +1018,8 @@ namespace Prog_Kursovaya_sem3
             // 
             // Column_HardDriveInfo
             // 
-            dataGridViewCellStyle50.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column_HardDriveInfo.DefaultCellStyle = dataGridViewCellStyle50;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_HardDriveInfo.DefaultCellStyle = dataGridViewCellStyle14;
             this.Column_HardDriveInfo.HeaderText = "Краткая информация";
             this.Column_HardDriveInfo.MinimumWidth = 6;
             this.Column_HardDriveInfo.Name = "Column_HardDriveInfo";
@@ -676,7 +1034,7 @@ namespace Prog_Kursovaya_sem3
             this.tabPage_SSD.Controls.Add(this.dataGridView_SolidStateDrive);
             this.tabPage_SSD.Location = new System.Drawing.Point(4, 40);
             this.tabPage_SSD.Name = "tabPage_SSD";
-            this.tabPage_SSD.Size = new System.Drawing.Size(553, 563);
+            this.tabPage_SSD.Size = new System.Drawing.Size(562, 611);
             this.tabPage_SSD.TabIndex = 8;
             this.tabPage_SSD.Text = "SSD";
             this.tabPage_SSD.UseVisualStyleBackColor = true;
@@ -714,8 +1072,8 @@ namespace Prog_Kursovaya_sem3
             // 
             // Column_SolidStateDriveName
             // 
-            dataGridViewCellStyle51.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column_SolidStateDriveName.DefaultCellStyle = dataGridViewCellStyle51;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_SolidStateDriveName.DefaultCellStyle = dataGridViewCellStyle15;
             this.Column_SolidStateDriveName.HeaderText = "Наименование";
             this.Column_SolidStateDriveName.MinimumWidth = 6;
             this.Column_SolidStateDriveName.Name = "Column_SolidStateDriveName";
@@ -726,8 +1084,8 @@ namespace Prog_Kursovaya_sem3
             // 
             // Column_SolidStateDriveInfo
             // 
-            dataGridViewCellStyle52.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column_SolidStateDriveInfo.DefaultCellStyle = dataGridViewCellStyle52;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_SolidStateDriveInfo.DefaultCellStyle = dataGridViewCellStyle16;
             this.Column_SolidStateDriveInfo.HeaderText = "Краткая информация";
             this.Column_SolidStateDriveInfo.MinimumWidth = 6;
             this.Column_SolidStateDriveInfo.Name = "Column_SolidStateDriveInfo";
@@ -743,7 +1101,7 @@ namespace Prog_Kursovaya_sem3
             this.tabPage_Cooling.Location = new System.Drawing.Point(4, 40);
             this.tabPage_Cooling.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage_Cooling.Name = "tabPage_Cooling";
-            this.tabPage_Cooling.Size = new System.Drawing.Size(553, 563);
+            this.tabPage_Cooling.Size = new System.Drawing.Size(562, 611);
             this.tabPage_Cooling.TabIndex = 9;
             this.tabPage_Cooling.Text = "Кулер";
             this.tabPage_Cooling.UseVisualStyleBackColor = true;
@@ -781,8 +1139,8 @@ namespace Prog_Kursovaya_sem3
             // 
             // Column_CoolingName
             // 
-            dataGridViewCellStyle53.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column_CoolingName.DefaultCellStyle = dataGridViewCellStyle53;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_CoolingName.DefaultCellStyle = dataGridViewCellStyle17;
             this.Column_CoolingName.HeaderText = "Наименование";
             this.Column_CoolingName.MinimumWidth = 6;
             this.Column_CoolingName.Name = "Column_CoolingName";
@@ -793,8 +1151,8 @@ namespace Prog_Kursovaya_sem3
             // 
             // Column_CoolingInfo
             // 
-            dataGridViewCellStyle54.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column_CoolingInfo.DefaultCellStyle = dataGridViewCellStyle54;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column_CoolingInfo.DefaultCellStyle = dataGridViewCellStyle18;
             this.Column_CoolingInfo.HeaderText = "Краткая информация";
             this.Column_CoolingInfo.MinimumWidth = 6;
             this.Column_CoolingInfo.Name = "Column_CoolingInfo";
@@ -1418,6 +1776,21 @@ namespace Prog_Kursovaya_sem3
             this.tabPage_Videocard.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Videocard)).EndInit();
             this.tabPage_Motherboard.ResumeLayout(false);
+            this.groupBox14.ResumeLayout(false);
+            this.groupBox13.ResumeLayout(false);
+            this.groupBox12.ResumeLayout(false);
+            this.groupBox11.ResumeLayout(false);
+            this.groupBox10.ResumeLayout(false);
+            this.groupBox9.ResumeLayout(false);
+            this.groupBox8.ResumeLayout(false);
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox_MotherboardSearch.ResumeLayout(false);
+            this.groupBox_MotherboardSearch.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Motherboard)).EndInit();
             this.tabPage_Processor.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Processor)).EndInit();
@@ -1559,6 +1932,36 @@ namespace Prog_Kursovaya_sem3
         private System.Windows.Forms.GroupBox groupBox_AssemblingResults;
         private System.Windows.Forms.Button button_StartTheAssembling;
         private System.Windows.Forms.RichTextBox richTextBox_AssemblingResults;
+        private System.Windows.Forms.CheckedListBox checkedListBox_MotherboardSearchSocketType;
+        private System.Windows.Forms.GroupBox groupBox_MotherboardSearch;
+        private System.Windows.Forms.TextBox textBox_MotherboardSearchName;
+        private System.Windows.Forms.CheckedListBox checkedListBox_MotherboardSearchFormFactor;
+        private System.Windows.Forms.CheckedListBox checkedListBox_MotherboardSearchChipset;
+        private System.Windows.Forms.CheckedListBox checkedListBox_MotherboardSearchNumberOfThreePinSlotsForCooling;
+        private System.Windows.Forms.CheckedListBox checkedListBox_MotherboardSearchProcessorSupplyConnectorsType;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.CheckedListBox checkedListBox_MotherboardSearchNumberOfFourPinSlotsForCooling;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.CheckedListBox checkedListBox_MotherboardSearchNumberOfPCIESlots;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.CheckedListBox checkedListBox_MotherboardSearchNumberOfSATASlots;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.CheckedListBox checkedListBox_MotherboardSearchNumberOfRAMSlots;
+        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.CheckedListBox checkedListBox_MotherboardSearchRAMFormFactor;
+        private System.Windows.Forms.GroupBox groupBox11;
+        private System.Windows.Forms.GroupBox groupBox10;
+        private System.Windows.Forms.GroupBox groupBox9;
+        private System.Windows.Forms.GroupBox groupBox8;
+        private System.Windows.Forms.GroupBox groupBox12;
+        private System.Windows.Forms.CheckedListBox checkedListBox_MotherboardSearchRAMMaxCapacity;
+        private System.Windows.Forms.Button button_MotherboardResetSearch;
+        private System.Windows.Forms.Button button_MotherboardStartASearch;
+        private System.Windows.Forms.GroupBox groupBox13;
+        private System.Windows.Forms.CheckedListBox checkedListBox_MotherboardSearchMemoryType;
+        private System.Windows.Forms.GroupBox groupBox14;
+        private System.Windows.Forms.CheckedListBox checkedListBox_MotherboardSearchAvailableFrequencies;
     }
 }
 

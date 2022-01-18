@@ -93,31 +93,136 @@ namespace Prog_Kursovaya_sem3
 
 
                 //Reading the motherboard.dat
-                fileStream = new FileStream("DataBases/motherboard.dat", FileMode.Open);
-                file = new StreamReader(fileStream);
-                if (file.Peek() < 0)
-                    file.Close();
-                else
                 {
-                    int i = 0;
-                    string[] inputSubStrings;
-                    while (file.Peek() >= 0)
+                    List<string> listOfFormFactors = new List<string>();
+                    List<string> listOfSockets = new List<string>();
+                    List<string> listOfChipsets = new List<string>();
+                    List<string> listOfProcessorSupplyConnectorsType = new List<string>();
+                    List<int> listOfNumberOfThreePinSlotsForCooling = new List<int>();
+                    List<int> listOfNumberOfFourPinSlotsForCooling = new List<int>();
+                    List<int> listOfNumberOfPCIESlots = new List<int>();
+                    List<int> listOfNumberOfSATASlots = new List<int>();
+                    List<int> listOfNumberOfRAMSlots = new List<int>();
+                    List<string> listOfRAMFormFactor = new List<string>();
+                    List<int> listOfRAMMaxCapacity = new List<int>();
+                    List<string> listOfMemoryTypes = new List<string>();
+                    List<int> listOfAvailableFrequencies = new List<int>();
+
+
+                    fileStream = new FileStream("DataBases/motherboard.dat", FileMode.Open);
+                    file = new StreamReader(fileStream);
+                    if (file.Peek() < 0)
+                        file.Close();
+                    else
                     {
-                        i++;
-                        inputSubStrings = file.ReadLine().Split('/');
+                        int i = 0;
+                        string[] inputSubStrings;
+                        while (file.Peek() >= 0)
+                        {
+                            i++;
+                            inputSubStrings = file.ReadLine().Split('/');
 
-                        motherboards.Add(new Motherboard(inputSubStrings));
+                            motherboards.Add(new Motherboard(inputSubStrings));
 
-                        dataGridView_Motherboard.Rows.Add(motherboards[i - 1].Name,
-                            "[" + motherboards[i - 1].SocketType + ", " +
-                            motherboards[i - 1].ChipsetType + ", " +
-                             motherboards[i - 1].NumberOfRAMSlots + "x" +
-                              motherboards[i - 1].MemoryType + " - " +
-                               motherboards[i - 1].AvailableFrequenciesArray[motherboards[i - 1].AvailableFrequenciesArray.Length - 1] + " МГц, " +
-                               motherboards[i - 1].NumberOfPCIESlots + "xPCI-Ex16" + "]");
+                            dataGridView_Motherboard.Rows.Add(motherboards[i - 1].Name,
+                                "[" + motherboards[i - 1].SocketType + ", " +
+                                motherboards[i - 1].ChipsetType + ", " +
+                                 motherboards[i - 1].NumberOfRAMSlots + "x" +
+                                  motherboards[i - 1].MemoryType + " - " +
+                                   motherboards[i - 1].AvailableFrequenciesArray[motherboards[i - 1].AvailableFrequenciesArray.Length - 1] + " МГц, " +
+                                   motherboards[i - 1].NumberOfPCIESlots + "xPCI-Ex16" + "]");
+
+                            //Filling the lists of future searching fields
+                            {
+                                if (!listOfFormFactors.Contains(motherboards[i - 1].FormFactor))
+                                    listOfFormFactors.Add(motherboards[i - 1].FormFactor);
+
+                                if (!listOfSockets.Contains(motherboards[i - 1].SocketType))
+                                    listOfSockets.Add(motherboards[i - 1].SocketType);
+
+                                if (!listOfChipsets.Contains(motherboards[i - 1].ChipsetType))
+                                    listOfChipsets.Add(motherboards[i - 1].ChipsetType);
+
+                                if (!listOfProcessorSupplyConnectorsType.Contains(motherboards[i - 1].ProcessorSupplyConnectorsType))
+                                    listOfProcessorSupplyConnectorsType.Add(motherboards[i - 1].ProcessorSupplyConnectorsType);
+
+                                if (!listOfNumberOfThreePinSlotsForCooling.Contains(motherboards[i - 1].NumberOfThreePinSlotsForCooling))
+                                    listOfNumberOfThreePinSlotsForCooling.Add(motherboards[i - 1].NumberOfThreePinSlotsForCooling);
+
+                                if (!listOfNumberOfFourPinSlotsForCooling.Contains(motherboards[i - 1].NumberOfFourPinSlotsForCooling))
+                                    listOfNumberOfFourPinSlotsForCooling.Add(motherboards[i - 1].NumberOfFourPinSlotsForCooling);
+
+                                if (!listOfNumberOfPCIESlots.Contains(motherboards[i - 1].NumberOfPCIESlots))
+                                    listOfNumberOfPCIESlots.Add(motherboards[i - 1].NumberOfPCIESlots);
+
+                                if (!listOfNumberOfSATASlots.Contains(motherboards[i - 1].NumberOfSATASlots))
+                                    listOfNumberOfSATASlots.Add(motherboards[i - 1].NumberOfSATASlots);
+
+                                if (!listOfNumberOfRAMSlots.Contains(motherboards[i - 1].NumberOfRAMSlots))
+                                    listOfNumberOfRAMSlots.Add(motherboards[i - 1].NumberOfRAMSlots);
+
+                                if (!listOfRAMFormFactor.Contains(motherboards[i - 1].RamFormFactor))
+                                    listOfRAMFormFactor.Add(motherboards[i - 1].RamFormFactor);
+
+                                if (!listOfRAMMaxCapacity.Contains(motherboards[i - 1].RamMaxCapacity))
+                                    listOfRAMMaxCapacity.Add(motherboards[i - 1].RamMaxCapacity);
+
+                                if (!listOfMemoryTypes.Contains(motherboards[i - 1].MemoryType))
+                                    listOfMemoryTypes.Add(motherboards[i - 1].MemoryType);
+
+                                for (int j =0; j < motherboards[i - 1].AvailableFrequenciesArray.Length; j++)
+                                    if (!listOfAvailableFrequencies.Contains(motherboards[i - 1].AvailableFrequenciesArray[j]))
+                                        listOfAvailableFrequencies.Add(motherboards[i - 1].AvailableFrequenciesArray[j]);
+                            }
+
+                        }
+                        file.Close();
+
+                        //Filling the searching fields
+                        {
+                            foreach (var element in listOfFormFactors)
+                                checkedListBox_MotherboardSearchFormFactor.Items.Add(element);
+
+                            foreach (var element in listOfSockets)
+                                checkedListBox_MotherboardSearchSocketType.Items.Add(element);
+
+                            foreach (var element in listOfChipsets)
+                                checkedListBox_MotherboardSearchChipset.Items.Add(element);
+
+                            foreach (var element in listOfProcessorSupplyConnectorsType)
+                                checkedListBox_MotherboardSearchProcessorSupplyConnectorsType.Items.Add(element);
+
+                            foreach (var element in listOfNumberOfThreePinSlotsForCooling)
+                                checkedListBox_MotherboardSearchNumberOfThreePinSlotsForCooling.Items.Add(element);
+
+                            foreach (var element in listOfNumberOfFourPinSlotsForCooling)
+                                checkedListBox_MotherboardSearchNumberOfFourPinSlotsForCooling.Items.Add(element);
+
+                            foreach (var element in listOfNumberOfPCIESlots)
+                                checkedListBox_MotherboardSearchNumberOfPCIESlots.Items.Add(element);
+
+                            foreach (var element in listOfNumberOfSATASlots)
+                                checkedListBox_MotherboardSearchNumberOfSATASlots.Items.Add(element);
+
+                            foreach (var element in listOfNumberOfRAMSlots)
+                                checkedListBox_MotherboardSearchNumberOfRAMSlots.Items.Add(element);
+
+                            foreach (var element in listOfRAMFormFactor)
+                                checkedListBox_MotherboardSearchRAMFormFactor.Items.Add(element);
+
+                            foreach (var element in listOfRAMMaxCapacity)
+                                checkedListBox_MotherboardSearchRAMMaxCapacity.Items.Add(element);
+
+                            foreach (var element in listOfMemoryTypes)
+                                checkedListBox_MotherboardSearchMemoryType.Items.Add(element);
+
+                            listOfAvailableFrequencies.Sort();
+                            foreach (var element in listOfAvailableFrequencies)
+                                checkedListBox_MotherboardSearchAvailableFrequencies.Items.Add(element);
+                        }
                     }
-                    file.Close();
                 }
+                
 
 
                 //Reading the RAM.dat
@@ -409,7 +514,9 @@ namespace Prog_Kursovaya_sem3
             checkBox_AssemblingProcessorEnabled.Checked = true;
         }
 
+
         //Motherboard*
+        
         private void dataGridView_Motherboard_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             if (e.ColumnIndex >= 0 && e.RowIndex >= 0)
@@ -434,7 +541,197 @@ namespace Prog_Kursovaya_sem3
             checkBox_AssemblingMotherboardEnabled.Enabled = true;
             checkBox_AssemblingMotherboardEnabled.Checked = true;
         }
-        
+        private void button_MotherboardResetSearch_Click(object sender, EventArgs e)
+        {
+
+            foreach (DataGridViewRow element in dataGridView_Motherboard.Rows)
+                if (element.Visible == false)
+                    element.Visible = true;
+
+            textBox_MotherboardSearchName.Text = "";
+
+            for (int i = 0; i < checkedListBox_MotherboardSearchChipset.Items.Count; i++)
+                if (checkedListBox_MotherboardSearchChipset.GetItemChecked(i))
+                    checkedListBox_MotherboardSearchChipset.SetItemChecked(i, false);
+
+            for (int i = 0; i < checkedListBox_MotherboardSearchFormFactor.Items.Count; i++)
+                if (checkedListBox_MotherboardSearchFormFactor.GetItemChecked(i))
+                    checkedListBox_MotherboardSearchFormFactor.SetItemChecked(i, false);
+
+            for (int i = 0; i < checkedListBox_MotherboardSearchSocketType.Items.Count; i++)
+                if (checkedListBox_MotherboardSearchSocketType.GetItemChecked(i))
+                    checkedListBox_MotherboardSearchSocketType.SetItemChecked(i, false);
+
+            for (int i = 0; i < checkedListBox_MotherboardSearchChipset.Items.Count; i++)
+                if (checkedListBox_MotherboardSearchChipset.GetItemChecked(i))
+                    checkedListBox_MotherboardSearchChipset.SetItemChecked(i, false);
+
+            for (int i = 0; i < checkedListBox_MotherboardSearchProcessorSupplyConnectorsType.Items.Count; i++)
+                if (checkedListBox_MotherboardSearchProcessorSupplyConnectorsType.GetItemChecked(i))
+                    checkedListBox_MotherboardSearchProcessorSupplyConnectorsType.SetItemChecked(i, false);
+
+            for (int i = 0; i < checkedListBox_MotherboardSearchNumberOfThreePinSlotsForCooling.Items.Count; i++)
+                if (checkedListBox_MotherboardSearchNumberOfThreePinSlotsForCooling.GetItemChecked(i))
+                    checkedListBox_MotherboardSearchNumberOfThreePinSlotsForCooling.SetItemChecked(i, false);
+
+            for (int i = 0; i < checkedListBox_MotherboardSearchNumberOfFourPinSlotsForCooling.Items.Count; i++)
+                if (checkedListBox_MotherboardSearchNumberOfFourPinSlotsForCooling.GetItemChecked(i))
+                    checkedListBox_MotherboardSearchNumberOfFourPinSlotsForCooling.SetItemChecked(i, false);
+
+            for (int i = 0; i < checkedListBox_MotherboardSearchNumberOfPCIESlots.Items.Count; i++)
+                if (checkedListBox_MotherboardSearchNumberOfPCIESlots.GetItemChecked(i))
+                    checkedListBox_MotherboardSearchNumberOfPCIESlots.SetItemChecked(i, false);
+
+            for (int i = 0; i < checkedListBox_MotherboardSearchNumberOfSATASlots.Items.Count; i++)
+                if (checkedListBox_MotherboardSearchNumberOfSATASlots.GetItemChecked(i))
+                    checkedListBox_MotherboardSearchNumberOfSATASlots.SetItemChecked(i, false);
+
+            for (int i = 0; i < checkedListBox_MotherboardSearchNumberOfRAMSlots.Items.Count; i++)
+                if (checkedListBox_MotherboardSearchNumberOfRAMSlots.GetItemChecked(i))
+                    checkedListBox_MotherboardSearchNumberOfRAMSlots.SetItemChecked(i, false);
+
+            for (int i = 0; i < checkedListBox_MotherboardSearchRAMFormFactor.Items.Count; i++)
+                if (checkedListBox_MotherboardSearchRAMFormFactor.GetItemChecked(i))
+                    checkedListBox_MotherboardSearchRAMFormFactor.SetItemChecked(i, false);
+
+            for (int i = 0; i < checkedListBox_MotherboardSearchRAMMaxCapacity.Items.Count; i++)
+                if (checkedListBox_MotherboardSearchRAMMaxCapacity.GetItemChecked(i))
+                    checkedListBox_MotherboardSearchRAMMaxCapacity.SetItemChecked(i, false);
+
+            for (int i = 0; i < checkedListBox_MotherboardSearchMemoryType.Items.Count; i++)
+                if (checkedListBox_MotherboardSearchMemoryType.GetItemChecked(i))
+                    checkedListBox_MotherboardSearchMemoryType.SetItemChecked(i, false);
+
+            for (int i = 0; i < checkedListBox_MotherboardSearchAvailableFrequencies.Items.Count; i++)
+                if (checkedListBox_MotherboardSearchAvailableFrequencies.GetItemChecked(i))
+                    checkedListBox_MotherboardSearchAvailableFrequencies.SetItemChecked(i, false);
+        }
+        private void button_MotherboardStartASearch_Click(object sender, EventArgs e)
+        {
+            bool[] requestIndex = new bool[motherboards.Count];
+            for (int i = 0; i < requestIndex.Length; i++)
+                requestIndex[i] = true;
+
+
+            if (textBox_MotherboardSearchName.Text != "")
+            {
+                for (int i = 0; i < requestIndex.Length; i++)
+                    if (requestIndex[i] == true)
+                        if (motherboards[i].Name != textBox_MotherboardSearchName.Text)
+                            requestIndex[i] = false;
+            }
+
+            if (checkedListBox_MotherboardSearchFormFactor.CheckedItems.Count != 0)
+            {
+                for (int i = 0; i < requestIndex.Length; i++)
+                    if (requestIndex[i] == true)
+                        if (!checkedListBox_MotherboardSearchFormFactor.CheckedItems.Contains(motherboards[i].FormFactor))
+                            requestIndex[i] = false;
+            }
+
+            if (checkedListBox_MotherboardSearchSocketType.CheckedItems.Count != 0)
+            {
+                for (int i = 0; i < requestIndex.Length; i++)
+                    if (requestIndex[i] == true)
+                        if (!checkedListBox_MotherboardSearchSocketType.CheckedItems.Contains(motherboards[i].SocketType))
+                            requestIndex[i] = false;
+            }
+
+            if (checkedListBox_MotherboardSearchChipset.CheckedItems.Count != 0)
+            {
+                for (int i = 0; i < requestIndex.Length; i++)
+                    if (requestIndex[i] == true)
+                        if (!checkedListBox_MotherboardSearchChipset.CheckedItems.Contains(motherboards[i].ChipsetType))
+                            requestIndex[i] = false;
+            }
+
+            if (checkedListBox_MotherboardSearchProcessorSupplyConnectorsType.CheckedItems.Count != 0)
+            {
+                for (int i = 0; i < requestIndex.Length; i++)
+                    if (requestIndex[i] == true)
+                        if (!checkedListBox_MotherboardSearchProcessorSupplyConnectorsType.CheckedItems.Contains(motherboards[i].ProcessorSupplyConnectorsType))
+                            requestIndex[i] = false;
+            }
+
+            if (checkedListBox_MotherboardSearchNumberOfThreePinSlotsForCooling.CheckedItems.Count != 0)
+            {
+                for (int i = 0; i < requestIndex.Length; i++)
+                    if (requestIndex[i] == true)
+                        if (!checkedListBox_MotherboardSearchNumberOfThreePinSlotsForCooling.CheckedItems.Contains(motherboards[i].NumberOfThreePinSlotsForCooling))
+                            requestIndex[i] = false;
+            }
+
+            if (checkedListBox_MotherboardSearchNumberOfFourPinSlotsForCooling.CheckedItems.Count != 0)
+            {
+                for (int i = 0; i < requestIndex.Length; i++)
+                    if (requestIndex[i] == true)
+                        if (!checkedListBox_MotherboardSearchNumberOfFourPinSlotsForCooling.CheckedItems.Contains(motherboards[i].NumberOfFourPinSlotsForCooling))
+                            requestIndex[i] = false;
+            }
+
+            if (checkedListBox_MotherboardSearchNumberOfPCIESlots.CheckedItems.Count != 0)
+            {
+                for (int i = 0; i < requestIndex.Length; i++)
+                    if (requestIndex[i] == true)
+                        if (!checkedListBox_MotherboardSearchNumberOfPCIESlots.CheckedItems.Contains(motherboards[i].NumberOfPCIESlots))
+                            requestIndex[i] = false;
+            }
+
+            if (checkedListBox_MotherboardSearchNumberOfSATASlots.CheckedItems.Count != 0)
+            {
+                for (int i = 0; i < requestIndex.Length; i++)
+                    if (requestIndex[i] == true)
+                        if (!checkedListBox_MotherboardSearchNumberOfSATASlots.CheckedItems.Contains(motherboards[i].NumberOfSATASlots))
+                            requestIndex[i] = false;
+            }
+
+            if (checkedListBox_MotherboardSearchNumberOfRAMSlots.CheckedItems.Count != 0)
+            {
+                for (int i = 0; i < requestIndex.Length; i++)
+                    if (requestIndex[i] == true)
+                        if (!checkedListBox_MotherboardSearchNumberOfRAMSlots.CheckedItems.Contains(motherboards[i].NumberOfRAMSlots))
+                            requestIndex[i] = false;
+            }
+
+            if (checkedListBox_MotherboardSearchRAMFormFactor.CheckedItems.Count != 0)
+            {
+                for (int i = 0; i < requestIndex.Length; i++)
+                    if (requestIndex[i] == true)
+                        if (!checkedListBox_MotherboardSearchRAMFormFactor.CheckedItems.Contains(motherboards[i].RamFormFactor))
+                            requestIndex[i] = false;
+            }
+
+            if (checkedListBox_MotherboardSearchRAMMaxCapacity.CheckedItems.Count != 0)
+            {
+                for (int i = 0; i < requestIndex.Length; i++)
+                    if (requestIndex[i] == true)
+                        if (!checkedListBox_MotherboardSearchRAMMaxCapacity.CheckedItems.Contains(motherboards[i].RamMaxCapacity))
+                            requestIndex[i] = false;
+            }
+
+            if (checkedListBox_MotherboardSearchMemoryType.CheckedItems.Count != 0)
+            {
+                for (int i = 0; i < requestIndex.Length; i++)
+                    if (requestIndex[i] == true)
+                        if (!checkedListBox_MotherboardSearchMemoryType.CheckedItems.Contains(motherboards[i].MemoryType))
+                            requestIndex[i] = false;
+            }
+
+            if (checkedListBox_MotherboardSearchAvailableFrequencies.CheckedItems.Count != 0)
+            {
+                for (int i = 0; i < requestIndex.Length; i++)
+                    if (requestIndex[i] == true)
+                        for (int j=0;j< checkedListBox_MotherboardSearchAvailableFrequencies.CheckedItems.Count;j++)
+                            if (!motherboards[i].AvailableFrequenciesArray.Contains(int.Parse(checkedListBox_MotherboardSearchAvailableFrequencies.CheckedItems[j].ToString())))
+                                requestIndex[i] = false;
+            }
+
+            button_MotherboardResetSearch_Click(sender, e);
+            for (int i = 0; i < requestIndex.Length; i++)
+                if (requestIndex[i] == false)
+                    dataGridView_Motherboard.Rows[i].Visible = false;
+        }
+
         //RAM*
         private void dataGridView_RAM_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
         {
@@ -757,6 +1054,71 @@ namespace Prog_Kursovaya_sem3
             }
 
             richTextBox_AssemblingResults.Text = personalComputer.ResultOfAssembling();
+        }
+
+        private void checkedListBox_MotherboardSearchChipset_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            checkedListBox_MotherboardSearchChipset.ClearSelected();
+        }
+
+        private void checkedListBox_MotherboardSearchSocketType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            checkedListBox_MotherboardSearchSocketType.ClearSelected();
+        }
+
+        private void checkedListBox_MotherboardSearchFormFactor_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            checkedListBox_MotherboardSearchFormFactor.ClearSelected();
+        }
+
+        private void checkedListBox_MotherboardSearchNumberOfThreePinSlotsForCooling_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            checkedListBox_MotherboardSearchNumberOfThreePinSlotsForCooling.ClearSelected();
+        }
+
+        private void checkedListBox_MotherboardSearchNumberOfFourPinSlotsForCooling_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            checkedListBox_MotherboardSearchNumberOfFourPinSlotsForCooling.ClearSelected();
+        }
+
+        private void checkedListBox_MotherboardSearchNumberOfPCIESlots_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            checkedListBox_MotherboardSearchNumberOfPCIESlots.ClearSelected();
+        }
+
+        private void checkedListBox_MotherboardSearchNumberOfRAMSlots_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            checkedListBox_MotherboardSearchNumberOfRAMSlots.ClearSelected();
+        }
+
+        private void checkedListBox_MotherboardSearchRAMFormFactor_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            checkedListBox_MotherboardSearchRAMFormFactor.ClearSelected();
+        }
+
+        private void checkedListBox_MotherboardSearchProcessorSupplyConnectorsType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            checkedListBox_MotherboardSearchProcessorSupplyConnectorsType.ClearSelected();
+        }
+
+        private void checkedListBox_MotherboardSearchRAMMaxCapacity_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            checkedListBox_MotherboardSearchRAMMaxCapacity.ClearSelected();
+        }
+
+        private void checkedListBox_MotherboardSearchNumberOfSATASlots_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            checkedListBox_MotherboardSearchNumberOfSATASlots.ClearSelected();
+        }
+
+        private void checkedListBox_MotherboardSearchMemoryType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            checkedListBox_MotherboardSearchMemoryType.ClearSelected();
+        }
+
+        private void checkedListBox_MotherboardSearchAvailableFrequencies_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            checkedListBox_MotherboardSearchAvailableFrequencies.ClearSelected();
         }
     }
 }

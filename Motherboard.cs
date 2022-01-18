@@ -154,7 +154,7 @@
             }
             set
             {
-                if ((value >= 0) && (value <= 64))
+                if ((value >= 0) && (value <= 256))
                     ramMaxCapacity = value;
             }
         }
